@@ -1,0 +1,46 @@
+.realize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 3rem 2rem 2rem;
+    gap: 1rem;
+    font-weight: 200;
+    font-size: .9rem;
+    margin-top: 2rem;
+
+}
+
+.realize-title {
+    text-align: center;
+}
+
+/* .realize .detalhe-horizontal::after {
+    bottom: 27px;
+    width: 150px;
+
+} */
+
+.realize-mosaico {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 8px;
+}
+
+.realize-mosaico img {
+    width: 48%;
+    transition: transform 0.3s ease
+}
+.realize-mosaico img:hover {
+    transform: scale(1.1);
+}
+
+.realize p {
+    width: 48%;
+}

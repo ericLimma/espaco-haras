@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --preto: #1a1a1a;
+    --cinza-claro: #666666;
+    --vermelho: #af1e22;
+    --branco: #f5f5f5;
+    --fonte-principal: "Poppins", sans-serif;
+    --highlight-color: #ff4500;
+    font-size: 14px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+a,
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover,
+button:hover {
+    transform: scale(1.05);
+}
+
+p,
+a,
+li {
+    font-family: var(--fonte-principal)
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+main {
+    position: relative;
+}
+
+.whatsapp-img {
+    width: 15px;
+}
+
+.whatsapp-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.whatsapp-link p {
+    margin: 0;
+
+}
+
+.whatsapp-btn {
+    position: fixed;
+    background-color: #42B759;
+    width: 155px;
+    height: 30px;
+    bottom: 40px;
+    right: 16px;
+    z-index: 100;
+    padding: 6px;
+    font-size: 0.6rem;
+    border-radius: 15px;
+    border: 2px solid var(--branco);
+    opacity: 0.95;
+}
+
+.btn-preto,
+.btn-vermelho {
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    width: 270px;
+    height: 56px;
+    vertical-align: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn-preto {
+    background-color: var(--preto);
+}
+
+.btn-vermelho {
+    background-color: var(--vermelho);
+}
+
+.btn-preto:hover {
+    background-color: var(--preto);
+}
+
+.btn-vermelho:hover {
+    background-color: var(--vermelho);
+}
+
+.detalhe-vertical {
+    position: relative;
+    display: inline-block;
+
+}
+
+.detalhe-vertical {
+    padding-left: 10px;
+    border-left: 1.5px solid var(--vermelho);
+    padding: 0 1rem;
+}
+
+.detalhe-div {
+    width: 60%;
+    height: 1.5px;
+    margin: 0 auto;
+    background-color: var(--vermelho);
+}
+
+.parallax {
+    background-image: url('your-image.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desktop {
+    display: none;
+}
+
+.zoom {
+    transition: all 0.4s ease-in-out;
+
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

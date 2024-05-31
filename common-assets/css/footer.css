@@ -1,0 +1,49 @@
+.footer {
+    color: var(--branco);
+    background-color: var(--preto);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-top: 1px solid #444444;
+}
+
+.footer-logo {
+    width: 60%;
+    max-width: 200px;
+    margin-top: 0;
+}
+
+.footer-icone {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-contato p {
+    margin: 0;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Haras</title>
+    <link rel="shortcut icon" href="../common-assets/img/fav.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../common-assets/css/style.css">
+    <link rel="stylesheet" href="../common-assets/css/header.css">
+    <link rel="stylesheet" href="../common-assets/css/footer.css">
+    <link rel="stylesheet" href="../common-assets/css/faq.css">
+    <link rel="stylesheet" href="../common-assets/css/scrool-bar.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/evento.css">
+    <link rel="stylesheet" href="assets/css/diferenciais.css">
+    <link rel="stylesheet" href="assets/css/alta-gastronomia.css">
+    <link rel="stylesheet" href="assets/css/realize.css">
+    <link rel="stylesheet" href="assets/css/mapa.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="../common-assets/img/logo.png" alt=""></a>
+                <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nossa História</a>
+                        </li>
+                        <li class="nav-item dropdown evento">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tipo de Evento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Casamento</a></li>
+                                <li><a class="dropdown-item" href="#">Formatura</a></li>
+                                <li><a class="dropdown-item" href="#">Aniversários e Outros</a></li>
+                                <li><a class="dropdown-item" href="#">Corporativo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tour 360</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perguntas Frequentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <ul class="nav-icons">
+                                <li><a class="nav-link" href="#"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aSYgUWRAtZ3QcxZ1xOYiKy2HEy4AHzzKjuKGI5Xoou/K/97NqLJ32OJcCT24HRXBB8OBBRfHgjgcVPYiIFy92q420PTOIKA3iwd2UgC/TFD+zfmZlZyViQEBBZsWPlxE//ovILBS+yzcqlUplPMlVJPcAuASgG0A/yXei5neXXJN7tNYrS6XSuEIepFarDVdKbSJ5leRHkkFM/QjgCsmNYquQtXR2do4guZ3kfwmctyqAf0n+VSqVfs4EBIAlJHvSAmDRx0qpxYMGQEJPcv8gAmjU4xL5VEF4njeZ5L0MQQRG7/q+PykVEFrrGRLuNoAIzN55JD60BKKjo2OilNF2geD/2lOtVqckAiHVo03pFISlWaISDeBQDpwPGvRAkhIb5FQXxSmzD3PgcBCij50OTXNiuxh8T3IryZH1ev0HrfUfAD5lAQbANpdoONEOANqSkucziso/kRvfEEAXEDdD/r84qxTTWm+ISqurjobWhZgYkuH+uhzVTzhRcc/zZoc9DMnfLIAA+FCr1cbYorHK1UhUfkqzZApBFlFZYQOy19WAUJcwICRnkfycUVR22xy4GMPIshAQw0hezygaAckLttx+FMPA6TzQGgDdNidexjAie2CaxcaNLIGQfGFLi3cxn8apRhue5/1K8k2GEXlrA5LEgdWWqFTbCgTAswSG+svl8nTLQ9nfztR6kNDY/XK5PNpywjcr570tzMMCo12tlt/GyFwqFos/2rgbgNeW+19WKpWZZt1ZptrFTm0hqTYgO1rM12NC5y1gpgI48ZXiC7VQSi1svE96cgA7AbyKse6ulihKhB6XQzFkGjNHTmKt9Rrb9YH30XE9pdRyG5CxUgVSAHPN87wJhYRC8hfHdd5bSWPKjVGvLX1cRGu91HGNiy03Vo4qxPGo7JE4QEiec9yT66OMCOl7mvahRfIgyfkObfZhR5t9xWLxp2ZP5M80gTSonFV/+77/mwwtqtXqKDOSrZB8EsNOrWlojeHBApJGhLudJo5Kqc3tdpbh+hnA701BmNQ6mQOHgxDd5wRCaEbMviRLvdN0gw9IqwU5cDiwaI+8bHICYdKqngOngwZ9aGsVIgXA7bylU0fExKblAV0WCuBIohc7Sqm1OQHQ7VxibSL9hMNCLwCcldcJADpNl5cWgD45sVv+AkJG9RbjzwGcAbDF9/150sIO/E+9Xh8qU3HDmpN0eB+ExQoBdC6tzYTkLRlAyJhHuI/Wem6j41EivMk0ZzsMg+0yA4035qMaOZ8eGNC7pCmy9PrfpfCtyBd2U8z1HXuYGAAAAABJRU5ErkJggg=="></a>
+                                </li>
+                                <li><a class="nav-link" href="#"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOklEQVR4nO2Zv09UQRDHX6E2EtAeC+MvEhujaGHEQrAWTehIKNjv93GXXKVISQNRSsBCIQj/gxGjB0RM/BPkR6+VvyIYtYFnRuaZF+K9ez/W20dyk0xzudndz87M7rwdz2tKU9zL0NDQOZIjAJZIrpP8TjKwpDKWjFkFcF/msg5AspPkssVFJ9W3AK7aADgM4BHJXQcQgarMPT06OnooE0SpVDpOcsUhQLBPl2VNqT3hKJSCOvqmr6/vSGIQDaegiApgKk1iu8yJoI7uGmMuJQEpYkgF+7Sa5J5wGTbPjTHtoiQX4/7r+/6ZOG+MuAQxxrSHaymVSifq/H84DqR6UEAAvIoD2bSwoM8k53zfvyWh2t/ff1RUw7YXwFMAX2rYLgqAKIAXdUA24kC2csT3D5JjlUqlNTYR9+ZpAzCuNlk3bCtugqwQ76NHou/7N0nOyq5pMRgWhDMAeiLzdYpt1nk9myAK8Se2jTFnAawmsHsdnjpimxXGswUioRF6guT1mNj/Zy4ZY7rEFsBlkj9demQs4ok0EH9hBgcHTyvMQ1cgcjq16SKShFMtXZExBgYGjqXdDFsgc5HEDnJqt84/33AQuSfUZjYvCIAnGqK3Gw4ieaFhtWHBI+tZaj3PBki5XG5RkG0LHtmWscrlcstBB/kmY1UqldaDHlprzkKLZK/azFgAeaxj3Wk4iFSx6pGevCDGmBs6/4LTC1Fqpxwgy+GFSPKrCxDxyrjYGWNOkvyYp0QhOZHW3hqIFnqdCtOlXkq6CZ9IXhNb3/evuC4ag2gZL7ub8HVSXmpORT5pP2SZ27MJEsJIKR4Zp1vKDjlW5Z5RfSenU5jYEU9kgmAdkMyfuhoaDyRpvTqiiT0B4Nf/+tTdzDFw6B0pxee1AOyQCkBLjw79bSHt6cQMjw9On4OYTl/WBJFOUQEWGCTUuzVB5EGgAAsM0tR6cV5ZKsJCmfWVMRRjzAUAOwWG2EnUVhCRnp3rBbO2TnpJRRqPRQwxAKupWm+RZmhhmj4AlpJctnGemXLZisNevk5mbk9HxRhznuQzByBVkhc926L3zLAcf/KEY+PhIbLzMtaa3NgA7sW21prSFK9h8huGGq2jktC9vAAAAABJRU5ErkJggg=="></a>
+                                </li>
+                                <li><a class="nav-link" href="#"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEB0lEQVR4nO1aTYwURRRufuQvUSGIeiBBzyaaKOHAwQMxGIPiXpoomkx25n1f7+5khPXIZRJuCkQIJmpCOECM92VQkIPcJMaLCWGXZQ9G0agsBAXC37JNHlTHzkz3TlVP905reMlLZqanX72v3k+9elWe94j+pzQ8PLyK5ADJPQCOA5gAcIXkbWXzeVyf6X+CIHi7Uqms9MpAjUZjqYi8R/IkyRmSoSPPAPiG5HaV5c03jY6OLif5IcnfMiifyAAuktxZqVSWzQsIAG+QnMoLQAJfEJHXCwOgpid5oEAA7XxELZ8riFqt9gzJH+cRRGj4h6GhoadzAREEwXNq7j6ACE3sTKoOPYEYHBxco2m0XyD4L0+NjIw8mwmEZo8+uVOY5maZUjSAz0qgfNjGB7Ok2LCkvNklzZ4vgcJhCl+wWjTNih2WmQHs6GoNUyqEJedf5wx8UwB2FeQVTLTQIQiCd+cScNLStO8UCGLQ0ipfz7WfsC3FZ0nuyhnDApK7HeLkbqPReCJpJgYcfPQBYACHSD7WKwLf95cAOBop6KDHW0lA9toK0N0dyetm4G9JPpkVhHoCgO+M7H9c1jAAH3cINFtQKwH6/yAIXtLsYX47W61W17mCEJHnSZ4zMn4n+bKZVFsgY0lAJl2AxCrjs5EiIvKKLYggCDaQ/MO8+5OIrI2eOQCZ6BBM8rIrEKVqtfq4ZhDz7DqArd1AmHi8Yd451e6atI+Rv5KE384CRKnZbC4m+XksEXyQBkJX5ViyOJyULGhvkVu5AlGq1WovAvg7NsgnzWZzYfTc9/1FJPfH5FwVkRdSLBZmBgJgOisQku/HXOWcDmA+H9M4MkHdigaPNmsAronItqxASF5KmgXrirct/38am6HDplX0akrMXTbPVmhzIfbePnVPzx3IeBKQlgsQzTIkvze/3RQRxOVpOib5FYA/lUl+2Z6iSdZjLn1amxw9p19tY9oKEJFNRjn9/jPJ9V5GArAxqrgBXNTvDhb5qEOgWa1tBUQ12Yl6vb7ay6fddNrItE46IvJmhzBtKNsWjQDuaYEXz0q9ksYIgH2mILUBciexaFTSGbYUssUriERkm6UOrVQh2hW3DfYiib3uif5LW13f95d0m42dJVA07MKNrmY1VilDmzRMcalJ646jnk/0W2Em8yyA1zwXipceJeL9TiAiF9PGcQmUDw2f6RrgaUTyqZLEy1RUh2UmLcNdtsEF8Pks/YBE0uOvPrnZGT1s8go6DLWthXpiAF8Uevau5xNFuhoe3phwS7FZySyaO2J9rTwA/KIrdl9uQOig2hU3d0/uZlBe32lpAZg5teZNujfQXqy2MbXpYC7QTMcu1UybxsSY7ux0U6Q9sdwVeUReOeg+pD77ZfwU1uMAAAAASUVORK5CYII="></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="whatsapp-btn">
+            <a class="whatsapp-link" href="#">
+                <img class="whatsapp-img"
+                    src="data:image/png;base64,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">
+                <p class="text-light">Como podemos ajudar?</p>
+            </a>
+        </div>
+        <section id="home" class="home">
+            <div class="home_capa"></div>
+            <article class="home_card " data-aos="fade-down">
+                <div class="home_title">
+                    <h2 class="text-uppercase">Bem-vindo ao</h2>
+                    <h1 class="text-uppercase">Espaço Haras</h1>
+                </div>
+
+                <p class="home_text">Realizando sonhos há mais de 10 anos em Piracicaba!</p>
+                <p class="home_text">Com 24 m², oferecemos ambientes acolhedores e versáteis para tornar o seu evento
+                    inesquecível!</p>
+                <p class="home_text">Seja qual for o seu ideal , no Espaço Haras tudo é possível!</p>
+                <p class="home_text">A antiga construção, remota à arquitetura de 1930, oferecendo aos convidados o
+                    charme do passado e a
+                    modernidade do presente com os serviços e qualidade oferecidos.</p>
+                <a href="#" class="btn btn-preto text-uppercase">Solicite um Orçamento</a>
+            </article>
+        </section>
+        <section id="tipo_de_evento" class="tipo_de_evento text-light">
+            <h2 class="text-uppercase text-center" data-aos="fade-up">
+                Tipo de Evento
+                <div class="detalhe-div"></div>
+            </h2>
+            <p class="texto-chamada" data-aos="fade-up">Todos os espaços do Espaço Haras são versáteis e foram
+                projetados para atender as
+                mais diferentes
+                necessidades e tipos de eventos, com layouts 100% personalizáveis.
+            </p>
+            <div class="evento-container">
+                <div class="casamento-container card-container zoom" data-aos="fade-up" data-aos-delay="200">
+                    <div class="evento-card">
+                        <h3>CASAMENTO</h3>
+                        <p>Sua cerimônia e celebração se tornam realidade no Espaço Haras!
+                            Personalize cada detalhe, desde o layout até o tema, em espaços diversos - do mais íntimo ao
+                            grandioso, até cerimônias ao ar livre.
+                        </p>
+                        <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="corporativo-container card-container zoom" data-aos="fade-up" data-aos-delay="150">
+                    <div class="evento-card">
+                        <h3>CORPORATIVO</h3>
+                        <p>Os melhores eventos corporativos acontecem aqui!
+                            Com ampla área de estacionamento, jardim open air e flexibilidade de layout conforme sua
+                            necessidade.
+                            Seja palesta, coworking, confraternizações, treinamentos e muito mais.
+                        </p>
+                        <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="formatura-container card-container zoom" data-aos="fade-up" data-aos-delay="100">
+                    <div class="evento-card">
+                        <h3>FORMATURA</h3>
+                        <p>Sua formatura ainda mais inesquecível!
+                            Com opções de layout que possibilitam o espaço para o que desejar: bartender, palco para
+                            banda/DJ,
+                            iluminação, pista de dança, espaço para cabine de fotos, ilha de buffet e muito mais..
+                            Cada detalhe é pensado para uma experiência única.
+                        </p>
+                        <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="aniversario-container card-container zoom" data-aos="fade-up" data-aos-delay="200">
+                    <div class="evento-card">
+                        <h3>ANIVERSÁRIO & OUTROS</h3>
+                        <p>SO cenário perfeito para a celebração dos seus momentos mais importantes.
+                            Seja um aniversário, celebração, debutante ou outra festividade/evento, a versatilidade e
+                            personalização se encontram, tornando o seu ideal possível.
+                        </p>
+                        <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-vermelho btn text-uppercase">agende sua visita</a>
+            <div id="carouselExample" class="evento-carrossel carousel slide" data-aos="fade-left">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carrossel_1.jpg" class="d-block w-100 zoom" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrossel_2.jpg" class="d-block w-100 zoom" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrossel_3.jpg" class="d-block w-100 zoom" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrossel_4.jpg" class="d-block w-100 zoom" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carrossel_5.jpg" class="d-block w-100 zoom" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="diferenciais" class="diferenciais">
+            <div class="capa-diferenciais"></div>
+            <div class="card-diferenciais" data-aos="fade-left" data-aos-delay="150">
+                <h2 class="text-uppercase">diferenciais
+                    <div class="detalhe-div"></div>
+                </h2>
+                <p>O que você adquire ao fechar um pacote conosco?</p>
+                <img class="card-diferenciais-img" src="assets/img/outros_serviços.png" alt="">
+            </div>
+        </section>
+        <section id="alta-gastronomia" class="alta-gastronomia">
+            <h2 class="text-uppercase detalhe-vertical">Alta Gastronomia</h2>
+            <div class="alta-gastronomia-container">
+                <img class="alta-gastronomia-img zoom" data-aos="fade-nup" data-aos-delay="100"
+                    src="assets/img/alta_gastronomia.jpg" alt="">
+                <p>Construímos o banquete ideal com seu toque especial.
+                    Com uma ampla variedade de opções, desde ilhas de frios, finger foods, jantares, ilha de massas até
+                    food
+                    trucks e costelada no chão.
+                    Elaboramos o cardápio de maneira altamente exclusiva e personalizada, portanto, a proposta se ajusta
+                    exatamente às suas preferências.
+                </p>
+            </div>
+            <a href="#" class="btn text-uppercase btn-preto ">CONHEÇA O NOSSO <br>ZARA BUFFET</a>
+        </section>
+        <section id="realize" class="realize">
+            <h2 class="realize-title mobile">REALIZE SEU EVENTO
+                <div class="detalhe-div"></div>
+                CONOSCO!
+            </h2>
+            <h2 class="realize-title desktop">REALIZE SEU EVENTO CONOSCO!
+                <div class="detalhe-div"></div>
+
+            </h2>
+            <p>Excelência, infraestrutura, tradição, referência e versatilidade tornam o Espaço Haras o local ideal para
+                seu evento!
+            </p>
+            <p>
+                Seja um casamento, aniversário, palestra corporativa, formatura e muito mais. Aqui sonhos se tornam
+                realidade, eventos são potencializados e celebrações se tornam memoráveis.
+            </p>
+            <div class="realize-mosaico">
+                <img class="zoom" src="assets/img/realize_3.jpg" data-aos="fade-down" data-aos-delay="100" alt="">
+                <img class="zoom" src="assets/img/realize_4.jpg" data-aos="fade-down" data-aos-delay="200" alt="">
+                <img class="zoom" src="assets/img/realize_2.jpg" data-aos="fade-up" data-aos-delay="150" alt="">
+                <img class="zoom" src="assets/img/realize_1.jpg" data-aos="fade-up" data-aos-delay="180" alt="">
+            </div>
+            <a href="" class="btn btn-vermelho text-uppercase">Solicite um Orçamento</a>
+            <!-- <div>
+                <h2 class="text-light text-uppercase">tour completo</h2>
+                <video src="assets/video/tour_completo.mp4" class="object-fit-fill"></video>
+            </div> -->
+        </section>
+        <!--    <section class="bg-dark" id="tour_completo">
+            <h2 class="text-light text-uppercase">tour completo</h2>
+            <video src="assets/video/tour_completo.mp4" class="object-fit-fill"></video>
+        </section>-->
+        <section id="onde-estamos" class="onde-estamos">
+            <h2 class="text-uppercase">Onde estamos?<div class="detalhe-div"></div>
+            </h2>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8003104095037!2d-47.596177824695985!3d-22.698476479402224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62e7265c16c91%3A0x2eb14df4bf9d5544!2sESPA%C3%87O%20HARAS!5e0!3m2!1spt-BR!2sbr!4v1716854276847!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="endereco">
+                <img class="mapa-icone"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERUlEQVR4nO1aS6gdRRBtEzWSKKiPy/Q5fT+Cz4AvIshDMKCC5ulCEPyh4kIkEReiRhGMoBFc6MbgB/G/iAuNxscLiUZ04QdE8EOCSowSE8MziHGhYlRExdyR0hoYh/ndmZ43V7Cg4NJTXV2nq7q7uvoa8z+l0/T09FEkrya5CcBekr8I6+/nSV4lMmacyVp7Ocn9JMMC3g/gUjOGdATJh2OG7gKwNgiCFUEQLFNeIW3yLZID8KD0NeNCJB9Sw34neaMxZlGO+GIAN6ms9NlgxoEAXBKBcM6dX7YfyVURGJIXmzZpamrqaAAH1BjxxEgE4GbtO9/qBuCcuyJaExIyiW9dALMkf1Kec86dklCxmOSnosNae5lpiwC8qGG1NgXE98ndStq63a5LyN6m3zeZtgjAHp3NqUT7rBr+ihguDGC7tm2OywZBcJq271kww621A5JbAHwXn+mJiYnj4nIaSmF89kn21OAf47LSN8VzHyV1eiWSr6UdcP1+/4SE3CFplxArAtLtdk9M0wngiSaB/Jw2qLX2zITcnBqzXcDomnlV22bjstI34/QfkpyRDcE5dxbJ20k+DeBtkjsAvExyZSUgAL7OGPTuBJDlyfCLLfbJhM47slIZAD9E3s34/huA6SpANmQo/CQpqwt8sxpySDyRBKGgPyyRm4U5YDZWAXJBjsJzRtVH8ow6IPgPv1M4kHPudJKPAHiP5Jckd+co3FphYl7wAGRr0WzdpwuurMJhctHnkbX2VJJ/1gUC4PHMQXq93skVlb41gje2efBGSPK6pga5skzm6wlEGATBSVkg1tRUfnAwGByfBUIuWbreaoMAsC0vpP5OL2ryU0WXsBp8WA9XOSxT6UgA73ty+RDA2SkgVoohNb1waxaAKKTu9RW3OuAXnU7n2Jj+pSQ/86D7rkwQElJy3PsEomCejXnjGU96n8vzxkbfIGJgrpFalkedn+cB2dsUkCjX8qhvKBGUBeSGirvVvJwJuqXOkPyqwQkJS91V5HKkW+Mou8qqskmlZz4s4WpKlD1L5UDxXSnr2togDyUfzAUD4LGSymZa8kioIbYvF4geXGWUzYvx4hkAFy7UGuG/a8e5Hlm6kAZVBPFrv99HLhD1io+cq0m+vxCEAvGRTjTFB0vXvUg+OsZhdb0pSxJ/DZ/4VXlXsmBeSLIbkVw/BsaHETvnLjJVKSr9t80A3qwMQoFsGRNvnFcLiFYM2/bGx7VAKJA32gZCcr0PIGVzryZ5Z+2nbP03w1zN0DiQ9hzntfBQFkz0pFYFRKfTsfIK7Jy7tqCGHObwbuOJpGT0wIg14TDl/X2R/F8leoMsORl/kFxtfJK19lyS9wC4E8CTAD7QgdIMeKlgYtYUpf8AvkmrkzVCg8HgGHkj0UzgdXndkkdNAP2ivpOTk0sA3ELy2xQg7/Z6PZr/EgVBsAzAOt0YhNfJumrbrgWlvwCojcwxK4K1xwAAAABJRU5ErkJggg==">
+                <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Limeira - SP</p>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <h2 class="text-uppercase">perguntas <br>frequentes</h2>
+            <div class="accordions">
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-1">
+                    <label for="accordion-1">
+                        O espaço possui estacionamento de fácil acesso disponível para os convidados?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500 carros.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-2">
+                    <label for="accordion-2">
+                        O espaço possui equipe de segurança e limpeza durante o evento?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, é incluído em proposta uma equipe completa e qualificada de seguranças, banheiristas e
+                        vassourinhas ao longo de todo o evento.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-3">
+                    <label for="accordion-3">
+                        O espaço possui acessibilidade para PCD?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço é completo e acessível
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-4">
+                    <label for="accordion-4">
+                        O local possui opções de espaços cobertos para dias de chuva?
+
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o Espaço Haras oferece ambientes cobertos e climatizados.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-5">
+                    <label for="accordion-5">
+                        O espaço possui a possibilidade de Cerimônia no local?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço oferece diversos ambientes que possibilitam layouts para realização de cerimônias.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-6">
+                    <label for="accordion-6">
+                        O espaço possuí Jardim ao Ar Livre para atividades recreativas, cerimônias e entretenimento
+                        adicional?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, possuímos Jardim ao ar livre amplo para a realização de diversas atividades.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <img class="footer-logo" src="../common-assets/img/logo_branco.png" alt="">
+        <div class="footer-contato">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVR4nO2aOYgUQRSG2/vAG48NRMUjUEwEA2PxwAtFxDMxE+8jNBGMvAIXwQPBwEBFMfDGQEUDETExcVddxBORGWbHrv+vHnfVkgclK7M1M9U9Y08jPihYmO7X9fV7VfW/1xsE/+0ftWKxOJrkKpJHSd4i2U6yAOCbDPmbZJv9Ta5Z2dnZOSrIghljBimlNpG8C+A7SRNn2HvuKKU2iq+gCQBDtNb7AHyKO/kqUB9J7jHGDE4FAsASAB2NAnAAvQaw+K8BSOgBtP4tAMc4L5FvKIRSagLJZylCGBudp0qp8Q2BiKJoioQ7bQj2wLySOdQFEYbhOLuNNgWCPTAdAFoSQcju0Yx0YpU0S7RFAzjV7MmzN8yJuBBLmj1pVoZZFGebfZlhkNdeh6ac2J4Ou0juMsYMNcb0VUotBPAjJaDdPtHwlR1bHCl5PaWofKi68K0A9HH00HW/SIu0UkxrvaEiiKhYTyfrKkS0T4rr63bFesJXikdRNL3Ky9idUnp15/P5Ea4JrPJ1Ui0/pViyG0EaUVnhAjnm60CkSyWQKIqmAfiZEsgRF8jNGGFd5oIwxgwgeT8lCEPyRq9JiMqMAXI5I7Km3RWRfAyQLq31JIePBymD5Fxv81scJwAulfsIw3AmgCgtEAAlF0iSCax2RGVbU0FIfk7grKC1nux4Ka1NSy2SLxI6e57L5YaXn/C1tnMAb5P2w9gz2urafh3jljGmn0u7AVCO6/NRFE3949w5lSS1AVx3gRysM8znRM47/E4EcOG3xBdpoZSa70jHFpKHSH6N8czDdUmUGr2oAb2cB0FQKpVmyElMco3r97LrjGdElvdyUCgURsou0ACYe8VicUyQ0MIwHOsJ0eUUjY0sjGQhu9LHxwAs9XzOzboLK08YEY5nZY3EBLnm419rvb6iE8lvAO8aBWOBSgBOkpzrUWaf9vT53hgzsOobIbm9kSBl4wWA/QDm2KbFMGmHktwK4E0MPztrhtY6Nhke7V4dRwCbMzBZUyGlfiqlFtSEsCAXMwxy3AtCZEacuiRliCc1F/hvIzkvoxAd8rHJC8Km1YEMQrx0lQq1QB5nLZ3CKh2buht0KY0ziT7saK3XZmDyRs4J7y3WZVJPeDwkB+CqfE4guddWeY1Ko/dyYtf9HxDSqnc84AuAKyR3KKVmSwn75z3GmP7SFRfVnLDC6xYVKwLQe2utZQAeSQNC2jyifcIwnFU+8WomuskWZwetgm2z/iLbaspbrSWlwmEpispr/f8W/EP2C8nUy5qJ62wFAAAAAElFTkSuQmCC">
+            <p>+55 19 99709-3745 <br> (Edmara - Gerente do Espaço Haras)</p>
+        </div>
+        <div class="footer-contato">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO1ZPWtUQRQdv0HR+IWosfYLO+3EoK0gRoNiY5NWEISorYVECxUUkaSxsFQQbE0i+AtiYTA2isZC3PXlfZwzbqGOXHeMi+zmzXv75r1FcuDCFu/M3DP33rkzs0ot4T9HFEV7AFwlOUnyDSzkN8kJAFcajcZu1asgeYjkFEnjaCL0oOoVGGNWAbgP4GcGEb9NOADuGWNWVioiDMNNJF9kFdAuOvPz8xsri0TGVEqLzktjzOrShUg6FSWiRczd0gs7T0241AzL3ACKTKk2NlGKiDiO93oUYcRK6TO22bmkyUeSQ7Vabb0YyUGSs47cy96FSOhdRIRhuLnddm0Fpol57l0IgLcOjgx14mutzzjwZ70LIRmnOSKp1Ilfr9c3OAiJvQsBoLsREgRBn0Nq6jKEfHJY0cFOfK31WZcaU77heLaalcL+lxtF0RYAcw78Se9CANxx3X6lsKUmxCQSjiIMyVvehZA84ehMbgNw3LsQY8w6AA2PIrQxZq0qAwCeehTyWJUFkqc9ptbJsq+3HzxEY07GVmUCwIiHaFxSZcMeNcICRUTS9VUVAHC7QCE3VVUgubP59tZ1bSQAtlcmxIq5XkA0rqmqUWve/j53IeKL1JvqBZC82IWQC6pXYIxZTXImh4jX3vuGMWYZgHeLOZIkydE/32utj2R565JvkyQ51sI/vBhfGrD4lFmIOOa4ogsP0CQfZYjGw5ZFW0HyVRpHfMosBMCYHWDUlZMkyTaSXx1E1OI43uo6LslRG5WxPDlft+lzIAsXwHmHlT2XZcw4jvdZbmCMWeNMtI9pQpzOMqHLMR/AszxjkpzOfDoG8MROOpJnUgA7OqRYLW8Hhz2kim9OBGlOcksD8IPkLpUTJE8Veddg8zj0HcA3pz+FAAzbSafyTtoy+XhLSj0o6l8AAMPFfpwCuXvbRjlTxD0crotMsl9SSsJX1N1AdhyxIsYKgqBPfLNp39/xQ3nOz1RQFQAuG1FLd+345Fk1mNYa4jjen6vplAyT1qxJ3rBCxlWPg393w9F2J933XdwpKjE0T8TLF4RorQeqdiqvaa0HKkiKJag0/ALBtZsoADVy3AAAAABJRU5ErkJggg==">
+            <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Liumeira - SP</p>
+        </div>
+        <div class="redes">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nO2azU4UQRDH+6BeJKh3OBg/Ey9GwYNRD36cAV9FhReAKEfFg0JA3sEI0WUJmPgIAt7x5LDLbte/Zy7QpkitToSdz5Yeku2kEg5b3fXrququ6UKp3ugN/6PVal0jogkAKwA2iYgAWBcic20CqBHROK/lHADAEIC6K6NzwH0zxtwtDWCtPU1Eb4lo/7gh8Bdmn4hmrLWnCkHs7u5eALDqCwCHpc425faEj1BCune+WmvPZAbhcPJtNLrDvMmc2D5zAukgbNvtLCCVCykclloiBJ/dng38BGBAZCnpt1EUXUnKjQnPIAMdW4wxgykh9iIprGonBQTAlySP/HBgzA6AeQAjHKrW2rMsErajABYANLroLjGAQCynrLOV5JF2UQAiMgAmgyDoT0xEpVSj0TgHYEp0im5YOwmkKMR2/EjUWj8BMMe7xsVgrCCc1Vo//ueo3y66rnIJIoYcxHYURVeJaD2Dzlrn1GHdojDKFYiExoEnjDEPEmL/yFwyxtyXdYeJKPTpkcmOJ3JC/IEJw/CyrP3KF8gOJy3rZQmnBFnlOZrN5vm8m+EKZD6W2LaMaK0fyfoffICMiM5cWRAA72WusWMH4bwQnS0HIJtFaj3lAsRa2yf5ocuC8Bw8l7W270SDAGjxXEEQ9J/00NrwFloARkVn1kFovZO5nvoAWWAdrp3KgmitH8r6i74vxLUSIPXYhdj0AcIyxXphGF4E8KtkiTKdV98ZiBR6Q6zLBaB8VGXVD4wx92TdO76LRhsv43l3M75O1sMwvCQbMEhEP4usrVyCxGCGO/Nw7cRlBx+rfM/IXfOdT6dOYsc8UQgCKSBlPnU5NF5y0qqUIYk9TUTRf/nUJTePDw2pYsfa7fZ1rgBY+G8pChfznk4o8Pjg+znI5pDPSR4Zr4CBNotorZ91BeEHAd8GImetlxReK1UwFEVfGWPhdZOI9ipgrD1KxLb0toLAzFQY5LXKOrjxWMUQI6L1XK23WDO0Sk2flSyXbVfPcM/Oc3t6j8OpcHs6PrTWNwB89ABSI6JbyvXge4Y7RXz8yb9waIc7z3Nt8I1NRM8TW2u90Rvq2MZv02ZBeQmhibcAAAAASUVORK5CYII=">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2Zu2tUURDGj68UPhCxsvABaqlNekHFVywkPkErO/EfsFEIChokjRba2AQLTbSJGglqYyc2BlGMvd0mm13P9527SZGRITe4hOzJPbtn997AfjCwxe7M/d2ZO3fOrDFddVVsichWAH0kB0m+JTlFsgxgXk0/k/wF4A3JBwDO6G9MESQi6/SCAIwCqJGUEAOQABgBcFp9mTzknLtE8nvoxXtskuT5jgHUarWDJD9FBFhuH5IkOdBWCJIXSFbaCCGp/bXWXo0OoPVLcqADALLMBqM9O+kD/TQHCEkbwpMoMNoq84Lgf7vXEoRz7koBIETNWnut6e4EwEYqj4TkM23Z6rdare4sl8vbK5XKjiRJ9llrD5EcWsVPNUmS/cEgEVvsRwC7VosH4HoGXxOhEBcjQYyLyMYsMTOCCMn+kFYb4409rSWU9eYFgHzL1MV0doqUjftZIQJBBMCpLA5HY4BYaw83ikGyF8DjdNhcsq8BIC+8EKVSaVszU+wKVhWRDR6IuVb8A3AistmXjb5IZTXpycZwjBgATjYESQ9FMYJ89tysP21/Brl4sosR5L1nbpuPdLPGfKX1OxLIeAOQnkj+RY/NvozMrCGQki8jc2sFBEAtNki/Dn/15tuOLP/ukpF8GAgy5yut2VAQa+0JE0EAXgbGnvaBTOUFojMUw2L/9DkbzwNERNYDYLT2qy+ZPECcc3ujHn8BnG3C4U2dn+qt0V4qPSL0rmA3QuPCNwHrIIbFHEuR2y8AisgWb5oBvFoDICNeiBTkZNFBrLXHVwVJ6/hHgUEmTVaRPFdUEAB9mUEirIPaBTJhQqWLM92KFwik4pzbY5qRDoQAFvIGAbDgnLvcFEQdzN28QUgOmBgC8ChHkKEoEHUwtwLKrGUQLMaKk4kGf73NdgBkJvOOt8VJ9V27QACMOed2m05JJ2XPmjMYBMAX3TubvOScO0Lyua5JmwDR99Sw+jBFkYj0WGuPAbitjaHBdzYBeA3gjrX2qP6m81faVVcmRP8AB4HTiOgD+ZAAAAAASUVORK5CYII=">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="../common-assets/js/arrow_animation.js"></script>
+    <script src="../common-assets/js/aos_init.js"></script>
+
+</body>
+
+</html>
