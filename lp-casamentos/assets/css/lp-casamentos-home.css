@@ -1,0 +1,65 @@
+.home,
+.container-capa {
+    width: 100vw;
+}
+
+.imagem-capa {
+    width: 100%;
+}
+
+.home-card {
+    width: calc(100% - 4rem);
+    margin: auto;
+    padding: 3rem;
+    text-align: justify;
+    background-color: #F2E9E5;
+    font-size: .8rem;
+
+}
+
+.home-card h1 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.home-card h2 {
+    font-size: 1rem;
+}
+
+.mtg-container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mtg-1 {
+    width: 45%;
+    margin-right: -15%;
+    transition: all .3s ease-in-out;
+    z-index: 2;
+
+}
+
+.mtg-1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+.mtg-2 {
+    width: 50%;
+    z-index: 1;
+    top: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.mtg-2:hover {
+    transform: scale(1.1);
+    z-index: 3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
