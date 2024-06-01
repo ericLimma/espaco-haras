@@ -1,0 +1,63 @@
+.capacidade {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 4rem 2rem;
+}
+
+.carousel-item {
+    padding: 4rem;
+}
+
+.carousel-item-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.capacidade-card {
+    background-color: var(--cinza-escuro);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.capacidade-card p {
+    margin: 0;
+}
+.capacidade-card small {
+    font-size: .6rem;
+}
+
+.outline {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--cinza-escuro);
+    position: absolute;
+    top: -10px;
+    /* Desloca o contorno verticalmente */
+    left: -10px;
+    /* Desloca o contorno horizontalmente */
+    transform: rotate(0deg);
+    /* Mantenha-o quadrado, ajuste conforme necessário */
+}
+
+.capacidade-card-icone {
+    width: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1.3rem;
+}

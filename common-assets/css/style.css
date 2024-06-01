@@ -7,12 +7,13 @@
 }
 
 :root {
-    --preto: #1a1a1a;
-    --cinza-claro: #666666;
-    --vermelho: #af1e22;
     --branco: #f5f5f5;
+    --cinza-claro: #666666;
+    --cinza-escuro: #363636;
     --fonte-principal: "Poppins", sans-serif;
     --highlight-color: #ff4500;
+    --preto: #1a1a1a;
+    --vermelho: #af1e22;
     font-size: 14px;
 }
 
