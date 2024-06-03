@@ -130,6 +130,7 @@ main {
 
 .detalhe-div {
     width: 60%;
+    max-width: 110px;
     height: 1.5px;
     margin: 0 auto;
     background-color: var(--vermelho);
