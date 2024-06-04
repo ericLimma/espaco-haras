@@ -1,6 +1,7 @@
 .header {
     width: 100vw;
     position: relative;
+    z-index: 3;
 }
 .nav-container{
     max-width: 1400px;

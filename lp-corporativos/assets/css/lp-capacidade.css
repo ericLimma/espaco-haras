@@ -1,0 +1,90 @@
+.capacidade {
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.capacidade h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.capacidade-carrossel {
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+
+}
+
+.carousel-item {
+    height: 200px;
+
+}
+
+.carousel-item-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.capacidade-card {
+    align-items: center;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: .8rem;
+    height: 100%;
+    justify-content: space-around;
+    left: 10px;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    transform: rotate(0deg);
+    width: 100%;
+
+}
+
+.capacidade-card p {
+    margin: 0;
+}
+
+.capacidade-card small {
+    font-size: .6rem;
+}
+
+.outline {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--cinza-escuro);
+    transform: rotate(0deg);
+
+}
+
+.capacidade-card-icone {
+    width: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1.3rem;
+}
+
+.diferenciais-lista {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
