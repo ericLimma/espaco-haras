@@ -37,10 +37,29 @@
     width: 48%;
     transition: transform 0.3s ease
 }
+
 .realize-mosaico img:hover {
     transform: scale(1.1);
 }
 
 .realize p {
     width: 48%;
+}
+
+.tour-completo {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: var(--branco);
+}
+
+.tour-completo iframe {
+    width: 100%;
+    max-width: 510px;
+    height: 315px;
 }
