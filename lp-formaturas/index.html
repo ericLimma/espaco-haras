@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Haras | Formaturas</title>
+    <link rel="shortcut icon" href="../common-assets/img/fav.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../common-assets/css/style.css">
+    <link rel="stylesheet" href="../common-assets/css/header.css">
+    <link rel="stylesheet" href="../common-assets/css/footer.css">
+    <link rel="stylesheet" href="../common-assets/css/faq.css">
+    <link rel="stylesheet" href="../common-assets/css/scrool-bar.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/lp-styles.css">
+    <link rel="stylesheet" href="assets/css/lp-header.css">
+    <link rel="stylesheet" href="assets/css/lp-home.css">
+    <link rel="stylesheet" href="assets/css/lp-capacidade.css">
+    <link rel="stylesheet" href="assets/css/lp-cta.css">
+
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="">
+            <img src="../common-assets/img/logo.png" alt="">
+        </a>
+        <div class=" off-screen-menu">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nossa História</a></li>
+                <li>
+                    <div class="nav-accordion h-nav-accordion">
+                        <input type="checkbox" id="accordion-h-nav">
+                        <label for="accordion-h-nav">
+                            Tipo de Evento
+                            <span class="nav-arrow">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkklEQVR4nO2UOQrDMBQFdYmY5HgqNAgdM668NXHh4zh8SBEEXrR1f0Cg5r3hFZIxiqIotQDewOy970q7pANYgP6OeAR259xaIpesdPy6hsuAtfYBfCQAbMArVRp3hBCeWcEUeba0RF4szZFXk6bIq0vvyJtJz+TNpQdvc/2/1/hwTolWtl16sHyS03ypoiiKifgCmKK058HKOCgAAAAASUVORK5CYII=">
+                            </span>
+                        </label>
+                        <div class="nav-accordion-content">
+                            <ul class="nav-accordion-list">
+                                <li><a href="#">Casamento</a></li>
+                                <li><a href="#">Formatura</a></li>
+                                <li><a href="#">Aniversários e Outros</a></li>
+                                <li><a href="#">Corporativo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Tour 360</a></li>
+                <li><a href="#">Perguntas Frequentes</a></li>
+                <li><a href="#">Contato</a></li>
+                <li>
+                    <ul class="nav-icons">
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aSYgUWRAtZ3QcxZ1xOYiKy2HEy4AHzzKjuKGI5Xoou/K/97NqLJ32OJcCT24HRXBB8OBBRfHgjgcVPYiIFy92q420PTOIKA3iwd2UgC/TFD+zfmZlZyViQEBBZsWPlxE//ovILBS+yzcqlUplPMlVJPcAuASgG0A/yXei5neXXJN7tNYrS6XSuEIepFarDVdKbSJ5leRHkkFM/QjgCsmNYquQtXR2do4guZ3kfwmctyqAf0n+VSqVfs4EBIAlJHvSAmDRx0qpxYMGQEJPcv8gAmjU4xL5VEF4njeZ5L0MQQRG7/q+PykVEFrrGRLuNoAIzN55JD60BKKjo2OilNF2geD/2lOtVqckAiHVo03pFISlWaISDeBQDpwPGvRAkhIb5FQXxSmzD3PgcBCij50OTXNiuxh8T3IryZH1ev0HrfUfAD5lAQbANpdoONEOANqSkucziso/kRvfEEAXEDdD/r84qxTTWm+ISqurjobWhZgYkuH+uhzVTzhRcc/zZoc9DMnfLIAA+FCr1cbYorHK1UhUfkqzZApBFlFZYQOy19WAUJcwICRnkfycUVR22xy4GMPIshAQw0hezygaAckLttx+FMPA6TzQGgDdNidexjAie2CaxcaNLIGQfGFLi3cxn8apRhue5/1K8k2GEXlrA5LEgdWWqFTbCgTAswSG+svl8nTLQ9nfztR6kNDY/XK5PNpywjcr570tzMMCo12tlt/GyFwqFos/2rgbgNeW+19WKpWZZt1ZptrFTm0hqTYgO1rM12NC5y1gpgI48ZXiC7VQSi1svE96cgA7AbyKse6ulihKhB6XQzFkGjNHTmKt9Rrb9YH30XE9pdRyG5CxUgVSAHPN87wJhYRC8hfHdd5bSWPKjVGvLX1cRGu91HGNiy03Vo4qxPGo7JE4QEiec9yT66OMCOl7mvahRfIgyfkObfZhR5t9xWLxp2ZP5M80gTSonFV/+77/mwwtqtXqKDOSrZB8EsNOrWlojeHBApJGhLudJo5Kqc3tdpbh+hnA701BmNQ6mQOHgxDd5wRCaEbMviRLvdN0gw9IqwU5cDiwaI+8bHICYdKqngOngwZ9aGsVIgXA7bylU0fExKblAV0WCuBIohc7Sqm1OQHQ7VxibSL9hMNCLwCcldcJADpNl5cWgD45sVv+AkJG9RbjzwGcAbDF9/150sIO/E+9Xh8qU3HDmpN0eB+ExQoBdC6tzYTkLRlAyJhHuI/Wem6j41EivMk0ZzsMg+0yA4035qMaOZ8eGNC7pCmy9PrfpfCtyBd2U8z1HXuYGAAAAABJRU5ErkJggg=="></a>
+                        </li>
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOklEQVR4nO2Zv09UQRDHX6E2EtAeC+MvEhujaGHEQrAWTehIKNjv93GXXKVISQNRSsBCIQj/gxGjB0RM/BPkR6+VvyIYtYFnRuaZF+K9ez/W20dyk0xzudndz87M7rwdz2tKU9zL0NDQOZIjAJZIrpP8TjKwpDKWjFkFcF/msg5AspPkssVFJ9W3AK7aADgM4BHJXQcQgarMPT06OnooE0SpVDpOcsUhQLBPl2VNqT3hKJSCOvqmr6/vSGIQDaegiApgKk1iu8yJoI7uGmMuJQEpYkgF+7Sa5J5wGTbPjTHtoiQX4/7r+/6ZOG+MuAQxxrSHaymVSifq/H84DqR6UEAAvIoD2bSwoM8k53zfvyWh2t/ff1RUw7YXwFMAX2rYLgqAKIAXdUA24kC2csT3D5JjlUqlNTYR9+ZpAzCuNlk3bCtugqwQ76NHou/7N0nOyq5pMRgWhDMAeiLzdYpt1nk9myAK8Se2jTFnAawmsHsdnjpimxXGswUioRF6guT1mNj/Zy4ZY7rEFsBlkj9demQs4ok0EH9hBgcHTyvMQ1cgcjq16SKShFMtXZExBgYGjqXdDFsgc5HEDnJqt84/33AQuSfUZjYvCIAnGqK3Gw4ieaFhtWHBI+tZaj3PBki5XG5RkG0LHtmWscrlcstBB/kmY1UqldaDHlprzkKLZK/azFgAeaxj3Wk4iFSx6pGevCDGmBs6/4LTC1Fqpxwgy+GFSPKrCxDxyrjYGWNOkvyYp0QhOZHW3hqIFnqdCtOlXkq6CZ9IXhNb3/evuC4ag2gZL7ub8HVSXmpORT5pP2SZ27MJEsJIKR4Zp1vKDjlW5Z5RfSenU5jYEU9kgmAdkMyfuhoaDyRpvTqiiT0B4Nf/+tTdzDFw6B0pxee1AOyQCkBLjw79bSHt6cQMjw9On4OYTl/WBJFOUQEWGCTUuzVB5EGgAAsM0tR6cV5ZKsJCmfWVMRRjzAUAOwWG2EnUVhCRnp3rBbO2TnpJRRqPRQwxAKupWm+RZmhhmj4AlpJctnGemXLZisNevk5mbk9HxRhznuQzByBVkhc926L3zLAcf/KEY+PhIbLzMtaa3NgA7sW21prSFK9h8huGGq2jktC9vAAAAABJRU5ErkJggg=="></a>
+                        </li>
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEB0lEQVR4nO1aTYwURRRufuQvUSGIeiBBzyaaKOHAwQMxGIPiXpoomkx25n1f7+5khPXIZRJuCkQIJmpCOECM92VQkIPcJMaLCWGXZQ9G0agsBAXC37JNHlTHzkz3TlVP905reMlLZqanX72v3k+9elWe94j+pzQ8PLyK5ADJPQCOA5gAcIXkbWXzeVyf6X+CIHi7Uqms9MpAjUZjqYi8R/IkyRmSoSPPAPiG5HaV5c03jY6OLif5IcnfMiifyAAuktxZqVSWzQsIAG+QnMoLQAJfEJHXCwOgpid5oEAA7XxELZ8riFqt9gzJH+cRRGj4h6GhoadzAREEwXNq7j6ACE3sTKoOPYEYHBxco2m0XyD4L0+NjIw8mwmEZo8+uVOY5maZUjSAz0qgfNjGB7Ok2LCkvNklzZ4vgcJhCl+wWjTNih2WmQHs6GoNUyqEJedf5wx8UwB2FeQVTLTQIQiCd+cScNLStO8UCGLQ0ipfz7WfsC3FZ0nuyhnDApK7HeLkbqPReCJpJgYcfPQBYACHSD7WKwLf95cAOBop6KDHW0lA9toK0N0dyetm4G9JPpkVhHoCgO+M7H9c1jAAH3cINFtQKwH6/yAIXtLsYX47W61W17mCEJHnSZ4zMn4n+bKZVFsgY0lAJl2AxCrjs5EiIvKKLYggCDaQ/MO8+5OIrI2eOQCZ6BBM8rIrEKVqtfq4ZhDz7DqArd1AmHi8Yd451e6atI+Rv5KE384CRKnZbC4m+XksEXyQBkJX5ViyOJyULGhvkVu5AlGq1WovAvg7NsgnzWZzYfTc9/1FJPfH5FwVkRdSLBZmBgJgOisQku/HXOWcDmA+H9M4MkHdigaPNmsAronItqxASF5KmgXrirct/38am6HDplX0akrMXTbPVmhzIfbePnVPzx3IeBKQlgsQzTIkvze/3RQRxOVpOib5FYA/lUl+2Z6iSdZjLn1amxw9p19tY9oKEJFNRjn9/jPJ9V5GArAxqrgBXNTvDhb5qEOgWa1tBUQ12Yl6vb7ay6fddNrItE46IvJmhzBtKNsWjQDuaYEXz0q9ksYIgH2mILUBciexaFTSGbYUssUriERkm6UOrVQh2hW3DfYiib3uif5LW13f95d0m42dJVA07MKNrmY1VilDmzRMcalJ646jnk/0W2Em8yyA1zwXipceJeL9TiAiF9PGcQmUDw2f6RrgaUTyqZLEy1RUh2UmLcNdtsEF8Pks/YBE0uOvPrnZGT1s8go6DLWthXpiAF8Uevau5xNFuhoe3phwS7FZySyaO2J9rTwA/KIrdl9uQOig2hU3d0/uZlBe32lpAZg5teZNujfQXqy2MbXpYC7QTMcu1UybxsSY7ux0U6Q9sdwVeUReOeg+pD77ZfwU1uMAAAAASUVORK5CYII="></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="horizontal-menu">
+            <ul class="horizontal-menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nossa História</a></li>
+                <li>
+                    <div class="nav-accordion">
+                        <input type="checkbox" id="accordion-nav">
+                        <label for="accordion-nav">
+                            Tipo de Evento
+                            <span class="nav-arrow">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkklEQVR4nO2UOQrDMBQFdYmY5HgqNAgdM668NXHh4zh8SBEEXrR1f0Cg5r3hFZIxiqIotQDewOy970q7pANYgP6OeAR259xaIpesdPy6hsuAtfYBfCQAbMArVRp3hBCeWcEUeba0RF4szZFXk6bIq0vvyJtJz+TNpQdvc/2/1/hwTolWtl16sHyS03ypoiiKifgCmKK058HKOCgAAAAASUVORK5CYII=">
+                            </span>
+                        </label>
+                        <div class="nav-accordion-content">
+                            <ul class="nav-accordion-list">
+                                <li><a href="#">Casamento</a></li>
+                                <li><a href="#">Formatura</a></li>
+                                <li><a href="#">Aniversários e Outros</a></li>
+                                <li><a href="#">Corporativo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Tour 360</a></li>
+                <li><a href="#">Perguntas Frequentes</a></li>
+                <li><a href="#">Contato</a></li>
+                <li>
+                    <ul class="nav-icons">
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aSYgUWRAtZ3QcxZ1xOYiKy2HEy4AHzzKjuKGI5Xoou/K/97NqLJ32OJcCT24HRXBB8OBBRfHgjgcVPYiIFy92q420PTOIKA3iwd2UgC/TFD+zfmZlZyViQEBBZsWPlxE//ovILBS+yzcqlUplPMlVJPcAuASgG0A/yXei5neXXJN7tNYrS6XSuEIepFarDVdKbSJ5leRHkkFM/QjgCsmNYquQtXR2do4guZ3kfwmctyqAf0n+VSqVfs4EBIAlJHvSAmDRx0qpxYMGQEJPcv8gAmjU4xL5VEF4njeZ5L0MQQRG7/q+PykVEFrrGRLuNoAIzN55JD60BKKjo2OilNF2geD/2lOtVqckAiHVo03pFISlWaISDeBQDpwPGvRAkhIb5FQXxSmzD3PgcBCij50OTXNiuxh8T3IryZH1ev0HrfUfAD5lAQbANpdoONEOANqSkucziso/kRvfEEAXEDdD/r84qxTTWm+ISqurjobWhZgYkuH+uhzVTzhRcc/zZoc9DMnfLIAA+FCr1cbYorHK1UhUfkqzZApBFlFZYQOy19WAUJcwICRnkfycUVR22xy4GMPIshAQw0hezygaAckLttx+FMPA6TzQGgDdNidexjAie2CaxcaNLIGQfGFLi3cxn8apRhue5/1K8k2GEXlrA5LEgdWWqFTbCgTAswSG+svl8nTLQ9nfztR6kNDY/XK5PNpywjcr570tzMMCo12tlt/GyFwqFos/2rgbgNeW+19WKpWZZt1ZptrFTm0hqTYgO1rM12NC5y1gpgI48ZXiC7VQSi1svE96cgA7AbyKse6ulihKhB6XQzFkGjNHTmKt9Rrb9YH30XE9pdRyG5CxUgVSAHPN87wJhYRC8hfHdd5bSWPKjVGvLX1cRGu91HGNiy03Vo4qxPGo7JE4QEiec9yT66OMCOl7mvahRfIgyfkObfZhR5t9xWLxp2ZP5M80gTSonFV/+77/mwwtqtXqKDOSrZB8EsNOrWlojeHBApJGhLudJo5Kqc3tdpbh+hnA701BmNQ6mQOHgxDd5wRCaEbMviRLvdN0gw9IqwU5cDiwaI+8bHICYdKqngOngwZ9aGsVIgXA7bylU0fExKblAV0WCuBIohc7Sqm1OQHQ7VxibSL9hMNCLwCcldcJADpNl5cWgD45sVv+AkJG9RbjzwGcAbDF9/150sIO/E+9Xh8qU3HDmpN0eB+ExQoBdC6tzYTkLRlAyJhHuI/Wem6j41EivMk0ZzsMg+0yA4035qMaOZ8eGNC7pCmy9PrfpfCtyBd2U8z1HXuYGAAAAABJRU5ErkJggg=="></a>
+                        </li>
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOklEQVR4nO2Zv09UQRDHX6E2EtAeC+MvEhujaGHEQrAWTehIKNjv93GXXKVISQNRSsBCIQj/gxGjB0RM/BPkR6+VvyIYtYFnRuaZF+K9ez/W20dyk0xzudndz87M7rwdz2tKU9zL0NDQOZIjAJZIrpP8TjKwpDKWjFkFcF/msg5AspPkssVFJ9W3AK7aADgM4BHJXQcQgarMPT06OnooE0SpVDpOcsUhQLBPl2VNqT3hKJSCOvqmr6/vSGIQDaegiApgKk1iu8yJoI7uGmMuJQEpYkgF+7Sa5J5wGTbPjTHtoiQX4/7r+/6ZOG+MuAQxxrSHaymVSifq/H84DqR6UEAAvIoD2bSwoM8k53zfvyWh2t/ff1RUw7YXwFMAX2rYLgqAKIAXdUA24kC2csT3D5JjlUqlNTYR9+ZpAzCuNlk3bCtugqwQ76NHou/7N0nOyq5pMRgWhDMAeiLzdYpt1nk9myAK8Se2jTFnAawmsHsdnjpimxXGswUioRF6guT1mNj/Zy4ZY7rEFsBlkj9demQs4ok0EH9hBgcHTyvMQ1cgcjq16SKShFMtXZExBgYGjqXdDFsgc5HEDnJqt84/33AQuSfUZjYvCIAnGqK3Gw4ieaFhtWHBI+tZaj3PBki5XG5RkG0LHtmWscrlcstBB/kmY1UqldaDHlprzkKLZK/azFgAeaxj3Wk4iFSx6pGevCDGmBs6/4LTC1Fqpxwgy+GFSPKrCxDxyrjYGWNOkvyYp0QhOZHW3hqIFnqdCtOlXkq6CZ9IXhNb3/evuC4ag2gZL7ub8HVSXmpORT5pP2SZ27MJEsJIKR4Zp1vKDjlW5Z5RfSenU5jYEU9kgmAdkMyfuhoaDyRpvTqiiT0B4Nf/+tTdzDFw6B0pxee1AOyQCkBLjw79bSHt6cQMjw9On4OYTl/WBJFOUQEWGCTUuzVB5EGgAAsM0tR6cV5ZKsJCmfWVMRRjzAUAOwWG2EnUVhCRnp3rBbO2TnpJRRqPRQwxAKupWm+RZmhhmj4AlpJctnGemXLZisNevk5mbk9HxRhznuQzByBVkhc926L3zLAcf/KEY+PhIbLzMtaa3NgA7sW21prSFK9h8huGGq2jktC9vAAAAABJRU5ErkJggg=="></a>
+                        </li>
+                        <li><a class="nav-link" href="#"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEB0lEQVR4nO1aTYwURRRufuQvUSGIeiBBzyaaKOHAwQMxGIPiXpoomkx25n1f7+5khPXIZRJuCkQIJmpCOECM92VQkIPcJMaLCWGXZQ9G0agsBAXC37JNHlTHzkz3TlVP905reMlLZqanX72v3k+9elWe94j+pzQ8PLyK5ADJPQCOA5gAcIXkbWXzeVyf6X+CIHi7Uqms9MpAjUZjqYi8R/IkyRmSoSPPAPiG5HaV5c03jY6OLif5IcnfMiifyAAuktxZqVSWzQsIAG+QnMoLQAJfEJHXCwOgpid5oEAA7XxELZ8riFqt9gzJH+cRRGj4h6GhoadzAREEwXNq7j6ACE3sTKoOPYEYHBxco2m0XyD4L0+NjIw8mwmEZo8+uVOY5maZUjSAz0qgfNjGB7Ok2LCkvNklzZ4vgcJhCl+wWjTNih2WmQHs6GoNUyqEJedf5wx8UwB2FeQVTLTQIQiCd+cScNLStO8UCGLQ0ipfz7WfsC3FZ0nuyhnDApK7HeLkbqPReCJpJgYcfPQBYACHSD7WKwLf95cAOBop6KDHW0lA9toK0N0dyetm4G9JPpkVhHoCgO+M7H9c1jAAH3cINFtQKwH6/yAIXtLsYX47W61W17mCEJHnSZ4zMn4n+bKZVFsgY0lAJl2AxCrjs5EiIvKKLYggCDaQ/MO8+5OIrI2eOQCZ6BBM8rIrEKVqtfq4ZhDz7DqArd1AmHi8Yd451e6atI+Rv5KE384CRKnZbC4m+XksEXyQBkJX5ViyOJyULGhvkVu5AlGq1WovAvg7NsgnzWZzYfTc9/1FJPfH5FwVkRdSLBZmBgJgOisQku/HXOWcDmA+H9M4MkHdigaPNmsAronItqxASF5KmgXrirct/38am6HDplX0akrMXTbPVmhzIfbePnVPzx3IeBKQlgsQzTIkvze/3RQRxOVpOib5FYA/lUl+2Z6iSdZjLn1amxw9p19tY9oKEJFNRjn9/jPJ9V5GArAxqrgBXNTvDhb5qEOgWa1tBUQ12Yl6vb7ay6fddNrItE46IvJmhzBtKNsWjQDuaYEXz0q9ksYIgH2mILUBciexaFTSGbYUssUriERkm6UOrVQh2hW3DfYiib3uif5LW13f95d0m42dJVA07MKNrmY1VilDmzRMcalJ646jnk/0W2Em8yyA1zwXipceJeL9TiAiF9PGcQmUDw2f6RrgaUTyqZLEy1RUh2UmLcNdtsEF8Pks/YBE0uOvPrnZGT1s8go6DLWthXpiAF8Uevau5xNFuhoe3phwS7FZySyaO2J9rTwA/KIrdl9uQOig2hU3d0/uZlBe32lpAZg5teZNujfQXqy2MbXpYC7QTMcu1UybxsSY7ux0U6Q9sdwVeUReOeg+pD77ZfwU1uMAAAAASUVORK5CYII="></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- 
+    <main>
+        <div class="whatsapp-btn">
+            <a class="whatsapp-link" href="#">
+                <img class="whatsapp-img"
+                    src="data:image/png;base64,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">
+                <p class="text-light">Como podemos ajudar?</p>
+            </a>
+        </div>
+        <section id="home" class="home">
+            <div class="container-capa">
+                <div class="imagem-capa"></div>
+                <div class="home-card">
+                    <h1 class="h1 text-uppercase">Formatura</h1>
+                    <h2 class="detalhe-vertical text-uppercase">
+                        Diversão e Comemoração com muito estilo
+                    </h2>
+                    <p>Na sua formatura no Espaço Haras, cada detalhe é planejado para tornar o seu evento único e
+                        inesquecível. Com um espaço amplo e versátil, podemos acomodar desde turmas pequenas até grandes
+                        grupos de amigos.
+                        Queremos que sua formatura seja do seu jeito, por isso oferecemos várias opções para
+                        personalizar o evento, é isso mesmo: desenhe o seu layout com a gente!
+                        Sonha com um buffet completo, espaço aconchegante para acomodar toda a sua família, local para
+                        um sistema de bar completo, pista de dança e palco para sua banda dos sonhos? O Espaço Haras
+                        torna tudo possível e muito mais, com muita diversão garantida!
+                        E tem mais! Se seu objetivo é uma Pré-Festa, Colação de Grau, Bailes e afins, você também
+                        encontrou o lugar certo.Estamos aqui para tornar seu evento incrível, onde você pode celebrar
+                        suas conquistas com seus amigos e família.
+
+                    </p>
+                    <a class="card-button" href="#">Faça um orçamento</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="capacidade" id="capacidade">
+            <h2 class="text-uppercase">capacidade <div class="detalhe-div"></div>
+            </h2>
+            <div class="capacidade-carrossel">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item-container">
+                                <div class="outline"></div>
+                                <div class="capacidade-card">
+                                    <img class="capacidade-card-icone" src="assets/img/capacidade-pessoas.png" alt="">
+                                    <p><span class="detalhe-vertical text-center">SALÃO PRINCIPAL:</span><br> 340 pessoas <small>(na área coberta)</small>
+                                        <br>Obs: Para Colação de Grau a quantidade média é de 400 pessoas <small>(sentadas)</small>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-container">
+                                <div class="outline"></div>
+                                <div class="capacidade-card">
+                                    <img class="capacidade-card-icone" src="assets/img/capacidade-carro.png" alt="">
+                                    <p> SALÃO ANEXO <small>(CAPELINHA)</small>: <br> 170 pessoas <small>(na área
+                                            coberta)</small> e 200 pessoas <small>(na área externa)</small>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-container">
+                                <div class="outline"></div>
+                                <div class="capacidade-card">
+                                    <img class="capacidade-card-icone" src="assets/img/capacidade-fonte.png" alt="">
+                                    <p>JARDIM EXTERNO (CERIMÔNIA): <br>400 pessoas <br><small>(sentadas na área
+                                            externa)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-container">
+                                <div class="outline"></div>
+                                <div class="capacidade-card">
+                                    <img class="capacidade-card-icone" src="assets/img/capacidade-carro.png" alt="">
+                                    <p> ESTACIONAMENTO: <br>privativo e de fácil acesso, para mais de 500 carros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
+                </h2>
+                <ul class="diferenciais-lista">
+                    <li>Salão Principal climatizado e Hall de Entrada</li>
+                    <li>Espaço para Área Kids (salão anexo)</li>
+                    <li>Espaço Bem-Estar / Descanso</li>
+                    <li>Varandas Multifuncionais</li>
+                    <li>Acessibilidade em todos os recintos</li>
+                    <li>Área para Fumantes</li>
+                    <li>Mesas e cadeiras</li>
+                    <li>Palco Móvel de até 6x3m</li>
+                    <li>Lounges rústicos e Bistrôs</li>
+                    <li>Internet WiFi com rede personalizada</li>
+                    <li>Camarim para banda e Sala de Assessoria</li>
+                    <li>Banheiristas e Seguranças</li>
+                    <li>Gerador de energia</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer" class="footer">
+        <img class="footer-logo" src="../common-assets/img/logo_branco.png" alt="">
+        <div class="footer-contato">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVR4nO2aOYgUQRSG2/vAG48NRMUjUEwEA2PxwAtFxDMxE+8jNBGMvAIXwQPBwEBFMfDGQEUDETExcVddxBORGWbHrv+vHnfVkgclK7M1M9U9Y08jPihYmO7X9fV7VfW/1xsE/+0ftWKxOJrkKpJHSd4i2U6yAOCbDPmbZJv9Ta5Z2dnZOSrIghljBimlNpG8C+A7SRNn2HvuKKU2iq+gCQBDtNb7AHyKO/kqUB9J7jHGDE4FAsASAB2NAnAAvQaw+K8BSOgBtP4tAMc4L5FvKIRSagLJZylCGBudp0qp8Q2BiKJoioQ7bQj2wLySOdQFEYbhOLuNNgWCPTAdAFoSQcju0Yx0YpU0S7RFAzjV7MmzN8yJuBBLmj1pVoZZFGebfZlhkNdeh6ac2J4Ou0juMsYMNcb0VUotBPAjJaDdPtHwlR1bHCl5PaWofKi68K0A9HH00HW/SIu0UkxrvaEiiKhYTyfrKkS0T4rr63bFesJXikdRNL3Ky9idUnp15/P5Ea4JrPJ1Ui0/pViyG0EaUVnhAjnm60CkSyWQKIqmAfiZEsgRF8jNGGFd5oIwxgwgeT8lCEPyRq9JiMqMAXI5I7Km3RWRfAyQLq31JIePBymD5Fxv81scJwAulfsIw3AmgCgtEAAlF0iSCax2RGVbU0FIfk7grKC1nux4Ka1NSy2SLxI6e57L5YaXn/C1tnMAb5P2w9gz2urafh3jljGmn0u7AVCO6/NRFE3949w5lSS1AVx3gRysM8znRM47/E4EcOG3xBdpoZSa70jHFpKHSH6N8czDdUmUGr2oAb2cB0FQKpVmyElMco3r97LrjGdElvdyUCgURsou0ACYe8VicUyQ0MIwHOsJ0eUUjY0sjGQhu9LHxwAs9XzOzboLK08YEY5nZY3EBLnm419rvb6iE8lvAO8aBWOBSgBOkpzrUWaf9vT53hgzsOobIbm9kSBl4wWA/QDm2KbFMGmHktwK4E0MPztrhtY6Nhke7V4dRwCbMzBZUyGlfiqlFtSEsCAXMwxy3AtCZEacuiRliCc1F/hvIzkvoxAd8rHJC8Km1YEMQrx0lQq1QB5nLZ3CKh2buht0KY0ziT7saK3XZmDyRs4J7y3WZVJPeDwkB+CqfE4guddWeY1Ko/dyYtf9HxDSqnc84AuAKyR3KKVmSwn75z3GmP7SFRfVnLDC6xYVKwLQe2utZQAeSQNC2jyifcIwnFU+8WomuskWZwetgm2z/iLbaspbrSWlwmEpispr/f8W/EP2C8nUy5qJ62wFAAAAAElFTkSuQmCC">
+            <p>+55 19 99709-3745 <br> (Edmara - Gerente do Espaço Haras)</p>
+        </div>
+        <div class="footer-contato">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO1ZPWtUQRQdv0HR+IWosfYLO+3EoK0gRoNiY5NWEISorYVECxUUkaSxsFQQbE0i+AtiYTA2isZC3PXlfZwzbqGOXHeMi+zmzXv75r1FcuDCFu/M3DP33rkzs0ot4T9HFEV7AFwlOUnyDSzkN8kJAFcajcZu1asgeYjkFEnjaCL0oOoVGGNWAbgP4GcGEb9NOADuGWNWVioiDMNNJF9kFdAuOvPz8xsri0TGVEqLzktjzOrShUg6FSWiRczd0gs7T0241AzL3ACKTKk2NlGKiDiO93oUYcRK6TO22bmkyUeSQ7Vabb0YyUGSs47cy96FSOhdRIRhuLnddm0Fpol57l0IgLcOjgx14mutzzjwZ70LIRmnOSKp1Ilfr9c3OAiJvQsBoLsREgRBn0Nq6jKEfHJY0cFOfK31WZcaU77heLaalcL+lxtF0RYAcw78Se9CANxx3X6lsKUmxCQSjiIMyVvehZA84ehMbgNw3LsQY8w6AA2PIrQxZq0qAwCeehTyWJUFkqc9ptbJsq+3HzxEY07GVmUCwIiHaFxSZcMeNcICRUTS9VUVAHC7QCE3VVUgubP59tZ1bSQAtlcmxIq5XkA0rqmqUWve/j53IeKL1JvqBZC82IWQC6pXYIxZTXImh4jX3vuGMWYZgHeLOZIkydE/32utj2R565JvkyQ51sI/vBhfGrD4lFmIOOa4ogsP0CQfZYjGw5ZFW0HyVRpHfMosBMCYHWDUlZMkyTaSXx1E1OI43uo6LslRG5WxPDlft+lzIAsXwHmHlT2XZcw4jvdZbmCMWeNMtI9pQpzOMqHLMR/AszxjkpzOfDoG8MROOpJnUgA7OqRYLW8Hhz2kim9OBGlOcksD8IPkLpUTJE8Veddg8zj0HcA3pz+FAAzbSafyTtoy+XhLSj0o6l8AAMPFfpwCuXvbRjlTxD0crotMsl9SSsJX1N1AdhyxIsYKgqBPfLNp39/xQ3nOz1RQFQAuG1FLd+345Fk1mNYa4jjen6vplAyT1qxJ3rBCxlWPg393w9F2J933XdwpKjE0T8TLF4RorQeqdiqvaa0HKkiKJag0/ALBtZsoADVy3AAAAABJRU5ErkJggg==">
+            <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Liumeira - SP</p>
+        </div>
+        <div class="redes">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nO2azU4UQRDH+6BeJKh3OBg/Ey9GwYNRD36cAV9FhReAKEfFg0JA3sEI0WUJmPgIAt7x5LDLbte/Zy7QpkitToSdz5Yeku2kEg5b3fXrququ6UKp3ugN/6PVal0jogkAKwA2iYgAWBcic20CqBHROK/lHADAEIC6K6NzwH0zxtwtDWCtPU1Eb4lo/7gh8Bdmn4hmrLWnCkHs7u5eALDqCwCHpc425faEj1BCune+WmvPZAbhcPJtNLrDvMmc2D5zAukgbNvtLCCVCykclloiBJ/dng38BGBAZCnpt1EUXUnKjQnPIAMdW4wxgykh9iIprGonBQTAlySP/HBgzA6AeQAjHKrW2rMsErajABYANLroLjGAQCynrLOV5JF2UQAiMgAmgyDoT0xEpVSj0TgHYEp0im5YOwmkKMR2/EjUWj8BMMe7xsVgrCCc1Vo//ueo3y66rnIJIoYcxHYURVeJaD2Dzlrn1GHdojDKFYiExoEnjDEPEmL/yFwyxtyXdYeJKPTpkcmOJ3JC/IEJw/CyrP3KF8gOJy3rZQmnBFnlOZrN5vm8m+EKZD6W2LaMaK0fyfoffICMiM5cWRAA72WusWMH4bwQnS0HIJtFaj3lAsRa2yf5ocuC8Bw8l7W270SDAGjxXEEQ9J/00NrwFloARkVn1kFovZO5nvoAWWAdrp3KgmitH8r6i74vxLUSIPXYhdj0AcIyxXphGF4E8KtkiTKdV98ZiBR6Q6zLBaB8VGXVD4wx92TdO76LRhsv43l3M75O1sMwvCQbMEhEP4usrVyCxGCGO/Nw7cRlBx+rfM/IXfOdT6dOYsc8UQgCKSBlPnU5NF5y0qqUIYk9TUTRf/nUJTePDw2pYsfa7fZ1rgBY+G8pChfznk4o8Pjg+znI5pDPSR4Zr4CBNotorZ91BeEHAd8GImetlxReK1UwFEVfGWPhdZOI9ipgrD1KxLb0toLAzFQY5LXKOrjxWMUQI6L1XK23WDO0Sk2flSyXbVfPcM/Oc3t6j8OpcHs6PrTWNwB89ABSI6JbyvXge4Y7RXz8yb9waIc7z3Nt8I1NRM8TW2u90Rvq2MZv02ZBeQmhibcAAAAASUVORK5CYII=">
+            <img class="footer-icone"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2Zu2tUURDGj68UPhCxsvABaqlNekHFVywkPkErO/EfsFEIChokjRba2AQLTbSJGglqYyc2BlGMvd0mm13P9527SZGRITe4hOzJPbtn997AfjCwxe7M/d2ZO3fOrDFddVVsichWAH0kB0m+JTlFsgxgXk0/k/wF4A3JBwDO6G9MESQi6/SCAIwCqJGUEAOQABgBcFp9mTzknLtE8nvoxXtskuT5jgHUarWDJD9FBFhuH5IkOdBWCJIXSFbaCCGp/bXWXo0OoPVLcqADALLMBqM9O+kD/TQHCEkbwpMoMNoq84Lgf7vXEoRz7koBIETNWnut6e4EwEYqj4TkM23Z6rdare4sl8vbK5XKjiRJ9llrD5EcWsVPNUmS/cEgEVvsRwC7VosH4HoGXxOhEBcjQYyLyMYsMTOCCMn+kFYb4409rSWU9eYFgHzL1MV0doqUjftZIQJBBMCpLA5HY4BYaw83ikGyF8DjdNhcsq8BIC+8EKVSaVszU+wKVhWRDR6IuVb8A3AistmXjb5IZTXpycZwjBgATjYESQ9FMYJ89tysP21/Brl4sosR5L1nbpuPdLPGfKX1OxLIeAOQnkj+RY/NvozMrCGQki8jc2sFBEAtNki/Dn/15tuOLP/ukpF8GAgy5yut2VAQa+0JE0EAXgbGnvaBTOUFojMUw2L/9DkbzwNERNYDYLT2qy+ZPECcc3ujHn8BnG3C4U2dn+qt0V4qPSL0rmA3QuPCNwHrIIbFHEuR2y8AisgWb5oBvFoDICNeiBTkZNFBrLXHVwVJ6/hHgUEmTVaRPFdUEAB9mUEirIPaBTJhQqWLM92KFwik4pzbY5qRDoQAFvIGAbDgnLvcFEQdzN28QUgOmBgC8ChHkKEoEHUwtwLKrGUQLMaKk4kGf73NdgBkJvOOt8VJ9V27QACMOed2m05JJ2XPmjMYBMAX3TubvOScO0Lyua5JmwDR99Sw+jBFkYj0WGuPAbitjaHBdzYBeA3gjrX2qP6m81faVVcmRP8AB4HTiOgD+ZAAAAAASUVORK5CYII=">
+        </div>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="../common-assets/js/arrow_animation.js"></script>
+    <script src="../common-assets/js/aos_init.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+
+</html>

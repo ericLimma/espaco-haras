@@ -9,12 +9,20 @@
     font-size: .9rem;
     max-width: 980px;
 }
+.alta-gastronomia p{
+    padding: 1rem;
+    text-align: justify;
+    width: 100%;
+    max-width: 500px;
+}
 
 .alta-gastronomia-container {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .alta-gastronomia h2 {
@@ -23,7 +31,8 @@
 }
 
 .alta-gastronomia-img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -31,6 +40,14 @@
     .alta-gastronomia {
         max-width: 980px;
         gap: 3rem;
+    }
+
+}
+@media (min-width: 1200px) {
+    .alta-gastronomia-container {
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
 
 }

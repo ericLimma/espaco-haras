@@ -1,4 +1,7 @@
 .footer {
+    width: 100vw;
+    height: 70vh;
+    max-height: 500px;
     color: var(--branco);
     background-color: var(--preto);
     padding: 4rem 0;

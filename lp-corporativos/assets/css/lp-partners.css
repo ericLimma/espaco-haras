@@ -3,6 +3,11 @@
     gap: 2rem;
     background-color: var(--preto);
     color: var(--branco);
+    height: 100vh;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .partners h2 {
@@ -13,8 +18,8 @@
 
 .partners-container {
     position: relative;
-    height: 100%;
     margin-top: 2rem;
+    width: 100%;
     max-width: 1400px;
     padding: 1rem;
     margin: auto;

@@ -1,15 +1,49 @@
-.home,
-.container-capa {
+.home {
     width: 100vw;
+    height: 100vh;
+    background: url('../img/capa-lp-casamentos.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
 }
 
-.imagem-capa {
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 700px;
-    height: 100vw;
-    max-height: 350px;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(3, 3, 3, 0.5), rgba(0, 55, 128, 0.219));
+    z-index: 1;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     margin: auto;
-    background: url('../img/capa-lp-casamentos.jpg') center/cover no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+
+.main-title {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: clamp(3rem, 8vw, 9rem);
+    letter-spacing: clamp(0.4rem, 1.5vw, 2rem);
+    color: var(--branco);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.capa-logo {
+    width: 50%;
+    max-width: 250px;
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 
 .home-card {
@@ -29,12 +63,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
         0 6px 20px rgba(0, 0, 0, 0.1);
 
-}
-
-.home-card h1 {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 700;
-    font-size: 3rem;
 }
 
 .home-card h2 {

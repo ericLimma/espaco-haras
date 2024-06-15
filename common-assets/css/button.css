@@ -1,0 +1,75 @@
+.button {
+    font-family: "Poppins";
+    width: 80%;
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #0000008a;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.button.btn-preto {
+    --btn-color: var(--preto);
+
+}
+
+.button.btn-vermelho {
+    --btn-color: var(--vermelho);
+    background-color: transparent;
+    border: 1px solid var(--vermelho);
+    color: var(--vermelho);
+}
+
+.button.btn-transparent {
+    --btn-color: #faa500;
+    background-color: #f5f5f500;
+    border: 1px solid var(--branco);
+    backdrop-filter: blur(1px);
+
+}
+
+.button:hover {
+    color: var(--branco);
+    backdrop-filter: none;
+
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    background-color: var(--btn-color);
+    box-shadow: 0 0 10px 60px var(--btn-color);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: width .9s ease-in-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.button:hover::before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    transition: width .8s ease-in-out, opacity 0.6s ease-out;
+}
+
+
+.button span {
+    position: relative;
+    z-index: 1;
+}

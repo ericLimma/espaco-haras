@@ -19,14 +19,14 @@
 
 body {
     background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-width: 375px;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-a,
-button {
+a {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -53,68 +53,7 @@ main {
     position: relative;
 }
 
-.whatsapp-img {
-    width: 15px;
-}
 
-.whatsapp-link {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-
-}
-
-.whatsapp-link p {
-    margin: 0;
-
-}
-
-.whatsapp-btn {
-    position: fixed;
-    background-color: #42B759;
-    width: 155px;
-    height: 30px;
-    bottom: 40px;
-    right: 16px;
-    z-index: 100;
-    padding: 6px;
-    font-size: 0.6rem;
-    border-radius: 15px;
-    border: 2px solid var(--branco);
-    opacity: 0.95;
-}
-
-.btn-preto,
-.btn-vermelho {
-    color: var(--branco);
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: .9rem;
-    width: 270px;
-    height: 56px;
-    vertical-align: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.btn-preto {
-    background-color: var(--preto);
-}
-
-.btn-vermelho {
-    background-color: var(--vermelho);
-}
-
-.btn-preto:hover {
-    background-color: var(--preto);
-}
-
-.btn-vermelho:hover {
-    background-color: var(--vermelho);
-}
 
 .detalhe-vertical {
     position: relative;
@@ -155,7 +94,7 @@ main {
 }
 
 .zoom:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
