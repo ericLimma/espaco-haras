@@ -12,7 +12,8 @@
     --cinza-escuro: #363636;
     --fonte-principal: "Poppins", sans-serif;
     --highlight-color: #ff4500;
-    --preto: #1a1a1a;
+    --preto: #18191b;
+    --preto-azulado: #0c0c0d;
     --vermelho: #af1e22;
     font-size: 14px;
 }
@@ -84,7 +85,8 @@ main {
     background-size: cover;
 }
 
-.desktop {
+.desktop,
+.tablet {
     display: none;
 }
 
@@ -99,12 +101,16 @@ main {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .tablet {
+        display: flex;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .desktop {
-        display: block;
+        display: flex;
     }
 
     .mobile {

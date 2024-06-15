@@ -3,6 +3,17 @@
     --text-color-hover: var(--preto);
     --bg-color: var(--branco);
     --bg-ham: var(--preto);
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    height: 60px;
+    z-index: 25;
 }
 
 .header.header-dark {
@@ -12,6 +23,37 @@
     --text-color-hover: var(--cinza-claro);
     font-weight: 200;
 
+}
+
+.contact {
+    background-color: #000;
+    color: var(--branco);
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-around;
+    position: relative;
+    font-size: .8rem;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 26;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.contact img {
+    width: 20px;
+    margin-left: 1rem;
+    margin-right: .5rem;
+
+}
+
+.contact p {
+    margin: 0;
 }
 
 .header a,
@@ -24,19 +66,6 @@ li,
 .header a:hover,
 .header .accordion-label:hover {
     color: var(--text-color-hover);
-}
-
-.header {
-    display: flex;
-    width: 100vw;
-    padding: 0 1rem;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: var(--bg-color);
-    height: 60px;
-    z-index: 25;
-
 }
 
 .logo {

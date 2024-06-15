@@ -1,85 +1,74 @@
-.capacidade {
-    background-color: var(--preto);
-    color: var(--branco);
-    padding: 4rem 2rem;
-    text-align: center;
+.about-the-space {
+    width: 100vw;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    gap: 2rem;
+    padding: 3rem 0;
+
+}
+
+.capacity-card {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-
-.capacidade h2 {
-    margin: auto;
     text-align: center;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+    /* Contexto de empilhamento */
+    margin: auto;
+    background-color: var(--preto);
 }
 
-.capacidade-carrossel {
+.capacity-card::after,
+.capacity-card::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    z-index: -1;
+    /* Pseudo-elementos atrás do conteúdo */
+}
+
+.capacity-card::after {
+    top: 3px;
+    left: 3px;
+    border-left: 3px solid var(--vermelho);
+    border-top: 3px solid var(--vermelho);
+}
+
+.capacity-card::before {
+    bottom: 3px;
+    right: 3px;
+    border-bottom: 3px solid var(--vermelho);
+    border-right: 3px solid var(--vermelho);
+}
+
+.capacity-carrossel {
     width: 100%;
     max-width: 600px;
     margin-bottom: 2rem;
 }
 
-
-
-.carousel-item-container {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-}
-
-.capacidade-card {
-    background-color: var(--cinza-escuro);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    font-size: .8rem;
-    gap: 1rem;
-    text-align: center;
-    font-weight: 300;
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--cinza-escuro);
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    transform: rotate(0deg);
-
-}
-
-
-.capacidade-card p {
-    margin: 0;
-}
-
-.capacidade-card small {
-    font-size: .6rem;
-}
-
-.outline {
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--cinza-escuro);
-    transform: rotate(0deg);
-
-}
-
-.capacidade-card-icone {
-    width: 50px;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 1.3rem;
+}
+
+.capacity-card-icon {
+    width: 30%;
+}
+
+.diferenciais {
+    text-align: center;
 }
 
 .diferenciais-lista {
