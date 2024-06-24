@@ -25,11 +25,12 @@
 
 }
 
+/* header contact */
 .contact {
-    background-color: #000;
+    background-color: var(--preto-azulado);
     color: var(--branco);
     width: 100%;
-    height: 2.5rem;
+    height: var(--contact-height);
     justify-content: space-around;
     position: relative;
     font-size: .8rem;
@@ -42,7 +43,6 @@
 .contact div {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .contact img {
@@ -52,8 +52,34 @@
 
 }
 
+.contact-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.contact-link:hover {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--vermelho);
+}
+
 .contact p {
     margin: 0;
+}
+
+.contact-link-desktop {
+    display: none;
+}
+
+.contact-link-mobile {
+    display: flex;
 }
 
 .header a,
@@ -252,6 +278,17 @@ nav {
     z-index: 1;
 }
 
+
+@media (min-width: 980px) {
+    .contact-link-mobile {
+        display: none;
+    }
+
+    .contact-link-desktop {
+        display: flex;
+    }
+
+}
 
 @media (min-width: 1600px) {
     .logo {

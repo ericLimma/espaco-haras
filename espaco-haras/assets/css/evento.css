@@ -10,8 +10,6 @@
     align-items: center;
     gap: 3rem;
     position: relative;
-    margin-bottom: 210px;
-    width: 100vw;
 }
 
 .texto-chamada {
@@ -50,15 +48,9 @@
     height: 100%;
 }
 
-.carousel-item img {
-       max-width: 500px;
-}
-
 .evento-btn {
     padding: .5rem 2rem;
 }
-
-
 
 .evento-card p {
     width: 80%;
@@ -80,20 +72,7 @@
     background: url('../img/card-aniversario.jpg') center/cover no-repeat;
 }
 
-.evento-carrossel {
-    margin-bottom: -200px;
-}
-
 @media (min-width: 768px) {
-    .evento-carrossel {
-        max-width: 1400px;
-        margin-bottom: -350px;
-        max-height: 750px;
-    }
-
-    .tipo-de-evento {
-        margin-bottom: 360px;
-    }
 
 }
 

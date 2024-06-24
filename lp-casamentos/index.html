@@ -43,15 +43,28 @@
 <body>
     <div class="contact tablet desktop">
         <div>
-            <img src="../common-assets/icones/whatsapp.png" alt="">
-            <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
-            <img src="../common-assets/icones/whatsapp.png" alt="">
-            <p>email@exemplo</p>
+            <a class="contact-link contact-link-desktop" target="_blank"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img src="../common-assets/icones/whatsapp.png" alt="">
+                <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
+            </a>
+            <a class="contact-link contact-link-mobile" target="_blank" href="https://wa.me/5519997093745">
+                <img src="../common-assets/icones/whatsapp.png" alt="">
+                <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
+            </a>
+            <a class="contact-link" href="mailto:contato@espacoharas.com.br" target="_blank">
+                <img src="../common-assets/icones/email.png" alt="">
+                <p>contato@espacoharas.com.br</p>
+            </a>
         </div>
         <div>
-            <img src="../common-assets/icones/facebook.png" alt="">
+            <a href=" https://www.facebook.com/espacoharas/" target="_blank">
+                <img src="../common-assets/icones/facebook.png" alt="">
+            </a>
             <img src="../common-assets/icones/linkedin.png" alt="">
-            <img src="../common-assets/icones/instagram.png" alt="">
+            <a target="_blank" href="https://www.instagram.com/espacoharaspiracicaba/">
+                <img src="../common-assets/icones/instagram.png" alt="">
+            </a>
         </div>
 
     </div>
@@ -69,9 +82,7 @@
                         <label class="accordion-label" for="accordion-h-nav">
                             Tipo de Evento
                             <span class="nav-arrow">
-                                <img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkklEQVR4nO2UOQrDMBQFdYmY5HgqNAgdM668NXHh4zh8SBEEXrR1f0Cg5r3hFZIxiqIotQDewOy970q7pANYgP6OeAR259xaIpesdPy6hsuAtfYBfCQAbMArVRp3hBCeWcEUeba0RF4szZFXk6bIq0vvyJtJz+TNpQdvc/2/1/hwTolWtl16sHyS03ypoiiKifgCmKK058HKOCgAAAAASUVORK5CYII=">
-                            </span>
+                                <img src="../common-assets/icones/down-branco.png" alt=""></span>
                         </label>
                         <div class="nav-accordion-content">
                             <ul class="nav-accordion-list">
@@ -120,8 +131,7 @@
                         <label for="accordion-nav">
                             Tipo de Evento
                             <span class="nav-arrow">
-                                <img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkklEQVR4nO2UOQrDMBQFdYmY5HgqNAgdM668NXHh4zh8SBEEXrR1f0Cg5r3hFZIxiqIotQDewOy970q7pANYgP6OeAR259xaIpesdPy6hsuAtfYBfCQAbMArVRp3hBCeWcEUeba0RF4szZFXk6bIq0vvyJtJz+TNpQdvc/2/1/hwTolWtl16sHyS03ypoiiKifgCmKK058HKOCgAAAAASUVORK5CYII=">
+                                <img src="../common-assets/icones/down-branco.png">
                             </span>
                         </label>
                         <div class="nav-accordion-content">
@@ -158,9 +168,13 @@
     </header>
     <main>
         <div class="whatsapp-btn">
-            <a class="whatsapp-link" href="#">
-                <img class="whatsapp-img"
-                    src="data:image/png;base64,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">
+            <a class="whatsapp-link whatsapp-link-desktop" target="_blank"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img class="whatsapp-img" src="../common-assets/icones/whatsapp.png">
+                <p class="text-light">Como podemos ajudar?</p>
+            </a>
+            <a class="whatsapp-link whatsapp-link-mobile" target="_blank" href="https://wa.me/5519997093745">
+                <img class="whatsapp-img" src="../common-assets/icones/whatsapp.png">
                 <p class="text-light">Como podemos ajudar?</p>
             </a>
         </div>
@@ -213,7 +227,7 @@
                 </div>
             </h2>
 
-            <div class="capacity-carrossel mobile tablet" data-aos='fade-up' data-aos-delay="150">
+            <div class="capacity-carrossel" data-aos='fade-up' data-aos-delay="150">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -267,7 +281,7 @@
                     </div>
                 </div>
             </div>
-            <div class="desktop capacity-card-container">
+            <div class="capacity-card-container">
                 <div class="capacity-card zoom">
                     <img class="capacity-card-icon" src="assets/img/capacidade-pessoas.png" alt="">
                     <div>
@@ -448,22 +462,41 @@
         </section>
     </main>
     <footer id="footer" class="footer">
-        <img class="footer-logo" src="../common-assets/img/logo_branco.png" alt="">
-        <div class="footer-contato">
-            <img class="footer-icone"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVR4nO2aOYgUQRSG2/vAG48NRMUjUEwEA2PxwAtFxDMxE+8jNBGMvAIXwQPBwEBFMfDGQEUDETExcVddxBORGWbHrv+vHnfVkgclK7M1M9U9Y08jPihYmO7X9fV7VfW/1xsE/+0ftWKxOJrkKpJHSd4i2U6yAOCbDPmbZJv9Ta5Z2dnZOSrIghljBimlNpG8C+A7SRNn2HvuKKU2iq+gCQBDtNb7AHyKO/kqUB9J7jHGDE4FAsASAB2NAnAAvQaw+K8BSOgBtP4tAMc4L5FvKIRSagLJZylCGBudp0qp8Q2BiKJoioQ7bQj2wLySOdQFEYbhOLuNNgWCPTAdAFoSQcju0Yx0YpU0S7RFAzjV7MmzN8yJuBBLmj1pVoZZFGebfZlhkNdeh6ac2J4Ou0juMsYMNcb0VUotBPAjJaDdPtHwlR1bHCl5PaWofKi68K0A9HH00HW/SIu0UkxrvaEiiKhYTyfrKkS0T4rr63bFesJXikdRNL3Ky9idUnp15/P5Ea4JrPJ1Ui0/pViyG0EaUVnhAjnm60CkSyWQKIqmAfiZEsgRF8jNGGFd5oIwxgwgeT8lCEPyRq9JiMqMAXI5I7Km3RWRfAyQLq31JIePBymD5Fxv81scJwAulfsIw3AmgCgtEAAlF0iSCax2RGVbU0FIfk7grKC1nux4Ka1NSy2SLxI6e57L5YaXn/C1tnMAb5P2w9gz2urafh3jljGmn0u7AVCO6/NRFE3949w5lSS1AVx3gRysM8znRM47/E4EcOG3xBdpoZSa70jHFpKHSH6N8czDdUmUGr2oAb2cB0FQKpVmyElMco3r97LrjGdElvdyUCgURsou0ACYe8VicUyQ0MIwHOsJ0eUUjY0sjGQhu9LHxwAs9XzOzboLK08YEY5nZY3EBLnm419rvb6iE8lvAO8aBWOBSgBOkpzrUWaf9vT53hgzsOobIbm9kSBl4wWA/QDm2KbFMGmHktwK4E0MPztrhtY6Nhke7V4dRwCbMzBZUyGlfiqlFtSEsCAXMwxy3AtCZEacuiRliCc1F/hvIzkvoxAd8rHJC8Km1YEMQrx0lQq1QB5nLZ3CKh2buht0KY0ziT7saK3XZmDyRs4J7y3WZVJPeDwkB+CqfE4guddWeY1Ko/dyYtf9HxDSqnc84AuAKyR3KKVmSwn75z3GmP7SFRfVnLDC6xYVKwLQe2utZQAeSQNC2jyifcIwnFU+8WomuskWZwetgm2z/iLbaspbrSWlwmEpispr/f8W/EP2C8nUy5qJ62wFAAAAAElFTkSuQmCC">
-            <p>+55 19 99709-3745 <br> (Edmara - Gerente do Espaço Haras)</p>
+        <div class="footer-logo">
+            <img class="footer-logo" src="../common-assets/img/logo_branco.png" alt="">
+            <p>A elegância e os encantos do nobre Espaço Haras são capazes de eternizar um evento ou confraternização. O
+                cenário traz toda a magia da arquitetura rústica e impecável que torna o local único.</p>
         </div>
-        <div class="footer-contato">
-            <img class="footer-icone"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO1ZPWtUQRQdv0HR+IWosfYLO+3EoK0gRoNiY5NWEISorYVECxUUkaSxsFQQbE0i+AtiYTA2isZC3PXlfZwzbqGOXHeMi+zmzXv75r1FcuDCFu/M3DP33rkzs0ot4T9HFEV7AFwlOUnyDSzkN8kJAFcajcZu1asgeYjkFEnjaCL0oOoVGGNWAbgP4GcGEb9NOADuGWNWVioiDMNNJF9kFdAuOvPz8xsri0TGVEqLzktjzOrShUg6FSWiRczd0gs7T0241AzL3ACKTKk2NlGKiDiO93oUYcRK6TO22bmkyUeSQ7Vabb0YyUGSs47cy96FSOhdRIRhuLnddm0Fpol57l0IgLcOjgx14mutzzjwZ70LIRmnOSKp1Ilfr9c3OAiJvQsBoLsREgRBn0Nq6jKEfHJY0cFOfK31WZcaU77heLaalcL+lxtF0RYAcw78Se9CANxx3X6lsKUmxCQSjiIMyVvehZA84ehMbgNw3LsQY8w6AA2PIrQxZq0qAwCeehTyWJUFkqc9ptbJsq+3HzxEY07GVmUCwIiHaFxSZcMeNcICRUTS9VUVAHC7QCE3VVUgubP59tZ1bSQAtlcmxIq5XkA0rqmqUWve/j53IeKL1JvqBZC82IWQC6pXYIxZTXImh4jX3vuGMWYZgHeLOZIkydE/32utj2R565JvkyQ51sI/vBhfGrD4lFmIOOa4ogsP0CQfZYjGw5ZFW0HyVRpHfMosBMCYHWDUlZMkyTaSXx1E1OI43uo6LslRG5WxPDlft+lzIAsXwHmHlT2XZcw4jvdZbmCMWeNMtI9pQpzOMqHLMR/AszxjkpzOfDoG8MROOpJnUgA7OqRYLW8Hhz2kim9OBGlOcksD8IPkLpUTJE8Veddg8zj0HcA3pz+FAAzbSafyTtoy+XhLSj0o6l8AAMPFfpwCuXvbRjlTxD0crotMsl9SSsJX1N1AdhyxIsYKgqBPfLNp39/xQ3nOz1RQFQAuG1FLd+345Fk1mNYa4jjen6vplAyT1qxJ3rBCxlWPg393w9F2J933XdwpKjE0T8TLF4RorQeqdiqvaa0HKkiKJag0/ALBtZsoADVy3AAAAABJRU5ErkJggg==">
-            <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Liumeira - SP</p>
+        <div class="contact-us">
+            <h4>Entre em contato</h4>
+            <a class="footer-contact footer-contact-desktop" target="_blank"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img class="footer-icone" src="../common-assets/icones/whatsapp.png">
+                <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
+            </a>
+            <a class="footer-contact footer-contact-mobile" target="_blank" href="https://wa.me/5519997093745">
+                <img class="footer-icone" src="../common-assets/icones/whatsapp.png">
+                <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
+            </a>
+            <a class="footer-contact">
+                <img class="footer-icone" src="../common-assets/icones/local-branco.png">
+                <p>Rod. Dep. Laércio Côrte <br> <small>Km 136 - Piracicaba, Limeira - SP</small></p>
+            </a>
+            <a class="footer-contact" href="mailto:contato@espacoharas.com.br">
+                <img class="footer-icone" src="../common-assets/icones/email.png">
+                <p>contato@espacoharas.com.br</p>
+            </a>
         </div>
-        <div class="redes">
-            <img class="footer-icone"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nO2azU4UQRDH+6BeJKh3OBg/Ey9GwYNRD36cAV9FhReAKEfFg0JA3sEI0WUJmPgIAt7x5LDLbte/Zy7QpkitToSdz5Yeku2kEg5b3fXrququ6UKp3ugN/6PVal0jogkAKwA2iYgAWBcic20CqBHROK/lHADAEIC6K6NzwH0zxtwtDWCtPU1Eb4lo/7gh8Bdmn4hmrLWnCkHs7u5eALDqCwCHpc425faEj1BCune+WmvPZAbhcPJtNLrDvMmc2D5zAukgbNvtLCCVCykclloiBJ/dng38BGBAZCnpt1EUXUnKjQnPIAMdW4wxgykh9iIprGonBQTAlySP/HBgzA6AeQAjHKrW2rMsErajABYANLroLjGAQCynrLOV5JF2UQAiMgAmgyDoT0xEpVSj0TgHYEp0im5YOwmkKMR2/EjUWj8BMMe7xsVgrCCc1Vo//ueo3y66rnIJIoYcxHYURVeJaD2Dzlrn1GHdojDKFYiExoEnjDEPEmL/yFwyxtyXdYeJKPTpkcmOJ3JC/IEJw/CyrP3KF8gOJy3rZQmnBFnlOZrN5vm8m+EKZD6W2LaMaK0fyfoffICMiM5cWRAA72WusWMH4bwQnS0HIJtFaj3lAsRa2yf5ocuC8Bw8l7W270SDAGjxXEEQ9J/00NrwFloARkVn1kFovZO5nvoAWWAdrp3KgmitH8r6i74vxLUSIPXYhdj0AcIyxXphGF4E8KtkiTKdV98ZiBR6Q6zLBaB8VGXVD4wx92TdO76LRhsv43l3M75O1sMwvCQbMEhEP4usrVyCxGCGO/Nw7cRlBx+rfM/IXfOdT6dOYsc8UQgCKSBlPnU5NF5y0qqUIYk9TUTRf/nUJTePDw2pYsfa7fZ1rgBY+G8pChfznk4o8Pjg+znI5pDPSR4Zr4CBNotorZ91BeEHAd8GImetlxReK1UwFEVfGWPhdZOI9ipgrD1KxLb0toLAzFQY5LXKOrjxWMUQI6L1XK23WDO0Sk2flSyXbVfPcM/Oc3t6j8OpcHs6PrTWNwB89ABSI6JbyvXge4Y7RXz8yb9waIc7z3Nt8I1NRM8TW2u90Rvq2MZv02ZBeQmhibcAAAAASUVORK5CYII=">
-            <img class="footer-icone"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2Zu2tUURDGj68UPhCxsvABaqlNekHFVywkPkErO/EfsFEIChokjRba2AQLTbSJGglqYyc2BlGMvd0mm13P9527SZGRITe4hOzJPbtn997AfjCwxe7M/d2ZO3fOrDFddVVsichWAH0kB0m+JTlFsgxgXk0/k/wF4A3JBwDO6G9MESQi6/SCAIwCqJGUEAOQABgBcFp9mTzknLtE8nvoxXtskuT5jgHUarWDJD9FBFhuH5IkOdBWCJIXSFbaCCGp/bXWXo0OoPVLcqADALLMBqM9O+kD/TQHCEkbwpMoMNoq84Lgf7vXEoRz7koBIETNWnut6e4EwEYqj4TkM23Z6rdare4sl8vbK5XKjiRJ9llrD5EcWsVPNUmS/cEgEVvsRwC7VosH4HoGXxOhEBcjQYyLyMYsMTOCCMn+kFYb4409rSWU9eYFgHzL1MV0doqUjftZIQJBBMCpLA5HY4BYaw83ikGyF8DjdNhcsq8BIC+8EKVSaVszU+wKVhWRDR6IuVb8A3AistmXjb5IZTXpycZwjBgATjYESQ9FMYJ89tysP21/Brl4sosR5L1nbpuPdLPGfKX1OxLIeAOQnkj+RY/NvozMrCGQki8jc2sFBEAtNki/Dn/15tuOLP/ukpF8GAgy5yut2VAQa+0JE0EAXgbGnvaBTOUFojMUw2L/9DkbzwNERNYDYLT2qy+ZPECcc3ujHn8BnG3C4U2dn+qt0V4qPSL0rmA3QuPCNwHrIIbFHEuR2y8AisgWb5oBvFoDICNeiBTkZNFBrLXHVwVJ6/hHgUEmTVaRPFdUEAB9mUEirIPaBTJhQqWLM92KFwik4pzbY5qRDoQAFvIGAbDgnLvcFEQdzN28QUgOmBgC8ChHkKEoEHUwtwLKrGUQLMaKk4kGf73NdgBkJvOOt8VJ9V27QACMOed2m05JJ2XPmjMYBMAX3TubvOScO0Lyua5JmwDR99Sw+jBFkYj0WGuPAbitjaHBdzYBeA3gjrX2qP6m81faVVcmRP8AB4HTiOgD+ZAAAAAASUVORK5CYII=">
+        <div class="follow-us">
+            <h4>Siga-nos</h4>
+            <a class="follow-us-link" href="https://www.instagram.com/espacoharaspiracicaba/">
+                <img class="footer-icone" src="../common-assets/icones/instagram.png">
+                <p>@espacoharaspiracicaba</p>
+            </a>
+            <a class="follow-us-link" href=" https://www.facebook.com/espacoharas/"><img class="footer-icone"
+                    src="../common-assets/icones/facebook.png">
+                <p>espacoharas</p>
+            </a>
         </div>
     </footer>
     <div class="dev-contact">

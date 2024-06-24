@@ -27,6 +27,12 @@ body {
     min-width: 375px;
 }
 
+section {
+    width: 100vw;
+    padding: 4rem 0;
+    min-height: 70vh;
+}
+
 a {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -46,6 +52,7 @@ li {
 h1,
 h2,
 h3 {
+
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
@@ -85,10 +92,6 @@ main {
     background-size: cover;
 }
 
-.desktop,
-.tablet {
-    display: none;
-}
 
 .content {
     height: 2000px;
@@ -136,16 +139,30 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
+.desktop,
+.tablet {
+    display: none;
+}
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .tablet {
         display: flex;
+    }
+
+    .mobile {
+        display: none;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .desktop {
+        display: flex;
+    }
+
+    .tablet {
         display: flex;
     }
 
