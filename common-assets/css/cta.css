@@ -18,11 +18,16 @@
     gap: 1rem;
 }
 
-.cta img {
+.cta-logo {
+    width: 90%;
+    max-width: 250px;
+}
+
+.cta a img {
     width: 1.5rem;
 }
 
 .cta p {
-    font-weight: 200;
+    font-weight: 20;
     font-size: 1rem;
 }

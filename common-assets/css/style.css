@@ -31,6 +31,7 @@ section {
     width: 100vw;
     padding: 4rem 0;
     min-height: 70vh;
+    margin-top: -1px;
 }
 
 a {
@@ -83,16 +84,6 @@ main {
     background-color: var(--vermelho);
 }
 
-.parallax {
-    background-image: url('your-image.jpg');
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 .content {
     height: 2000px;
     padding: 10px;
@@ -110,6 +101,7 @@ main {
     padding: 10px;
     text-align: center;
     z-index: 100;
+
 }
 
 .voltar-ao-topo::before {
@@ -126,7 +118,7 @@ main {
 }
 
 .voltar-ao-topo img {
-    filter: drop-shadow(1px 1px 1px #00000062);
+    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.274));
 }
 
 .zoom {
@@ -135,7 +127,7 @@ main {
 }
 
 .zoom:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 

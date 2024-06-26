@@ -10,6 +10,7 @@
     gap: 4rem;
     min-height: 40vh;
     margin: auto;
+    margin-top: -1px;
 }
 
 .footer div {
@@ -78,20 +79,26 @@
 
 }
 
-
-
 .dev-contact {
     background-color: var(--preto-azulado);
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3rem;
     color: var(--branco);
     font-weight: 300;
-    font-size: clamp(.8rem, 2.5vw, 1rem);
+    font-size: clamp(.8rem, 2.5vw, .8rem);
     height: 3rem;
+    padding: 0 2rem;
+    margin-top: -1px;
 
+}
+
+.dev-info {
+    display: flex;
+    gap: 3rem;
 }
 
 .dev-contact p {

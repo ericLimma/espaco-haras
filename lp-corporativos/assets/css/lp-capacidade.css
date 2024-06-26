@@ -1,81 +1,87 @@
-.capacidade {
-    padding: 4rem 2rem;
-    text-align: center;
+.about-the-space {
+    width: 100vw;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    background-color: var(--preto-azulado);
+    color: var(--branco);
+    gap: 2rem;
+    padding: 3rem 0;
+
+}
+
+.capacity-card-container {
+    display: none;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.capacity-card-container:nth-child(2) {
+    background-color: var(--preto-azulado);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
-.capacidade h2 {
-    margin: auto;
-    text-align: center;
-}
-
-.capacidade-carrossel {
-    padding: 2rem;
-    width: 100%;
-    max-width: 600px;
-    height: 200px;
-
-}
-
-.carousel-item {
-    height: 200px;
-
-}
-
-.carousel-item-container {
+.capacity-card {
+    padding: 1rem;
     position: relative;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-}
-
-.capacidade-card {
-    align-items: center;
-    background-color: var(--cinza-escuro);
-    color: var(--branco);
     display: flex;
     flex-direction: column;
-    font-weight: 300;
-    font-size: .8rem;
-    height: 100%;
-    justify-content: space-around;
-    left: 10px;
-    padding: 1rem;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
     text-align: center;
-    top: 10px;
-    transform: rotate(0deg);
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+    /* Contexto de empilhamento */
+    margin: auto;
+}
+
+.capacity-card::after,
+.capacity-card::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+}
+
+.capacity-card::after {
+    top: 0;
+    left: 0;
+    border-left: 3px solid var(--vermelho);
+    border-top: 3px solid var(--vermelho);
+}
+
+.capacity-card::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid var(--vermelho);
+    border-right: 3px solid var(--vermelho);
+}
+
+.capacity-carrossel {
     width: 100%;
-
-}
-
-.capacidade-card p {
-    margin: 0;
-}
-
-.capacidade-card small {
-    font-size: .6rem;
-}
-
-.outline {
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--cinza-escuro);
-    transform: rotate(0deg);
-
-}
-
-.capacidade-card-icone {
-    width: 50px;
+    max-width: 600px;
+    margin-bottom: 2rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 1.3rem;
+}
+
+.capacity-card-icon {
+    width: 30%;
+}
+
+.diferenciais {
+    text-align: center;
 }
 
 .diferenciais-lista {
@@ -88,3 +94,35 @@
     gap: 1rem;
 
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .capacity-card-container {
+        display: flex;
+
+    }
+
+    .capacity-carrossel {
+        display: none;
+    }
+
+    .capacity-card::after {
+        top: -3px;
+        left: -3px;
+    }
+
+    .capacity-card::before {
+        bottom: -3px;
+        right: -3px;
+
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
