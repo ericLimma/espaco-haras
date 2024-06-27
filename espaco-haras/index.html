@@ -7,6 +7,21 @@
     <title>Espaço Haras</title>
     <link rel="shortcut icon" href="../common-assets/img/favicon.ico" type="image/x-icon">
 
+    <!-- Slick jS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,8 +30,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Scrool Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Css -->
     <link rel="stylesheet" href="../common-assets/css/style.css">
     <link rel="stylesheet" href="../common-assets/css/header.css">
     <link rel="stylesheet" href="../common-assets/css/button.css">
@@ -69,31 +86,31 @@
         </a>
         <div class=" off-screen-menu">
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nossa História</a></li>
+                <li><a href="#home">Home</a></li>
                 <li>
                     <div class="nav-accordion h-nav-accordion">
                         <input type="checkbox" id="accordion-h-nav">
                         <label class="accordion-label" for="accordion-h-nav">
                             Tipo de Evento
-                            <span class="nav-arrow">
+                            <span class="arrow nav-arrow">
                                 <img src="../common-assets/icones/down-gray.png" alt=""></span>
                         </label>
                         <div class="nav-accordion-content">
                             <ul class="nav-accordion-list">
-                                <li><a href="#">Casamento</a></li>
-                                <li><a href="#">Formatura</a></li>
-                                <li><a href="#">Aniversários e Outros</a></li>
-                                <li><a href="#">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-casamentos/">Casamento</a></li>
+                                <li><a target="_blank" href="../lp-corporativos/">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-formaturas/">Formatura</a></li>
+                                <li><a target="_blank" href="../lp-aniversarios/">Aniversários e Outros</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Tour 360</a></li>
-                <li><a href="#">Perguntas Frequentes</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#photo-gallery">Fotos</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
+                <li><a href="#tour-completo">Tour 360</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#footer">Contato</a></li>
                 <li>
                     <ul class="nav-icons">
                         <li><a class="nav-link nav-link-mobile" href="https://wa.me/5519997093745"><img
@@ -138,19 +155,20 @@
                         </label>
                         <div class="nav-accordion-content">
                             <ul class="nav-accordion-list">
-                                <li><a href="#">Casamento</a></li>
-                                <li><a href="#">Formatura</a></li>
-                                <li><a href="#">Aniversários e Outros</a></li>
-                                <li><a href="#">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-casamentos/">Casamento</a></li>
+                                <li><a target="_blank" href="../lp-corporativos/">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-formaturas/">Formatura</a></li>
+                                <li><a target="_blank" href="../lp-aniversarios/">Aniversários e Outros</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Tour 360</a></li>
-                <li><a href="#">Perguntas Frequentes</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#photo-gallery">Fotos</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
+                <li><a href="#tour-completo">Tour 360</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#footer">Contato</a></li>
                 <li>
                     <ul class="nav-icons">
                         <li><a class="nav-link nav-link-mobile" href="https://wa.me/5519997093745"><img
@@ -272,50 +290,16 @@
                 <a href="#" class="btn-vermelho text-uppercase">agende sua visita</a>
 
                 </section>
-                <section class="photo-gallery">
-                    <h2>Galeria de Fotos</h2>
-                    <div id="carouselExampleAutoplaying" class="carrossel carousel slide" data-bs-ride="carousel"
-                        data-aos="fade-up">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/carrossel_1.jpg" class="d-block zoom" alt="">
 
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/carrossel_2.jpg" class="d-block zoom" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/carrossel_3.jpg" class="d-block zoom" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/carrossel_4.jpg" class="d-block zoom" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/carrossel_5.jpg" class="d-block zoom" alt="">
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="photo-gallery-container">
-                        <img src="assets/img/carrossel_1.jpg" data-aos="fade-up" data-aos-delay="110" class="zoom"
-                            alt="">
-                        <img src="assets/img/carrossel_2.jpg" data-aos="fade-up" data-aos-delay="150" class="zoom"
-                            alt="">
-                        <img src="assets/img/carrossel_3.jpg" data-aos="fade-up" data-aos-delay="130" class="zoom"
-                            alt="">
-                        <img src="assets/img/carrossel_4.jpg" data-aos="fade-up" data-aos-delay="150" class="zoom"
-                            alt="">
-                        <img src="assets/img/carrossel_5.jpg" data-aos="fade-up" data-aos-delay="160" class="zoom"
-                            alt="">
+                <section class="photo-gallery" id="photo-gallery">
+                    <h2 class="text-uppercase">Galeria de Fotos</h2>
+                    <div class="carousel-container responsive">
+                        <img class="img-container" src="assets/img/carrossel_1.jpg" alt="">
+                        <img class="img-container" src="assets/img/carrossel_2.jpg" alt="">
+                        <img class="img-container" src="assets/img/carrossel_3.jpg" alt="">
+                        <img class="img-container" src="assets/img/carrossel_4.jpg" alt="">
+                        <img class="img-container" src="assets/img/carrossel_5.jpg" alt="">
+
                     </div>
                 </section>
                 <section id="diferenciais" class="diferenciais">
@@ -412,10 +396,9 @@
                                 O espaço possui estacionamento de fácil acesso disponível para os convidados?
                                 <span class="arrow">
                                     <img src="../common-assets/icones/down-branco.png">
-
                                 </span>
                             </label>
-                            <div class="accordion-content\">
+                            <div class="accordion-content">
                                 Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500
                                 carros.
                             </div>
@@ -543,6 +526,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <script src="../common-assets/js/carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="../common-assets/js/aos_init.js"></script>
     <script src="../common-assets/js/arrow_animation.js"></script>
