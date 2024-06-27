@@ -85,6 +85,16 @@
 
 }
 
+.button.btn-golden {
+    --btn-color: var(--dourado);
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+    backdrop-filter: blur(1px);
+    text-shadow: none;
+    box-shadow: none;
+
+}
+
 .button:hover {
     color: var(--branco);
     backdrop-filter: none;

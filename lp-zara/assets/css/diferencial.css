@@ -1,0 +1,30 @@
+.diferencial {
+    padding: 1rem 2rem;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 1rem;
+    width: 100vw;
+    max-width: 800px;
+
+}
+
+.diferencial h2 {
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: clamp(2.5rem, 2.5vw, 1.6rem);
+}
+
+.diferencial-text {
+    width: 100%;
+    text-align: justify;
+}
+
+.diferencial .button {
+    margin: auto;
+}

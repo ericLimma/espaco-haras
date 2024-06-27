@@ -1,0 +1,26 @@
+#home {
+    position: relative;
+    min-height: 0;
+    padding: 2rem 0 0;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid var(--dourado);
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.home-capa {
+    width: 100%;
+    height: 25vh;
+    background: url("../img/capa-zara.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
