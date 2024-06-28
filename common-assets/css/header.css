@@ -14,7 +14,7 @@
     background-color: var(--bg-color);
     height: 60px;
     z-index: 25;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.274);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.144);
 }
 
 .header.header-dark {
