@@ -26,6 +26,13 @@ body {
     align-items: center;
     width: 100vw;
     min-width: 375px;
+    font-feature-settings: "liga", "clig", "calt";
+    font-feature-settings: "liga", "clig", "calt";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Para WebKit (Chrome, Safari) */
+    -moz-osx-font-smoothing: grayscale;
+    /* Para Firefox no macOS */
 }
 
 section {

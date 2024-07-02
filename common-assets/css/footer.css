@@ -13,6 +13,10 @@
     margin-top: -1px;
 }
 
+.footer-dark {
+    background-color: var(--preto-azulado);
+}
+
 .footer div {
     width: 100%;
     max-width: 375px;
@@ -114,7 +118,9 @@
     padding: 2rem;
     margin-top: -1px;
 }
-
+.dev-contact-preto{
+    background-color: var(--preto);
+}
 .dev-info {
     display: flex;
     gap: 3rem;

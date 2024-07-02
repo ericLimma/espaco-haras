@@ -55,6 +55,12 @@ h1 {
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
 }
+.btn-danger{
+    background-color: #ff0000cc;
+}
+.btn-danger::before{
+    background-color: #ff0000;
+}
 
 .button:hover::before {
     transform: scaleX(1);
