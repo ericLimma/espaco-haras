@@ -2,14 +2,15 @@ body {
     background-color: var(--branco)
 }
 
+/* 
 .container {
     text-align: center;
-    background: #fff;
+    background: #e90f0f;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+ */
 h1 {
     margin-bottom: 20px;
 }

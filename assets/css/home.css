@@ -1,0 +1,90 @@
+#home {
+    height: calc(100vh - 60px);
+    position: relative;
+    height: calc(100vh - 60px);
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.home-container {
+    width: 100vw;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-capa {
+    width: 100%;
+    max-height: 500px;
+    background: url("../img/capa.jpg") center/cover no-repeat;
+    aspect-ratio: 1 / 1;
+}
+
+.home-card {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-top: -150px;
+    background-color: var(--branco);
+    padding: 2rem;
+    font-size: .8rem;
+    gap: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.home-title h1 {
+    font-size: 1.6rem;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .home-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .home-capa {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        max-height: none;
+    }
+
+    .home-card {
+        margin: 0;
+        margin-right: -15%;
+        transform: translateY(50px);
+    }
+
+}

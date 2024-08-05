@@ -27,19 +27,17 @@
 }
 
 .capacity-card {
-    padding: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
+    font-size: .9rem;
     text-align: center;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     z-index: 0;
-    /* Contexto de empilhamento */
     margin: auto;
 }
 

@@ -129,6 +129,7 @@ li,
     transition: .6s ease-in-out;
     top: 0;
     width: 80%;
+
 }
 
 .off-screen-menu.active {
@@ -212,12 +213,14 @@ nav {
 }
 
 .nav-accordion-content {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height .6s ease-in-out;
     background-color: var(--bg-color);
     position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    opacity: 0;
 }
 
 .nav-accordion-list {
@@ -240,7 +243,7 @@ nav {
 
 [id^=accordion]:checked~.nav-accordion-content {
     max-height: 1000px;
-
+    opacity: 1;
 }
 
 /* icones */

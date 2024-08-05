@@ -1,26 +1,583 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Espaço de eventos ideal para casamentos, aniversários, eventos corporativos e muito mais. Oferecemos um ambiente elegante e versátil para tornar seu evento inesquecível.">
+    <meta name="keywords"
+        content="espaço para eventos, casamentos, aniversários, eventos corporativos, aluguel de espaço, eventos especiais, decoração de eventos, buffet, salão de festas">
+    <meta name="author" content="Espaço Haras">
+    <meta property="og:title" content="Espaço de Eventos para Casamentos, Aniversários e Mais | Espaço Haras">
+    <meta property="og:description"
+        content="Encontre o espaço perfeito para seu evento. Oferecemos soluções para casamentos, aniversários e eventos corporativos com uma decoração sofisticada e serviços personalizados.">
+    <meta property="og:image" content="assets/img/capa.jpg">
+    <meta property="og:url" content="https://espacoharas.com.br/">
+    <meta property="og:type" content="website">
 
+
+    <title>Espaço Haras | Eventos</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="common-assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="common-assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="common-assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="common-assets/img/favicon/site.webmanifest">
+    <!-- Slick jS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Scrool Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../common-assets/css/style.css">
+    <link rel="stylesheet" href="../common-assets/css/header.css">
+    <link rel="stylesheet" href="../common-assets/css/button.css">
+    <link rel="stylesheet" href="../common-assets/css/footer.css">
+    <link rel="stylesheet" href="../common-assets/css/scrool-bar.css">
+    <link rel="stylesheet" href="../common-assets/css/whatsapp-button.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/evento.css">
+    <link rel="stylesheet" href="assets/css/photo-gallery.css">
+    <link rel="stylesheet" href="assets/css/diferenciais.css">
+    <link rel="stylesheet" href="assets/css/alta-gastronomia.css">
+    <link rel="stylesheet" href="assets/css/realize.css">
+    <link rel="stylesheet" href="assets/css/mapa.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+
+    <script defer src="../common-assets/js/voltarAoTopo.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Bem-vindo à Página Principal</h1>
-        <div class="button-container">
-            <a href="espaco-haras/" class="button" target="_blank"><span>Espaço Haras</span></a>
-            <a href="espaco-haras/formulario.html" class="button btn-danger" target="_blank"><span>Formulário de Orçamento</span></a>
-            <a href="lp-casamentos/" class="button" target="_blank"><span>Landing Page Casamentos</span></a>
-            <a href="lp-corporativos/" class="button" target="_blank"><span>Landing Page Corporativos</span></a>
-            <a href="lp-formaturas/" class="button" target="_blank"><span>Landing Page Formaturas</span></a>
-            <a href="lp-zara/" class="button" target="_blank"><span>Zara Buffet</span></a>
+    <div class="contact tablet desktop">
+        <div>
+            <a class="contact-link contact-link-desktop" target="_blank"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img src="../common-assets/icones/whatsapp.png" alt="">
+                <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
+            </a>
+            <a class="contact-link contact-link-mobile" target="_blank" href="https://wa.me/5519997093745">
+                <img src="../common-assets/icones/whatsapp.png" alt="">
+                <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
+            </a>
+            <a class="contact-link" href="mailto:contato@espacoharas.com.br" target="_blank">
+                <img src="../common-assets/icones/email.png" alt="">
+                <p>contato@espacoharas.com.br</p>
+            </a>
+        </div>
+        <div>
+            <a href=" https://www.facebook.com/espacoharas/" target="_blank">
+                <img src="../common-assets/icones/facebook.png" alt="">
+            </a>
+            <img src="../common-assets/icones/linkedin.png" alt="">
+            <a target="_blank" href="https://www.instagram.com/espacoharaspiracicaba/">
+                <img src="../common-assets/icones/instagram.png" alt="">
+            </a>
+        </div>
+
+    </div>
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="../common-assets/img/logo.png" alt="">
+        </a>
+        <div class=" off-screen-menu">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <div class="nav-accordion h-nav-accordion">
+                        <input type="checkbox" id="accordion-h-nav">
+                        <label class="accordion-label" for="accordion-h-nav">
+                            Tipo de Evento
+                            <span class="arrow nav-arrow">
+                                <img src="../common-assets/icones/down-gray.png" alt=""></span>
+                        </label>
+                        <div class="nav-accordion-content">
+                            <ul class="nav-accordion-list">
+                                <li><a target="_blank" href="../lp-casamentos/">Casamento</a></li>
+                                <li><a target="_blank" href="../lp-corporativos/">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-formaturas/">Formatura</a></li>
+                                <li><a target="_blank" href="../lp-aniversarios/">Aniversários e Outros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#photo-gallery">Fotos</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
+                <li><a href="#tour-completo">Tour 360</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#footer">Contato</a></li>
+                <li>
+                    <ul class="nav-icons">
+                        <li><a class="nav-link nav-link-mobile" href="https://wa.me/5519997093745" target="_blank"><img
+                                    src="../common-assets/icones/whatsapp.png"></a>
+                        </li>
+                        <li><a class="nav-link nav-link-desktop" target="_blank"
+                                href="https://web.whatsapp.com/send?phone=5519997093745"><img
+                                    src="../common-assets/icones/whatsapp.png"></a>
+                        </li>
+                        <li><a class="nav-link" href="https://www.instagram.com/espacoharaspiracicaba/"
+                                target="_blank"><img src="../common-assets/icones/instagram.png"></a>
+                        </li>
+                        <li><a class="nav-link" href="mailto:contato@espacoharas.com.br" target="_blank"><img
+                                    src="../common-assets/icones/email-circle.png"></a>
+                        </li>
+                        <li><a class="nav-link" href=" https://www.facebook.com/espacoharas/" target="_blank"><img
+                                    src="../common-assets/icones/facebook.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="horizontal-menu">
+            <ul class="horizontal-menu-list">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <div class="nav-accordion">
+                        <input type="checkbox" id="accordion-nav">
+                        <label for="accordion-nav">
+                            Tipo de Evento
+                            <span class="nav-arrow">
+                                <img src="../common-assets/icones/down-gray.png">
+                            </span>
+                        </label>
+                        <div class="nav-accordion-content">
+                            <ul class="nav-accordion-list">
+                                <li><a target="_blank" href="../lp-casamentos/">Casamento</a></li>
+                                <li><a target="_blank" href="../lp-corporativos/">Corporativo</a></li>
+                                <li><a target="_blank" href="../lp-formaturas/">Formatura</a></li>
+                                <li><a target="_blank" href="../lp-aniversarios/">Aniversários e Outros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#photo-gallery">Fotos</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
+                <li><a href="#tour-completo">Tour 360</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#footer">Contato</a></li>
+                <li>
+                    <ul class="nav-icons">
+                        <li><a target="_blank" class="nav-link nav-link-mobile" href="https://wa.me/5519997093745"><img
+                                    src="../common-assets/icones/whatsapp.png"></a>
+                        </li>
+                        <li><a target="_blank" class="nav-link nav-link-desktop"
+                                href="https://web.whatsapp.com/send?phone=5519997093745"><img
+                                    src="../common-assets/icones/whatsapp.png"></a>
+                        </li>
+                        <li><a target="_blank" class="nav-link"
+                                href="https://www.instagram.com/espacoharaspiracicaba/"><img
+                                    src="../common-assets/icones/instagram.png"></a>
+                        </li>
+                        <li><a target="_blank" class="nav-link" href="mailto:contato@espacoharas.com.br"><img
+                                    src="../common-assets/icones/email-circle.png"></a>
+                        </li>
+                        <li><a target="_blank" class="nav-link" href=" https://www.facebook.com/espacoharas/"><img
+                                    src="../common-assets/icones/facebook.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="whatsapp-btn" data-aos="fade-up">
+            <a target="_blank" class="whatsapp-link whatsapp-link-desktop"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img class="whatsapp-img" src="../common-assets/icones/whatsapp.png">
+                <p class="text-light">Como podemos ajudar?</p>
+            </a>
+            <a target="_blank" class="whatsapp-link whatsapp-link-mobile" href="https://wa.me/5519997093745">
+                <img class="whatsapp-img" src="../common-assets/icones/whatsapp.png">
+                <p class="text-light">Como podemos ajudar?</p>
+            </a>
+        </div>
+        <section id="home" class="home">
+            <div class="home-container">
+                <div class="home-capa" data-aos="fade-up"></div>
+                <article class="home-card" data-aos="fade-down">
+                    <div class="home-title">
+                        <h2 class="text-uppercase">Bem-vindo ao</h2>
+                        <h1 class="text-uppercase">Espaço Haras</h1>
+                    </div>
+                    <p class="home-text">Realizando sonhos há mais de 10 anos em Piracicaba!</p>
+                    <p class="home-text">Com 24 m², oferecemos ambientes acolhedores e versáteis para tornar o seu
+                        evento inesquecível!</p>
+                    <p class="home-text">Seja qual for o seu ideal , no Espaço Haras tudo é possível!</p>
+                    <p class="home-text">A antiga construção, remota à arquitetura de 1930, oferecendo aos convidados o
+                        charme do passado e a
+                        modernidade do presente com os serviços e qualidade oferecidos.</p>
+                    <a href="formulario.html" target="_blank" class="zoom btn-preto text-uppercase">Solicite um
+                        Orçamento</a>
+                </article>
+            </div>
+        </section>
+        <div class="voltar-ao-topo-container">
+            <div class="voltar-ao-topo" id="btnVoltarAoTopo" data-aos="fade-up">
+                <img src="../common-assets/icones/up.png" alt="Voltar ao Topo" ">
+            </div>
+        </div>
+        <section id=" tipo-de-evento" class="tipo-de-evento">
+                <h2 class="text-uppercase text-center" data-aos="fade-up">
+                    Tipo de Evento
+                    <div class="detalhe-div"></div>
+                </h2>
+                <p class="texto-chamada" data-aos="fade-up">Todos os espaços do Espaço Haras são versáteis e foram
+                    projetados para atender as
+                    mais diferentes
+                    necessidades e tipos de eventos, com layouts 100% personalizáveis.
+                </p>
+                <div class="evento-container">
+                    <div class="casamento-container card-container zoom" data-aos="fade-up" data-aos-delay="200">
+                        <div class="evento-card">
+                            <h3>CASAMENTO</h3>
+                            <p>Sua cerimônia e celebração se tornam realidade no Espaço Haras!
+                                Personalize cada detalhe, desde o layout até o tema, em espaços diversos - do mais
+                                íntimo ao
+                                grandioso, até cerimônias ao ar livre.
+                            </p>
+                            <a target="_blank" href="lp-casamentos/"
+                                class="evento-btn btn btn-outline-light text-uppercase">Saiba
+                                Mais</a>
+                        </div>
+                    </div>
+                    <div class="corporativo-container card-container zoom" data-aos="fade-up" data-aos-delay="150">
+                        <div class="evento-card">
+                            <h3>CORPORATIVO</h3>
+                            <p>Os melhores eventos corporativos acontecem aqui!
+                                Com ampla área de estacionamento, jardim open air e flexibilidade de layout conforme sua
+                                necessidade.
+                                Seja palesta, coworking, confraternizações, treinamentos e muito mais.
+                            </p>
+                            <a target="_blank" href="lp-corporativos/"
+                                class="evento-btn btn btn-outline-light text-uppercase">Saiba
+                                Mais</a>
+                        </div>
+                    </div>
+                    <div class="formatura-container card-container zoom" data-aos="fade-up" data-aos-delay="100">
+                        <div class="evento-card">
+                            <h3>FORMATURA</h3>
+                            <p>Sua formatura ainda mais inesquecível!
+                                Com opções de layout que possibilitam o espaço para o que desejar: bartender, palco para
+                                banda/DJ,
+                                iluminação, pista de dança, espaço para cabine de fotos, ilha de buffet e muito mais..
+                                Cada detalhe é pensado para uma experiência única.
+                            </p>
+                            <a target="_blank" href="lp-formaturas/"
+                                class="evento-btn btn btn-outline-light text-uppercase">Saiba
+                                Mais</a>
+                        </div>
+                    </div>
+                    <div class="aniversario-container card-container zoom" data-aos="fade-up" data-aos-delay="200">
+                        <div class="evento-card">
+                            <h3>ANIVERSÁRIO & OUTROS</h3>
+                            <p>O cenário perfeito para a celebração dos seus momentos mais importantes.
+                                Seja um aniversário, celebração, debutante ou outra festividade/evento, a versatilidade
+                                e
+                                personalização se encontram, tornando o seu ideal possível.
+                            </p>
+                            <a target="_blank" href="lp-aniversarios/"
+                                class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="lp-aniversarios/" class="btn-vermelho text-uppercase">agende sua visita</a>
+
+                </section>
+
+                <section class="photo-gallery" id="photo-gallery">
+                    <h2 class="text-uppercase">Galeria de Fotos</h2>
+                    <div class="carousel-container responsive">
+                        <img class="img-container" src="assets/img/carousel/carrossel-1.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-2.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-3.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-4.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-5.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-6.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-7.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-8.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-9.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-10.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-11.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-12.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-13.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-15.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-16.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-17.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-18.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-19.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-21.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-22.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-23.jpg" alt="">
+                        <img class="img-container" src="assets/img/carousel/carrossel-24.jpg" alt="">
+                    </div>
+                </section>
+                <section id="diferenciais" class="diferenciais">
+                    <img src="assets/img/img-diferenciais.jpg" data-aos="fade-right" data-aos-delay="150" alt=""
+                        class="img-diferenciais">
+                    <div class="card-diferenciais" data-aos="fade-left" data-aos-delay="150">
+                        <h2 class="text-uppercase">diferenciais
+                            <div class="detalhe-div"></div>
+                        </h2>
+                        <p>O que você adquire ao fechar um pacote conosco?</p>
+                        <img class="card-diferenciais-img" src="assets/img/outros_serviços.png" alt="">
+                    </div>
+                </section>
+                <section id="alta-gastronomia" class="alta-gastronomia">
+                    <div class="alta-gastronomia-container">
+                        <h2 class="text-uppercase detalhe-vertical title-mobile">Alta Gastronomia</h2>
+                        <div class="text-alta">
+                            <img class="alta-gastronomia-img zoom" data-aos="fade-up" data-aos-delay="100"
+                                src="assets/img/alta_gastronomia.jpg" alt="">
+                            <div data-aos="fade-up" data-aos-delay="180">
+                                <h2 class="text-uppercase detalhe-vertical title-desktop">Alta Gastronomia</h2>
+                                <p>Construímos o banquete ideal com seu toque especial.
+                                    Com uma ampla variedade de opções, desde ilhas de frios, finger foods, jantares,
+                                    ilha de massas até food trucks e costelada no chão.
+                                    Elaboramos o cardápio de maneira altamente exclusiva e personalizada, portanto, a
+                                    proposta se ajusta exatamente às suas preferências.
+                                </p>
+                                <a target="_blank" href="https://zarabuffet.com.br/"
+                                    class="btn text-uppercase btn-preto ">CONHEÇA O
+                                    NOSSO <br>ZARA BUFFET</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="realize" class="realize">
+                    <h2 class="realize-title detalhe-vertical">REALIZE SEU EVENTO
+                        CONOSCO!
+                    </h2>
+                    <div>
+                        <p>Excelência, infraestrutura, tradição, referência e versatilidade tornam o Espaço Haras o
+                            local ideal para seu evento!
+                        </p>
+                        <p>
+                            Seja um casamento, aniversário, palestra corporativa, formatura e muito mais. Aqui sonhos se
+                            tornam realidade, eventos são potencializados e celebrações se tornam memoráveis.
+                        </p>
+                    </div>
+                    <div class="realize-mosaico">
+                        <img class="zoom" src="assets/img/realize_3.jpg" data-aos="fade-down" data-aos-delay="100"
+                            alt="">
+                        <img class="zoom" src="assets/img/realize_4.jpg" data-aos="fade-down" data-aos-delay="200"
+                            alt="">
+                        <img class="zoom" src="assets/img/realize_2.jpg" data-aos="fade-up" data-aos-delay="150" alt="">
+                        <img class="zoom" src="assets/img/realize_1.jpg" data-aos="fade-up" data-aos-delay="180" alt="">
+                    </div>
+                    <a target="_blank" href="formulario.html" class="btn btn-vermelho text-uppercase">Solicite um
+                        Orçamento</a>
+
+                    <div class="tour-completo" id="tour-completo">
+                        <h2 class="text-uppercase">tour completo <div class="detalhe-div"></div>
+                        </h2>
+                        <iframe src="https://www.youtube.com/embed/JIh6xmrwyxY?si=v8KUv0v4oDyWurbB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </section>
+                <section id="onde-estamos" class="onde-estamos" data-aos="fade-up">
+                    <h2 class="text-uppercase">Onde estamos?<div class="detalhe-div"></div>
+                    </h2>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8003104095037!2d-47.596177824695985!3d-22.698476479402224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62e7265c16c91%3A0x2eb14df4bf9d5544!2sESPA%C3%87O%20HARAS!5e0!3m2!1spt-BR!2sbr!4v1716854276847!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="endereco">
+                        <img class="mapa-icone"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERUlEQVR4nO1aS6gdRRBtEzWSKKiPy/Q5fT+Cz4AvIshDMKCC5ulCEPyh4kIkEReiRhGMoBFc6MbgB/G/iAuNxscLiUZ04QdE8EOCSowSE8MziHGhYlRExdyR0hoYh/ndmZ43V7Cg4NJTXV2nq7q7uvoa8z+l0/T09FEkrya5CcBekr8I6+/nSV4lMmacyVp7Ocn9JMMC3g/gUjOGdATJh2OG7gKwNgiCFUEQLFNeIW3yLZID8KD0NeNCJB9Sw34neaMxZlGO+GIAN6ms9NlgxoEAXBKBcM6dX7YfyVURGJIXmzZpamrqaAAH1BjxxEgE4GbtO9/qBuCcuyJaExIyiW9dALMkf1Kec86dklCxmOSnosNae5lpiwC8qGG1NgXE98ndStq63a5LyN6m3zeZtgjAHp3NqUT7rBr+ihguDGC7tm2OywZBcJq271kww621A5JbAHwXn+mJiYnj4nIaSmF89kn21OAf47LSN8VzHyV1eiWSr6UdcP1+/4SE3CFplxArAtLtdk9M0wngiSaB/Jw2qLX2zITcnBqzXcDomnlV22bjstI34/QfkpyRDcE5dxbJ20k+DeBtkjsAvExyZSUgAL7OGPTuBJDlyfCLLfbJhM47slIZAD9E3s34/huA6SpANmQo/CQpqwt8sxpySDyRBKGgPyyRm4U5YDZWAXJBjsJzRtVH8ow6IPgPv1M4kHPudJKPAHiP5Jckd+co3FphYl7wAGRr0WzdpwuurMJhctHnkbX2VJJ/1gUC4PHMQXq93skVlb41gje2efBGSPK6pga5skzm6wlEGATBSVkg1tRUfnAwGByfBUIuWbreaoMAsC0vpP5OL2ryU0WXsBp8WA9XOSxT6UgA73ty+RDA2SkgVoohNb1waxaAKKTu9RW3OuAXnU7n2Jj+pSQ/86D7rkwQElJy3PsEomCejXnjGU96n8vzxkbfIGJgrpFalkedn+cB2dsUkCjX8qhvKBGUBeSGirvVvJwJuqXOkPyqwQkJS91V5HKkW+Mou8qqskmlZz4s4WpKlD1L5UDxXSnr2togDyUfzAUD4LGSymZa8kioIbYvF4geXGWUzYvx4hkAFy7UGuG/a8e5Hlm6kAZVBPFrv99HLhD1io+cq0m+vxCEAvGRTjTFB0vXvUg+OsZhdb0pSxJ/DZ/4VXlXsmBeSLIbkVw/BsaHETvnLjJVKSr9t80A3qwMQoFsGRNvnFcLiFYM2/bGx7VAKJA32gZCcr0PIGVzryZ5Z+2nbP03w1zN0DiQ9hzntfBQFkz0pFYFRKfTsfIK7Jy7tqCGHObwbuOJpGT0wIg14TDl/X2R/F8leoMsORl/kFxtfJK19lyS9wC4E8CTAD7QgdIMeKlgYtYUpf8AvkmrkzVCg8HgGHkj0UzgdXndkkdNAP2ivpOTk0sA3ELy2xQg7/Z6PZr/EgVBsAzAOt0YhNfJumrbrgWlvwCojcwxK4K1xwAAAABJRU5ErkJggg==">
+                        <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Limeira - SP</p>
+                    </div>
+                </section>
+                <section class="faq" id="faq">
+                    <h2 class="text-uppercase" data-aos="fade-up" data-aos-delay="150">perguntas <br>frequentes</h2>
+                    <div class="accordions " data-aos="fade-up" data-aos-delay="130">
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-1">
+                            <label for="accordion-1">
+                                O espaço possui estacionamento de fácil acesso disponível para os convidados?
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500
+                                carros.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-2">
+                            <label for="accordion-2">
+                                O espaço possui equipe de segurança e limpeza durante o evento?
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, é incluído em proposta uma equipe completa e qualificada de seguranças,
+                                banheiristas e
+                                vassourinhas ao longo de todo o evento.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-3">
+                            <label for="accordion-3">
+                                O espaço possui acessibilidade para PCD?
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, o espaço é completo e acessível
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-4">
+                            <label for="accordion-4">
+                                O local possui opções de espaços cobertos para dias de chuva?
+
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, o Espaço Haras oferece ambientes cobertos e climatizados.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-5">
+                            <label for="accordion-5">
+                                O espaço possui a possibilidade de Cerimônia no local?
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, o espaço oferece diversos ambientes que possibilitam layouts para realização de
+                                cerimônias.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-6">
+                            <label for="accordion-6">
+                                O espaço possuí Jardim ao Ar Livre para atividades recreativas, cerimônias e
+                                entretenimento
+                                adicional?
+                                <span class="arrow">
+                                    <img src="../common-assets/icones/down-branco.png">
+                                </span>
+                            </label>
+                            <div class="accordion-content">
+                                Sim, possuímos Jardim ao ar livre amplo para a realização de diversas atividades.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer-logo" data-aos="fade-up" data-aos-delay="110">
+            <img class="footer-logo" src="../common-assets/img/logo_branco.png" alt="">
+            <p>A elegância e os encantos do nobre Espaço Haras são capazes de eternizar um evento ou confraternização. O
+                cenário traz toda a magia da arquitetura rústica e impecável que torna o local único.</p>
+        </div>
+        <div class="footer-nav" data-aos="fade-up" data-aos-delay="150">
+            <h4>Nossos Serviços</h4>
+            <ul class="footer-nav-list">
+                <li><a class="footer-link" href="#home">Home</a></li>
+                <li><a class="footer-link" href="#photo-gallery">Fotos</a></li>
+                <li><a class="footer-link" href="#diferenciais">Diferenciais</a></li>
+                <li><a class="footer-link" href="#alta-gastronomia">Alta Gastronomia</a></li>
+                <li><a class="footer-link" href="#tour-completo">Tour 360</a></li>
+                <li><a class="footer-link" href="#faq">Perguntas Frequentes</a></li>
+            </ul>
+        </div>
+        <div class="contact-us" data-aos="fade-up" data-aos-delay="150">
+            <h4>Entre em contato</h4>
+            <a target="_blank" class="footer-contact footer-contact-desktop"
+                href="https://web.whatsapp.com/send?phone=5519997093745">
+                <img class="footer-icone" src="../common-assets/icones/whatsapp.png">
+                <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
+            </a>
+            <a target="_blank" class="footer-contact footer-contact-mobile" href="https://wa.me/5519997093745">
+                <img class="footer-icone" src="../common-assets/icones/whatsapp.png">
+                <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
+            </a>
+            <a target="_blank" class="footer-contact">
+                <img class="footer-icone" src="../common-assets/icones/local-branco.png">
+                <p>Rod. Dep. Laércio Côrte <br> <small>Km 136 - Piracicaba, Limeira - SP</small></p>
+            </a>
+            <a target="_blank" class="footer-contact" href="mailto:contato@espacoharas.com.br">
+                <img class="footer-icone" src="../common-assets/icones/email.png">
+                <p>contato@espacoharas.com.br</p>
+            </a>
+        </div>
+        <div class="follow-us" data-aos="fade-up" data-aos-delay="130">
+            <h4>Siga-nos</h4>
+            <a target="_blank" class="follow-us-link" href="https://www.instagram.com/espacoharaspiracicaba/">
+                <img class="footer-icone" src="../common-assets/icones/instagram.png">
+                <p>@espacoharaspiracicaba</p>
+            </a>
+            <a target="_blank" class="follow-us-link" href=" https://www.facebook.com/espacoharas/"><img
+                    class="footer-icone" src="../common-assets/icones/facebook.png">
+                <p>espacoharas</p>
+            </a>
+        </div>
+    </footer>
+    <div class="dev-contact">
+        <p>Copyright © 2024 Espaço Haras. Todos os direitos reservados.</p>
+        <div class="dev-info">
+            <p>Desenvolvido por: <a href="#">Erick Lima</a></p>
+            <div class="dev-medias">
+                <img src="../common-assets/icones/instagram.png" alt="" srcset="">
+                <img src="../common-assets/icones/linkedin.png" alt="" srcset="">
+                <img src="../common-assets/icones/git.png" alt="" srcset="">
+                <img src="../common-assets/icones/whatsapp.png" alt="" srcset="">
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="../common-assets/js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="../common-assets/js/aos_init.js"></script>
+    <script src="../common-assets/js/arrow_animation.js"></script>
+    <script src="../common-assets/js/nav.js"></script>
+
 </body>
 
 </html>

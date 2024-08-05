@@ -35,7 +35,7 @@ $body = "<body style='font-family: Arial, sans-serif; line-height: 1.6; width:10
     <p><strong>Mensagem:</strong></p>
     <p>$mensagem</p>
     <div style='margin-top: 20px; font-size: 0.9em;'>
-        <p>Enviado através do seu site. Visite <a href='https://restaurantefassbier.com.br/'>https://restaurantefassbier.com.br/</a>.</p>
+        <p>Enviado através do seu site. Visite <a href='https://espacoharas.com.br'>https://espacoharas.com.br</a>.</p>
     </div>
 </div>
 </body>";
@@ -55,8 +55,8 @@ try {
     $mail->SMTPSecure = 'ssl';
 
     // Destinatários
-    $mail->setFrom('contato@restaurantefassbier.com.br', 'Restaurante Fassbier');
-    $mail->addAddress('contato@restaurantefassbier.com.br', 'Restaurante Fassbier');
+    $mail->setFrom('contato@espacoharas.com.br', 'Espaço Haras');
+    $mail->addAddress('contato@espacoharas.com.br', 'Espaço Haras');
 
     // Conteúdo
     $mail->isHTML(true);
