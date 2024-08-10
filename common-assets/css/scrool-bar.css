@@ -34,3 +34,7 @@
     height: 8px;
     /* Altura da barra de rolagem horizontal */
 }
+
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
