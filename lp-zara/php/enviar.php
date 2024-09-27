@@ -1,5 +1,6 @@
 <?php
 // Inicia a sessão para garantir que não haja saídas antes do cabeçalho
+
 ob_start();
 
 include('includes/config.php');
@@ -35,7 +36,7 @@ $body = "<body style='font-family: Arial, sans-serif; line-height: 1.6; width:10
     <p><strong>Mensagem:</strong></p>
     <p>$mensagem</p>
     <div style='margin-top: 20px; font-size: 0.9em;'>
-        <p>Enviado através do seu site. Visite <a href='https://restaurantefassbier.com.br/'>https://restaurantefassbier.com.br/</a>.</p>
+        <p>Enviado através do seu site. Visite <a href='https://zarabuffet.com.br/'>https://zarabuffet.com.br/</a>.</p>
     </div>
 </div>
 </body>";
@@ -55,8 +56,9 @@ try {
     $mail->SMTPSecure = 'ssl';
 
     // Destinatários
-    $mail->setFrom('contato@espacoharas.com.br', 'Espaço Haras');
-    $mail->addAddress('contato@espacoharas.com.br', 'Espaço Haras');
+    $mail->setFrom('orcamento@zarabuffet.com.br', 'Zara Buffet');
+    $mail->addAddress('orcamento@zarabuffet.com.br', 'Zara Buffet');
+    $mail->addAddress('contato@zarabuffet.com.br', 'Zara Buffet');
 
     // Conteúdo
     $mail->isHTML(true);
@@ -70,7 +72,7 @@ try {
         "Mensagem: " . $mensagem . "\n";
 
     $mail->send();
-    header("Location: retorno.html");
+    header("Location: ../index.html");
     exit; // Certifique-se de sair do script após o redirecionamento
 } catch (Exception $e) {
     echo "Erro ao enviar a mensagem: {$mail->ErrorInfo}";

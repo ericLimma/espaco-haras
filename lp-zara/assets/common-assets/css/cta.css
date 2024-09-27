@@ -1,0 +1,33 @@
+.cta {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+.cta a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-logo {
+    width: 90%;
+    max-width: 250px;
+}
+
+.cta a img {
+    width: 1.5rem;
+}
+
+.cta p {
+    font-weight: 20;
+    font-size: 1rem;
+}
