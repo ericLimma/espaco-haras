@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /formulario-zara.html/
+
+Sitemap: https://zarabuffet.com.br/sitemap.xml
