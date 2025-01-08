@@ -13,3 +13,441 @@ body {
 h1 {
     margin-bottom: 20px;
 }
+
+/* home */
+.home {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: url('../img/capa-lp-aniversaios.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(3, 3, 3, 0.993), rgba(0, 55, 128, 0));
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+.main-title {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: clamp(3rem, 8vw, 9rem);
+    letter-spacing: clamp(0.4rem, 1.5vw, 2rem);
+    color: var(--branco);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.capa-logo {
+    width: 50%;
+    max-width: 250px;
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+/* depoimentos */
+
+.testimonial {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: var(--preto-azulado);
+    color: var(--branco);
+}
+
+.testimonial h2 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.testimonial-img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.carousel-item {
+    padding: 0;
+}
+
+.testimonial-quote {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-size: 7rem;
+    line-height: 0;
+    vertical-align: bottom;
+}
+
+.testimonial-content {
+    background-color: var(--preto);
+    color: var(--branco);
+    width: 85%;
+    max-width: 350px;
+    font-weight: 200;
+    height: 500px;
+    font-size: .9rem;
+    padding: 4rem 2.5rem 3rem;
+    margin: -150px auto 50px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 0 16px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author {
+    font-size: 1.8rem;
+    opacity: .7;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 100;
+    text-align: right;
+    align-self: flex-end;
+}
+
+/* slider */
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 189px;
+    height: 224px;
+    object-fit: cover;
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: "" !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: initial;
+    height: initial;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.right-arrow,
+.left-arrow {
+    width: 1.5rem;
+    opacity: .6;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--cinza-claro) !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--second-color);
+}
+
+
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+    .card__content {
+        margin-inline: 3rem;
+        overflow-x: hidden;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 1120px) {
+    .card__container {
+        max-width: 1600px;
+    }
+
+    .swiper-button-prev {
+        left: 1rem;
+    }
+
+    .swiper-button-next {
+        right: 1rem;
+    }
+}
+
+/* text */
+.text {
+    padding: 3rem 0;
+    background-color: var(--preto-azulado);
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.text-card {
+    width: calc(100% - 1rem);
+    max-width: 600px;
+    min-width: 350px;
+    margin: auto;
+    padding: 2rem;
+    text-align: justify;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-weight: 200;
+    font-size: clamp(.9rem, 2.5vw, 1rem);
+    position: relative;
+    z-index: 1;
+    border-radius: 0 16px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.mtg-container {
+    width: 100%;
+    height: 80h;
+    position: relative;
+    margin-top: 3rem;
+    z-index: 3;
+}
+
+.mtg-1,
+.mtg-2,
+.mtg-3 {
+    max-width: 500px;
+    width: 80%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mtg-1 {
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.mtg-2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 4;
+}
+
+.mtg-3 {
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.mtg-1:hover,
+.mtg-2:hover,
+.mtg-3:hover {
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 6;
+}
+
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .text-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-card {
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .mtg-container {
+        width: 55%;
+    }
+}
+
+/* capacidade */
+.about-the-space {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--branco);
+    gap: 4rem;
+    padding: 3rem 0;
+
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 300px;
+    margin: 2rem 0;
+    max-width: 1600px;
+
+}
+
+.img-container {
+    margin: 10px;
+    height: 300px;
+    width: 300px !important;
+
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: var(--branco);
+    margin-top: 2rem;
+}
+
+.capacity-card {
+    padding: 1rem;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 250px !important;
+    height: 250px !important;
+    z-index: 0;
+    margin: auto;
+    font-size: .9rem;
+}
+
+.capacity-card h2 {
+    font-size: .9rem;
+}
+
+.capacity-card::after,
+.capacity-card::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+}
+
+.capacity-card::after {
+    top: 0;
+    left: 0;
+    border-left: 3px solid var(--vermelho);
+    border-top: 3px solid var(--vermelho);
+}
+
+.capacity-card::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid var(--vermelho);
+    border-right: 3px solid var(--vermelho);
+}
+
+.capacity-card-icon {
+    width: 30%;
+}
+
+.diferenciais {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.diferenciais-lista {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

@@ -138,12 +138,12 @@ input[type="radio"]:focus+.custom-radio {
 .btn-icon {
     height: 2rem;
     width: 2rem;
-    background: url("../../common-assets/icones/send-vermelho.png") center/cover no-repeat;
+    background: url("../../common-assets/icones/send-vermelho.webp") center/cover no-repeat;
     transition: background 0.2s ease-in-out;
 }
 
 .button:hover .btn-icon {
-    background: url("../../common-assets/icones/send-branco.png") center/cover no-repeat;
+    background: url("../../common-assets/icones/send-branco.webp") center/cover no-repeat;
 }
 
 /* Large devices (desktops, 992px and up) */
