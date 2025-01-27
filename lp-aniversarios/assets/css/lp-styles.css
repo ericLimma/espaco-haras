@@ -22,7 +22,7 @@ h1 {
     background-attachment: fixed;
     position: relative;
 
-}
+} 
 
 .home::before {
     content: "";
