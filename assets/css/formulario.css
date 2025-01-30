@@ -1,0 +1,182 @@
+main {
+    background-color: var(--preto);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formulario {
+    width: 100%;
+    max-width: 1600px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    background-color: var(--preto-azulado);
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+}
+
+.formulario h2 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    min-width: 375px;
+    padding: 1rem;
+}
+
+.form-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-width: 500px;
+}
+
+.fieldset-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.fieldset label {
+    margin: .8rem 0 .5rem;
+}
+
+.form-input {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-weight: 300;
+    font-size: .9rem;
+    font-family: var(--fonte-principal);
+    padding: .5rem;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.custom-radio::after {
+    content: "";
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: white;
+    margin: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+input[type="radio"]:checked+.custom-radio::after {
+    opacity: 1;
+}
+
+input[type="radio"]:focus+.custom-radio {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem auto 0;
+    color: var(--branco);
+}
+
+.btn-icon {
+    height: 2rem;
+    width: 2rem;
+    background: url("../../assets/icons/send-vermelho.webp") center/cover no-repeat;
+    transition: background 0.2s ease-in-out;
+}
+
+.button:hover .btn-icon {
+    background: url("../../assets/icons/send-branco.webp") center/cover no-repeat;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 3rem;
+
+    }
+
+    .fieldset-container {
+        display: flex;
+        background-color: var(--preto-azulado);
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1100px) {
+    .formulario {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .form-img {
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+    }
+}
