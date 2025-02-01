@@ -75,6 +75,7 @@ main {
 
 .text-card {
     max-width: 600px;
+    width: 50%;
     min-width: 350px;
     padding: 2rem;
 
@@ -107,6 +108,86 @@ main {
 .mtg-3:hover {
     transform: scale(1.5);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#photo-gallery {
+    background-color: var(--preto-azulado);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.photo-gallery h2 {
+  
+    text-align: center;
+    width: 100%;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+
+.item-container {
+    aspect-ratio: 5 / 4;
+    padding: 0 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.gallery-img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 5 /4;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+
+}
+
+.slick-prev {
+    left: 15px;
+    z-index: 999;
+}
+
+.slick-next {
+    right: 15px;
+    z-index: 999;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slick-prev:before {
+    background-image: url('../icons/previous.webp');
+}
+
+.slick-next:before {
+    background-image: url('../icons/next.webp');
+}
+
+
+.see-all {
+    color: var(--branco);
+    margin-left: auto;
+    margin-right: 1rem;
+    font-weight: 200;
+    text-decoration: none;
 }
 
 /* capacidade */
@@ -184,14 +265,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 1.3rem;
-}
 
-.capacity-card-icon {
-    width: 30%;
-} */
 
 .diferenciais {
     text-align: center;
@@ -223,7 +297,6 @@ main {
 
     background-color: var(--preto-azulado);
     color: var(--branco);
-    overflow: hidden;
     padding: 2rem;
 }
 
@@ -295,26 +368,6 @@ main {
     align-self: flex-end;
 }
 
-/* recentss works */
-.works {
-    display: flex;
-    gap: 3rem;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding: 0;
-    align-items: center;
-    flex-wrap: nowrap;
-
-    background-color: var(--preto-azulado);
-    color: var(--branco);
-    overflow: hidden;
-
-}
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -335,6 +388,7 @@ main {
 .slide-list {
     display: flex;
     overflow: hidden;
+    width: 90%;
 }
 
 .slide-item {
@@ -346,7 +400,6 @@ main {
     cursor: grab;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .slide-img {
@@ -414,6 +467,14 @@ main {
 
     .slide-nav-next {
         right: 1rem;
+    }
+
+    .slick-next {
+        right: -25px;
+    }
+
+    .slick-prev {
+        left: -25px;
     }
 
 }

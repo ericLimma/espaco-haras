@@ -19,6 +19,13 @@
         <title>Espaço Haras | Casamentos</title>
 
         <?php include './assets/php/fav_icon.php' ?>
+        <!-- Slick jS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+                integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+                integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -69,6 +76,216 @@
                         </div>
                         <img class="mtg-3"
                                 data-aos="fade-right" data-aos-delay="300" src="./assets/img-casamentos/celebrando.webp" alt="foto-casal">
+                </section>
+                <section class="photo-gallery" id="photo-gallery">
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+                                integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+                                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                        <h2 class="text-uppercase">Galeria de Fotos</h2>
+                        <div id="carousel-container" class="carousel-container responsive">
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-1.webp" alt="Salão de festa decorado 1">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-2.webp" alt="Salão de festa decorado 2">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-3.webp" alt="Salão de festa decorado 3">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-4.webp" alt="Salão de festa decorado 4">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-5.webp" alt="Salão de festa decorado 5">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-6.webp" alt="Salão de festa decorado 6">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-7.webp" alt="Salão de festa decorado 7">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-8.webp" alt="Salão de festa decorado 8">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-9.webp" alt="Salão de festa decorado 9">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-10.webp" alt="Salão de festa decorado 10">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-11.webp" alt="Salão de festa decorado 11">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-12.webp" alt="Salão de festa decorado 12">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-13.webp" alt="Salão de festa decorado 13">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-14.webp" alt="Salão de festa decorado 14">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-15.webp" alt="Salão de festa decorado 15">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-16.webp" alt="Salão de festa decorado 16">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-17.webp" alt="Salão de festa decorado 17">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-18.webp" alt="Salão de festa decorado 18">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-19.webp" alt="Salão de festa decorado 19">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-20.webp" alt="Salão de festa decorado 20">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-21.webp" alt="Salão de festa decorado 21">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-22.webp" alt="Salão de festa decorado 22">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-23.webp" alt="Salão de festa decorado 23">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-24.webp" alt="Salão de festa decorado 24">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-25.webp" alt="Salão de festa decorado 25">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-26.webp" alt="Salão de festa decorado 26">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-27.webp" alt="Salão de festa decorado 27">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-28.webp" alt="Salão de festa decorado 28">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-29.webp" alt="Salão de festa decorado 29">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-30.webp" alt="Salão de festa decorado 30">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-31.webp" alt="Salão de festa decorado 31">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-32.webp" alt="Salão de festa decorado 32">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-33.webp" alt="Salão de festa decorado 33">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-34.webp" alt="Salão de festa decorado 34">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-35.webp" alt="Salão de festa decorado 35">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-36.webp" alt="Salão de festa decorado 36">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-37.webp" alt="Salão de festa decorado 37">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-38.webp" alt="Salão de festa decorado 38">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-39.webp" alt="Salão de festa decorado 39">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-40.webp" alt="Salão de festa decorado 40">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-41.webp" alt="Salão de festa decorado 41">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-42.webp" alt="Salão de festa decorado 42">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-43.webp" alt="Salão de festa decorado 43">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-44.webp" alt="Salão de festa decorado 44">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-45.webp" alt="Salão de festa decorado 45">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-46.webp" alt="Salão de festa decorado 46">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-47.webp" alt="Salão de festa decorado 47">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-48.webp" alt="Salão de festa decorado 48">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-49.webp" alt="Salão de festa decorado 49">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-50.webp" alt="Salão de festa decorado 50">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-51.webp" alt="Salão de festa decorado 51">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-52.webp" alt="Salão de festa decorado 52">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-53.webp" alt="Salão de festa decorado 53">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-54.webp" alt="Salão de festa decorado 54">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-55.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-56.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-57.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-58.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-59.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-60.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-61.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-62.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-63.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-64.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-65.webp" alt="Salão de festa decorado 55">
+                                </div>
+                                <div class="item-container">
+                                        <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-66.webp" alt="Salão de festa decorado 55">
+                                </div>
+                        </div>
+                        <a class="see-all" href="galeria.php?origem=casamentos">Ver todas...</a>
                 </section>
                 <section id="about-the-space" class="about-the-space">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
@@ -306,15 +523,18 @@
                                         <span><img src="./assets/icons/next.webp" alt=""></span>
                                 </a>
                         </div>
+                        <script src="assets/js/slide.js"></script>
                 </section>
 
-                <script src="assets/js/carrossel.js"></script>
                 <style>
 
                 </style>
                 <?php include 'assets/php/buttons.php' ?>
         </main>
         <?php include 'assets/php/footer.php' ?>
+
+        <script defer src="./assets/js/carousel.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>

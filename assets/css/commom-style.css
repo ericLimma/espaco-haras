@@ -48,11 +48,6 @@ a {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-a:hover,
-button:hover {
-    transform: scale(1.01);
-}
-
 p,
 a,
 li {
@@ -125,7 +120,7 @@ main {
 }
 
 .zoom:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 

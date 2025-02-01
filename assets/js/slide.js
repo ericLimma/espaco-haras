@@ -275,5 +275,5 @@ initSlider({
         autoPlay: true,
         timeInterval: 3000,
         controls: false,
-        arrows: false
+        arrows: true
 });

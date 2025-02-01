@@ -1,6 +1,6 @@
 $('.responsive').slick({
   infinite: true,
-  dots: true,
+  dots: false,
   arrows: true,
   slidesToScroll: 1,
   autoplay: true,
@@ -9,31 +9,45 @@ $('.responsive').slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1920,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
-        arrows: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 800, // Novo breakpoint
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: true,
-        arrows: true,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
-        arrows: true,
+        dots: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
