@@ -177,149 +177,125 @@
                                 </ul>
                         </div>
                 </section>
+
                 <section class="testimonial" id="testimonial">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="200">depoimentos <div class="detalhe-div">
                                 </div>
                         </h2>
-                        <div class="testimonial-container" data-aos='fade-up' data-aos-delay="200">
-                                <div class="card__container swiper">
-                                        <div class="card__content">
-                                                <div class="swiper-wrapper">
-                                                        <article class="testimonial-slide swiper-slide">
-                                                                <div class="testimonial-card">
-                                                                        <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_loreta_bruno.webp"
-                                                                                alt="">
-                                                                        <div class="testimonial-content">
-                                                                                <p class="testimonial-text">
-                                                                                        <span class="testimonial-quote">“</span>
-                                                                                        Gostaríamos de deixar registrado nosso agradecimento. Desde a nossa primeira
-                                                                                        conversa, eu já me senti acolhida. Andamos pelo salão, A Ed me mostrou fotos
-                                                                                        de casamentos com a decoração, conversamos sobre várias coisas, montou um
-                                                                                        cardápio de acordo com o que eu imaginava e proporcionou todo seu amor.
-                                                                                        Durante os meses sempre mantivemos contato e no final entregou um trabalho
-                                                                                        maravilhoso, Buffet zero defeitos, comida maravilhosa, não faltou nada
-                                                                                        sempre tinha reposição. TODOS elogiaram. Os garçons sempre atentos, não
-                                                                                        deixavam os copos vazios. A ilha gastronômica ficou até o final com a mesma
-                                                                                        quantidade e qualidade do início. Enfim só agradecer por nos proporcionar
-                                                                                        uma festa maravilhosa. Obrigada por tudo. Beijão
-                                                                                </p>
-                                                                                <p class="testimonial-author">-Loreta & Bruno</p>
-                                                                        </div>
+                        <div class="wrapper">
+                                <div class="slide-wrapper" data-slide='wrapper'>
+                                        <button class="slide-nav-button slide-nav-prev" data-slide="nav-prev-button">
+                                                <img class="left-arrow" src="./assets/icons/previous.webp" alt="">
+                                        </button>
+                                        <button class="slide-nav-button slide-nav-next" data-slide="nav-next-button">
+                                                <img src="./assets/icons/next.webp" alt="next icon">
+                                        </button>
+                                        <div class="slide-list" data-slide="list">
+                                                <div class="slide-item" data-slide="item" data-index="0">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_loreta_bruno.webp"
+                                                                        alt="">
+                                                                <div class="testimonial-content">
+                                                                        <p class="testimonial-text">
+                                                                                <span class="testimonial-quote">“</span>
+                                                                                Gostaríamos de deixar registrado nosso agradecimento. Desde a nossa primeira
+                                                                                conversa, eu já me senti acolhida. Andamos pelo salão, A Ed me mostrou fotos
+                                                                                de casamentos com a decoração, conversamos sobre várias coisas, montou um
+                                                                                cardápio de acordo com o que eu imaginava e proporcionou todo seu amor.
+                                                                                Durante os meses sempre mantivemos contato e no final entregou um trabalho
+                                                                                maravilhoso, Buffet zero defeitos, comida maravilhosa, não faltou nada
+                                                                                sempre tinha reposição. TODOS elogiaram. Os garçons sempre atentos, não
+                                                                                deixavam os copos vazios. A ilha gastronômica ficou até o final com a mesma
+                                                                                quantidade e qualidade do início. Enfim só agradecer por nos proporcionar
+                                                                                uma festa maravilhosa. Obrigada por tudo. Beijão
+                                                                        </p>
+                                                                        <p class="testimonial-author">-Loreta & Bruno</p>
                                                                 </div>
-                                                        </article>
-                                                        <article class="testimonial-slide swiper-slide">
-                                                                <div class="testimonial-card">
-                                                                        <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="">
-                                                                        <div class="testimonial-content">
-                                                                                <p class="testimonial-text">
-                                                                                        <span class="testimonial-quote">“</span>
-                                                                                        Esse foi o dia mais lindo e especial das nossas vidas!!! O dia em que o
-                                                                                        nosso
-                                                                                        sonho se tornou realidade, e pudemos viver essa magia junto com a nossa
-                                                                                        família
-                                                                                        e amigos! E, sem dúvidas, não podíamos ter escolhido melhor local.
-                                                                                        Queríamos ter
-                                                                                        o casamento dos sonhos no lugar dos sonhos, e o Espaço Haras foi esse
-                                                                                        lugar.
-                                                                                        Repleto de natureza, com uma arquitetura incrível, e ambientes super
-                                                                                        acolhedores
-                                                                                        que fizeram com que absolutamente todos os convidados elogiassem a
-                                                                                        escolha. Sem
-                                                                                        contar o atendimento, super personalizado do começo ao fim!!! Não
-                                                                                        poderia ter
-                                                                                        sido melhor esse dia, e agradecemos a Edmara, ao Zara Buffet e toda a
-                                                                                        equipe por
-                                                                                        serem maravilhosos em cada mínimo detalhe!!”
-                                                                                </p>
-                                                                                <p class="testimonial-author">-Mari & Remo</p>
-                                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="1">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="">
+                                                                <div class="testimonial-content">
+                                                                        <p class="testimonial-text">
+                                                                                <span class="testimonial-quote">“</span>
+                                                                                Esse foi o dia mais lindo e especial das nossas vidas!!! O dia em que o
+                                                                                nosso
+                                                                                sonho se tornou realidade, e pudemos viver essa magia junto com a nossa
+                                                                                família
+                                                                                e amigos! E, sem dúvidas, não podíamos ter escolhido melhor local.
+                                                                                Queríamos ter
+                                                                                o casamento dos sonhos no lugar dos sonhos, e o Espaço Haras foi esse
+                                                                                lugar.
+                                                                                Repleto de natureza, com uma arquitetura incrível, e ambientes super
+                                                                                acolhedores
+                                                                                que fizeram com que absolutamente todos os convidados elogiassem a
+                                                                                escolha. Sem
+                                                                                contar o atendimento, super personalizado do começo ao fim!!! Não
+                                                                                poderia ter
+                                                                                sido melhor esse dia, e agradecemos a Edmara, ao Zara Buffet e toda a
+                                                                                equipe por
+                                                                                serem maravilhosos em cada mínimo detalhe!!”
+                                                                        </p>
+                                                                        <p class="testimonial-author">-Mari & Remo</p>
                                                                 </div>
-                                                        </article>
-                                                        <article class="testimonial-slide swiper-slide">
-                                                                <div class="testimonial-card">
-                                                                        <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="">
-                                                                        <div class="testimonial-content">
-                                                                                <p class="testimonial-text">
-                                                                                        <span class="testimonial-quote">“</span>
-                                                                                        Pra nós, o Haras foi um sonho realizado! 🤍🥹 Sonhamos com um casamento
-                                                                                        mais
-                                                                                        rústico, e o local superou nossas expectativas! Os colaboradores do
-                                                                                        local, Edi,
-                                                                                        Paraná, Beto, nos deram livre acesso antes de acontecer o evento, e se
-                                                                                        tornaram
-                                                                                        uma grande ajuda pra esse dia acontecer! O Buffet do Espaço Haras, nao
-                                                                                        dispensou
-                                                                                        elogio de ninguem! Tudo excelente! Só temos a agradecer por tornar tudo
-                                                                                        isso
-                                                                                        realidade!”
-                                                                                </p>
-                                                                                <p class="testimonial-author">-Marina & Luis Otávio</p>
-                                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="2">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="">
+                                                                <div class="testimonial-content">
+                                                                        <p class="testimonial-text">
+                                                                                <span class="testimonial-quote">“</span>
+                                                                                Pra nós, o Haras foi um sonho realizado! 🤍🥹 Sonhamos com um casamento
+                                                                                mais
+                                                                                rústico, e o local superou nossas expectativas! Os colaboradores do
+                                                                                local, Edi,
+                                                                                Paraná, Beto, nos deram livre acesso antes de acontecer o evento, e se
+                                                                                tornaram
+                                                                                uma grande ajuda pra esse dia acontecer! O Buffet do Espaço Haras, nao
+                                                                                dispensou
+                                                                                elogio de ninguem! Tudo excelente! Só temos a agradecer por tornar tudo
+                                                                                isso
+                                                                                realidade!”
+                                                                        </p>
+                                                                        <p class="testimonial-author">-Marina & Luis Otávio</p>
                                                                 </div>
-                                                        </article>
-                                                        <article class="testimonial-slide swiper-slide">
-                                                                <div class="testimonial-card">
-                                                                        <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_nathalia_Rafael.webp"
-                                                                                alt="">
-                                                                        <div class="testimonial-content">
-                                                                                <p class="testimonial-text">
-                                                                                        <span class="testimonial-quote">“</span>
-                                                                                        Desde a primeira vez que pisamos no Haras tivemos a certeza que
-                                                                                        queríamos casar
-                                                                                        lá. Além do espaço lindo, fomos muito bem recepcionados.
-                                                                                        Nosso casamento foi incrível,🤍✨ a equipe atendeu todas as nossas
-                                                                                        expectativas.
-                                                                                        Esse dia ficará pra sempre em nossas memórias! Obrigada Espaço Haras
-                                                                                        por fazer
-                                                                                        parte da nossa história."
-                                                                                </p>
-                                                                                <p class="testimonial-author">-Nathalia & Rafael</p>
-                                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="3">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp"
+                                                                        alt="">
+                                                                <div class="testimonial-content">
+                                                                        <p class="testimonial-text">
+                                                                                <span class="testimonial-quote">“</span>
+                                                                                O Haras foi amor à primeira vista.Estávamos procurando um lugar que
+                                                                                fosse grande
+                                                                                e rústico pois nosso casamento seria uma festa junina e a hora que
+                                                                                conhecemos o
+                                                                                Haras não tínhamos mais dúvidas que seria lá, não quisemos nem olhar
+                                                                                mais nenhum
+                                                                                outro lugar.
+                                                                                Não só o espaço é lindíssimo como todo o atendimento foi maravilhoso
+                                                                                e
+                                                                                personalizado.
+                                                                                Tivemos dificuldades em achar fornecedores que não só entendesse
+                                                                                como comprasse
+                                                                                a nossa ideia também e a Ju, a Edmara e o Beto super compraram a
+                                                                                ideia e nos
+                                                                                ajudaram com todos os detalhes de um cardápio junino, decoração,
+                                                                                barraquinha etc
+                                                                                e tudo na maior."
+                                                                        </p>
+                                                                        <p class="testimonial-author">-Bruna & Gustavo</p>
                                                                 </div>
-                                                        </article>
-                                                        <article class="testimonial-slide swiper-slide">
-                                                                <div class="testimonial-card">
-                                                                        <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp"
-                                                                                alt="">
-                                                                        <div class="testimonial-content">
-                                                                                <p class="testimonial-text">
-                                                                                        <span class="testimonial-quote">“</span>
-                                                                                        O Haras foi amor à primeira vista.Estávamos procurando um lugar que
-                                                                                        fosse grande
-                                                                                        e rústico pois nosso casamento seria uma festa junina e a hora que
-                                                                                        conhecemos o
-                                                                                        Haras não tínhamos mais dúvidas que seria lá, não quisemos nem olhar
-                                                                                        mais nenhum
-                                                                                        outro lugar.
-                                                                                        Não só o espaço é lindíssimo como todo o atendimento foi maravilhoso
-                                                                                        e
-                                                                                        personalizado.
-                                                                                        Tivemos dificuldades em achar fornecedores que não só entendesse
-                                                                                        como comprasse
-                                                                                        a nossa ideia também e a Ju, a Edmara e o Beto super compraram a
-                                                                                        ideia e nos
-                                                                                        ajudaram com todos os detalhes de um cardápio junino, decoração,
-                                                                                        barraquinha etc
-                                                                                        e tudo na maior."
-                                                                                </p>
-                                                                                <p class="testimonial-author">-Bruna & Gustavo</p>
-                                                                        </div>
-                                                                </div>
-                                                        </article>
+                                                        </div>
+
+                                                </div>
+                                                <div class="slide-controls" id="slide-controls" data-slide="controls-wrapper">
                                                 </div>
                                         </div>
-
-
-                                        <div class="swiper-button-next">
-                                                <img class="right-arrow" src="./assets/icons/next.webp" alt="">
-                                        </div>
-
-                                        <div class="swiper-button-prev">
-                                                <img class="left-arrow" src="./assets/icons/previous.webp" alt="">
-                                        </div>
-
-
-                                        <div class="swiper-pagination"></div>
                                 </div>
                         </div>
                         <div class="cta" data-aos='fade-up' data-aos-delay="200">
@@ -331,6 +307,11 @@
                                 </a>
                         </div>
                 </section>
+
+                <script src="assets/js/carrossel.js"></script>
+                <style>
+
+                </style>
                 <?php include 'assets/php/buttons.php' ?>
         </main>
         <?php include 'assets/php/footer.php' ?>

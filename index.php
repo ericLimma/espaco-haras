@@ -187,99 +187,99 @@
                                         <img class="img-container" src="assets/img/carousel/carrossel-25.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-26.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-27.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-28.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-29.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-30.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-31.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-32.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-33.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-34.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-35.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-36.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-37.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-38.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-39.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-40.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-41.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-42.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-43.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-44.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-45.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-46.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-47.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-48.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item">
                                         <img class="img-container" src="assets/img/carousel/carrossel-1.webp"
                                                 alt="Salão de festa decorado" loading="lazy">
                                 </div>
