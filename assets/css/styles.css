@@ -7,6 +7,8 @@
 body {
         width: 100vw;
         font-size: clamp(.8rem, 1vw, 1rem);
+        background-color: var(--preto);
+        color: var(--branco);
 }
 
 /* homee */
@@ -40,10 +42,8 @@ body {
         flex-direction: column;
         width: 80%;
         max-width: 600px;
-        height: 80%;
-        max-height: 450px;
         margin-top: auto;
-
+        min-height: 80%;
         text-align: center;
         background-color: #00000052;
         backdrop-filter: blur(1px);
@@ -69,16 +69,14 @@ body {
 
 /* eventos */
 .tipo-de-evento {
-        background-color: var(--preto);
-        color: var(--branco);
         font-weight: 300;
         padding: 4rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
-        position: relative;
+        min-height: 100vh;
+        gap: 2rem;
 }
 
 .texto-chamada {
@@ -88,19 +86,17 @@ body {
 }
 
 .evento-container {
-        display: flex;
-        width: 100%;
-        flex-flow: wrap row;
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        gap: 1rem;
         max-width: 1000px;
+        grid-template-rows: repeat(4, 1fr);
+
 }
 
 .card-container {
-        width: 350px;
-        height: 350px;
-        background-color: brown;
+        width: 100%;
+        aspect-ratio: 1/1;
+        max-width: 350px;
 }
 
 .evento-card {
@@ -145,10 +141,12 @@ body {
 
 #photo-gallery {
         background-color: var(--preto-azulado);
-        color: var(--branco);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 3rem;
+        min-height: 80vh;
+
 }
 
 .photo-gallery h2 {
@@ -165,7 +163,7 @@ body {
         margin-top: 2rem;
         max-width: 1600px;
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
 }
 
 .item-container {
@@ -214,15 +212,10 @@ body {
         background-image: url('../icons/next.webp');
 }
 
-.slick-arrow:hover {
-        /* transform: scale(1); */
-}
 
 /* diiferennciais */
 .diferenciais {
         padding-top: 3rem;
-        background-color: var(--preto);
-        color: var(--branco);
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -357,29 +350,21 @@ body {
 }
 
 .realize-mosaico {
-        width: 100%;
-        max-width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: auto;
-        gap: .8rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas */
+        grid-template-rows: repeat(2, auto);
+        /* 2 linhas */
 }
 
 .realize-mosaico img {
-        width: 48%;
-        max-width: 375px;
-        transition: transform 0.3s ease
-}
-
-.realize-mosaico img:hover {
-        transform: scale(1.05);
-}
-
-.realize p {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Faz a imagem preencher o espaço sem distorcer */
 }
+
 
 .tour-completo {
         width: 100vw;
@@ -494,6 +479,13 @@ body {
 }
 
 @media (min-width: 768px) {
+
+        .evento-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+        }
+
         .card-diferenciais {
                 margin-left: -135px;
 
@@ -527,10 +519,6 @@ body {
                 max-width: 500px !important;
         }
 
-        #photo-gallery {
-                height: 100vh;
-        }
-
         .alta-gastronomia {
                 gap: 3rem;
                 justify-content: center;
@@ -555,7 +543,14 @@ body {
 
 }
 
+@media (min-width:1024px) {}
+
 @media (min-width: 1200px) {
+        .home-card {
+                height: 80%;
+                max-height: 450px;
+                min-height: 0;
+        }
 
         .img-diferenciais {
                 width: 50%;
@@ -566,11 +561,19 @@ body {
                 width: 100%;
 
         }
+
+
 }
 
 @media (min-width: 1400px) {
         .evento-container {
                 max-width: none;
+        }
+
+        .realize-mosaico,
+        .evento-container {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 1fr);
         }
 
 }

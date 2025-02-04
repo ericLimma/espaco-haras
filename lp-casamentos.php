@@ -85,6 +85,7 @@
                                 integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
                                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                         <h2 class="text-uppercase">Galeria de Fotos</h2>
+
                         <div id="carousel-container" class="carousel-container responsive">
                                 <div class="item-container">
                                         <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-1.webp" alt="Salão de festa decorado 1">
@@ -411,7 +412,7 @@
                                                 <div class="slide-item" data-slide="item" data-index="0">
                                                         <div class="testimonial-card">
                                                                 <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_loreta_bruno.webp"
-                                                                        alt="">
+                                                                        alt="fotos casal" loading="lazy">
                                                                 <div class="testimonial-content">
                                                                         <p class="testimonial-text">
                                                                                 <span class="testimonial-quote">“</span>
@@ -432,7 +433,7 @@
                                                 </div>
                                                 <div class="slide-item" data-slide="item" data-index="1">
                                                         <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="fotos casal" loading="lazy">
                                                                 <div class="testimonial-content">
                                                                         <p class="testimonial-text">
                                                                                 <span class="testimonial-quote">“</span>
@@ -460,7 +461,7 @@
                                                 </div>
                                                 <div class="slide-item" data-slide="item" data-index="2">
                                                         <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="fotos casal" loading="lazy">
                                                                 <div class="testimonial-content">
                                                                         <p class="testimonial-text">
                                                                                 <span class="testimonial-quote">“</span>
@@ -482,8 +483,7 @@
                                                 </div>
                                                 <div class="slide-item" data-slide="item" data-index="3">
                                                         <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp"
-                                                                        alt="">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp" alt="fotos casal" loading="lazy">
                                                                 <div class="testimonial-content">
                                                                         <p class="testimonial-text">
                                                                                 <span class="testimonial-quote">“</span>
@@ -515,6 +515,7 @@
                                         </div>
                                 </div>
                         </div>
+
                         <div class="cta" data-aos='fade-up' data-aos-delay="200">
                                 <img class="cta-logo" src="./assets/img-commom/logo-zara.webp" alt="logo zara buffet">
                                 <p>Seu evento precisa de Buffet?</p>
@@ -523,7 +524,7 @@
                                         <span><img src="./assets/icons/next.webp" alt=""></span>
                                 </a>
                         </div>
-                        <script src="assets/js/slide.js"></script>
+
                 </section>
 
                 <style>
@@ -534,7 +535,7 @@
         <?php include 'assets/php/footer.php' ?>
 
         <script defer src="./assets/js/carousel.js"></script>
-
+        <script src="assets/js/slider-2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>

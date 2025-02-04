@@ -95,7 +95,7 @@ main {
     align-items: center;
     gap: 2rem;
     flex-shrink: 0;
-
+ 
 }
 
 .mtg-3 {
@@ -455,7 +455,7 @@ main {
     .wrapper {
         width: 90vw;
         margin-right: auto;
-    }
+    } 
 
     .slide-item {
         width: 30vw;

@@ -99,80 +99,63 @@
                                 </div>
                         </div>
                 </section>
+                <!--                 <section>
+                        <div class="wrapper">
+                                <div class="slide-wrapper" data-slide="wrapper">
+                                        <button class="slide-nav-button slide-nav-prev" data-slide="nav-prev-button">
+                                                <img class="left-arrow" src="./assets/icons/previous.webp" alt="Anterior">
+                                        </button>
+                                        <button class="slide-nav-button slide-nav-next" data-slide="nav-next-button">
+                                                <img src="./assets/icons/next.webp" alt="Próximo">
+                                        </button>
+
+                                        <div class="slide-list" data-slide="list">
+                                                <div class="slide-item" data-slide="item" data-index="0">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_loreta_bruno.webp" alt="Depoimento Loreta e Bruno">
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="1">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="Depoimento Mari e Remo">
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="2">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="Depoimento Marina e Luiz">
+                                                        </div>
+                                                </div>
+                                                <div class="slide-item" data-slide="item" data-index="3">
+                                                        <div class="testimonial-card">
+                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp" alt="Depoimento Bruna e Gustavo">
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="slide-controls" id="slide-controls" data-slide="controls-wrapper"></div>
+                                </div>
+                        </div>
+                        
+                </section> -->
                 <section class="partners" id="partners">
-                        <h2 class="text-uppercase">Parceiros <div class="detalhe-div"></div>
+                        <h2 class="text-uppercase">Marcas que fizeram história conosco<div class="detalhe-div"></div>
                         </h2>
                         <div class="partners-carousel" data-aos='fade-up' data-aos-delay="150">
-                                <div id="carouselExampleAutoplaying" class="carousel carousel-mobile slide" data-bs-ride="carousel">
+                                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                         <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-1.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/01.webp" alt="">
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-2.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/02.webp" alt="">
                                                         </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                         <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-3.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-4.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-5.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-6.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-7.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-1.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-8.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-9.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-10.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-11.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-12.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/logo-13.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/03.webp" alt="">
                                                         </div>
                                                 </div>
 
@@ -188,37 +171,6 @@
                                                 </button>
                                         </div>
                                 </div>
-                                <div id="carouselExampleAutoplaying" class="carousel carousel-desktop slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img-desktop" src="../assets/img-corporativos/01.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img-desktop" src="../assets/img-corporativos/02.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img-desktop" src="../assets/img-corporativos/02.webp" alt="">
-                                                        </div>
-                                                </div>
-
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                                                        data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                                                        data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Next</span>
-                                                </button>
-                                        </div>
-                                </div>
-
                         </div>
 
                 </section>
@@ -313,7 +265,11 @@
         </main>
         <?php include './assets/php/footer.php' ?>
 
+        <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
 
+        <script defer src="assets/js/slider-2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
         <script defer src="./assets/js/aos_init.js"></script>
 

@@ -177,6 +177,92 @@ main {
     z-index: 16;
 }
 
+/* galeria */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-list {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+}
+
+.slide-item {
+    flex-shrink: 0;
+    /*impede que altere o tamanho do elemento*/
+    padding: 0 3rem;
+    width: 100vw;
+    min-width: 375px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+}
+
+.slide-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.slide-nav-button {
+    cursor: pointer;
+    position: absolute;
+    z-index: 11;
+    margin-top: -20px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.slide-nav-button img {
+    width: 20px;
+}
+
+.slide-nav-prev {
+    left: 10px;
+}
+
+.slide-nav-next {
+    right: 10px;
+}
+
+.slide-controls {
+    margin: 20px auto 0;
+}
+
+.slide-control-button {
+    width: 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 4px;
+    cursor: pointer;
+
+}
+
+.slide-control-button.active {
+    background-color: #353535;
+
+}
+
+
 /* partners */
 .partners {
     padding: 4rem 0;
@@ -184,24 +270,22 @@ main {
     background-color: var(--preto);
     color: var(--branco);
     height: 100vh;
-    max-height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .partners h2 {
-    width: 50%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
 }
 
 .partners-container {
     position: relative;
     margin-top: 2rem;
-    width: 100%;
+    width: 80%;
     max-width: 1400px;
-    padding: 1rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -209,18 +293,10 @@ main {
 }
 
 .partners-img {
-    width: 70%;
     margin: auto;
-    max-width: 400px;
+    width: 100%;
 }
 
-.carousel-desktop {
-    display: none;
-}
-
-.carousel-mobile {
-    display: block;
-}
 
 /* capacidade */
 .about-the-space {
@@ -330,73 +406,6 @@ main {
     color: var(--branco);
 }
 
-.testimonial h2 {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-.testimonial-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-.testimonial-img {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-}
-
-.carousel-item {
-    padding: 0;
-}
-
-.testimonial-quote {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 700;
-    font-size: 7rem;
-    line-height: 0;
-    vertical-align: bottom;
-}
-
-.testimonial-content {
-    background-color: var(--preto);
-    color: var(--branco);
-    width: 85%;
-    max-width: 350px;
-    font-weight: 200;
-    height: 500px;
-    font-size: .9rem;
-    padding: 4rem 2.5rem 3rem;
-    margin: -150px auto 50px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    border-radius: 0 16px 0 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-        0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-author {
-    font-size: 1.8rem;
-    opacity: .7;
-    font-family: "Abhaya Libre", serif;
-    font-weight: 100;
-    text-align: right;
-    align-self: flex-end;
-}
 
 /* slider */
 .slider-wrapper .image-list {
@@ -444,28 +453,11 @@ main {
     right: 0;
 }
 
-.swiper-pagination-bullet {
-    background-color: var(--cinza-claro) !important;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--second-color);
-}
-
 
 @media (min-width: 768px) {
     .mtg-1 {
         margin-right: -10%;
 
-    }
-
-    .carousel-desktop {
-        display: block;
-    }
-
-    .carousel-mobile {
-        display: none;
     }
 
     .capacity-card-container {
@@ -488,10 +480,14 @@ main {
 
     }
 
-    .card__content {
-        margin-inline: 3rem;
-        overflow-x: hidden;
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper {
+        width: 90vw;
+        margin-right: auto;
     }
+
 }
 
 /* Large devices */
@@ -517,8 +513,8 @@ main {
         padding: 3rem;
     }
 
-    .card__container {
-        max-width: 1600px;
+    .partners-img {
+        width: 70%;
     }
 
     .swiper-button-prev {

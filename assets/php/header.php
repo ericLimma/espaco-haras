@@ -1,11 +1,7 @@
 <div class="contact tablet desktop">
         <div>
-                <a class="contact-link contact-link-desktop" target="_blank"
+                <a class="contact-link contact-link-desktop whatsapp" target="_blank"
                         href="https://web.whatsapp.com/send?phone=5519997093745">
-                        <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                        <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
-                </a>
-                <a class="contact-link contact-link-mobile" target="_blank" href="https://wa.me/5519997093745">
                         <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
                         <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
                 </a>
@@ -25,7 +21,7 @@
         </div>
 
 </div>
-<header class="header header-dark">
+<header class="header">
         <a class="logo" href="#">
                 <img src="./assets/img-commom/logo_branco_2.webp" alt="Logo Espaço Haras">
         </a>
@@ -58,17 +54,12 @@
                         <li><a href="#footer">Contato</a></li>
                         <li>
                                 <ul class="nav-icons">
-                                        <li><a class="nav-link nav-link-mobile" href="https://wa.me/5519997093745" target="_blank">
-                                                        <img src="./assets/icons/whatsapp.webp" alt='icone whatsapp'>
-                                                </a>
-                                        </li>
-                                        <li><a class="nav-link nav-link-desktop" target="_blank"
-                                                        href="https://web.whatsapp.com/send?phone=5519997093745">
+                                        <li><a class="nav-link" href="https://wa.me/5519997093745" target="_blank">
                                                         <img src="./assets/icons/whatsapp.webp" alt='icone whatsapp'>
                                                 </a>
                                         </li>
                                         <li><a class="nav-link" href="https://www.instagram.com/espacoharaspiracicaba/" target="_blank">
-                                                        <img src="" ./assets/icons/instagram.webp" alt='icone instagram'>
+                                                        <img src="./assets/icons/instagram.webp" alt='icone instagram'>
                                                 </a>
                                         </li>
                                         <li><a class="nav-link" href="mailto:contato@espacoharas.com.br" target="_blank">
@@ -120,12 +111,7 @@
                         <li><a href="#footer">Contato</a></li>
                         <li>
                                 <ul class="nav-icons">
-                                        <li><a target="_blank" class="nav-link nav-link-mobile" href="https://wa.me/5519997093745">
-                                                        <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                                                </a>
-                                        </li>
-                                        <li><a target="_blank" class="nav-link nav-link-desktop"
-                                                        href="https://web.whatsapp.com/send?phone=5519997093745">
+                                        <li><a target="_blank" class="nav-link whatsapp" href="https://wa.me/5519997093745">
                                                         <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
                                                 </a>
                                         </li>

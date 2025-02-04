@@ -17,12 +17,8 @@
         </div>
         <div class="contact-us" data-aos="fade-up" data-aos-delay="150">
                 <h4>Entre em contato</h4>
-                <a target="_blank" class="footer-contact footer-contact-desktop"
+                <a target="_blank" class="footer-contact whatsapp"
                         href="https://web.whatsapp.com/send?phone=5519997093745">
-                        <img class="footer-icone" src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                        <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
-                </a>
-                <a target="_blank" class="footer-contact footer-contact-mobile" href="https://wa.me/5519997093745">
                         <img class="footer-icone" src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
                         <p>+55 19 99709-3745 <br> <small>(Edmara - Gerente do Espaço Haras)</small></p>
                 </a>
@@ -60,3 +56,5 @@
                 </div>
         </div>
 </div>
+
+<script src="./assets/js/whatsapp.js"></script>

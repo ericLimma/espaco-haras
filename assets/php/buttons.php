@@ -1,11 +1,6 @@
-
 <div class="whatsapp-btn" data-aos="fade-up">
-        <a target="_blank" class="whatsapp-link whatsapp-link-desktop"
+        <a target="_blank" id='whatsapp-link' class="whatsapp-link whatsapp"
                 href="https://web.whatsapp.com/send?phone=5519997093745">
-                <img class="whatsapp-img" src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                <p class="text-light">Como podemos ajudar?</p>
-        </a>
-        <a target="_blank" class="whatsapp-link whatsapp-link-mobile" href="https://wa.me/5519997093745">
                 <img class="whatsapp-img" src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
                 <p class="text-light">Como podemos ajudar?</p>
         </a>
@@ -16,3 +11,7 @@
         </div>
 </div>
 <script defer src="./assets/js/voltarAoTopo.js"></script>
+
+<script>
+
+</script>
