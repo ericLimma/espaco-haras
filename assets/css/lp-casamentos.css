@@ -95,7 +95,7 @@ main {
     align-items: center;
     gap: 2rem;
     flex-shrink: 0;
- 
+
 }
 
 .mtg-3 {
@@ -120,7 +120,7 @@ main {
 }
 
 .photo-gallery h2 {
-  
+
     text-align: center;
     width: 100%;
     font-size: clamp(2rem, 3vw, 2.5rem);
@@ -452,10 +452,10 @@ main {
 }
 
 @media screen and (min-width: 900px) {
-    .wrapper {
+    /*    .wrapper {
         width: 90vw;
         margin-right: auto;
-    } 
+    }  */
 
     .slide-item {
         width: 30vw;
@@ -527,5 +527,13 @@ main {
         padding: 3rem;
     }
 
+
+}
+
+@media (min-width: 1600px) {
+    .wrapper {
+        width: 90vw;
+        margin-right: auto;
+    }
 
 }

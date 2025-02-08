@@ -801,6 +801,7 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         align-items: start;
+        text-align: left;
 
     }
 
@@ -808,6 +809,9 @@ nav {
         display: block;
     }
 
+    .footer div {
+        align-items: flex-start;
+    }
 
 }
 
