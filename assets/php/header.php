@@ -1,26 +1,3 @@
-<div class="contact tablet desktop">
-        <div>
-                <a class="contact-link contact-link-desktop whatsapp" target="_blank"
-                        href="https://web.whatsapp.com/send?phone=5519997093745">
-                        <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                        <p>+55 19 99709-3745 (Edmara - Gerente do Espaço Haras)</p>
-                </a>
-                <a class="contact-link" href="mailto:contato@espacoharas.com.br" target="_blank">
-                        <img src="./assets/icons/email.webp" alt="icone email">
-                        <p>contato@espacoharas.com.br</p>
-                </a>
-        </div>
-        <div>
-                <a href=" https://www.facebook.com/espacoharas/" target="_blank">
-                        <img src="./assets/icons/facebook.webp" alt="icone facebook">
-                </a>
-                <img src="./assets/icons/linkedin.webp" alt="icone linkedin">
-                <a target="_blank" href="https://www.instagram.com/espacoharaspiracicaba/">
-                        <img src="./assets/icons/instagram.webp" alt="icone instagram">
-                </a>
-        </div>
-
-</div>
 <header class="header">
         <a class="logo" href="#">
                 <img src="./assets/img-commom/logo_branco_2.webp" alt="Logo Espaço Haras">
@@ -46,32 +23,23 @@
                                         </div>
                                 </div>
                         </li>
-                        <li><a href="#photo-gallery">Fotos</a></li>
-                        <li><a href="#diferenciais">Diferenciais</a></li>
-                        <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
-                        <li><a href="#tour-completo">Tour 360</a></li>
-                        <li><a href="#faq">Perguntas Frequentes</a></li>
-                        <li><a href="#footer">Contato</a></li>
-                        <li>
-                                <ul class="nav-icons">
-                                        <li><a class="nav-link" href="https://wa.me/5519997093745" target="_blank">
-                                                        <img src="./assets/icons/whatsapp.webp" alt='icone whatsapp'>
-                                                </a>
-                                        </li>
-                                        <li><a class="nav-link" href="https://www.instagram.com/espacoharaspiracicaba/" target="_blank">
-                                                        <img src="./assets/icons/instagram.webp" alt='icone instagram'>
-                                                </a>
-                                        </li>
-                                        <li><a class="nav-link" href="mailto:contato@espacoharas.com.br" target="_blank">
-                                                        <img src="./assets/icons/email-circle.webp" alt="icone email">
-                                                </a>
-                                        </li>
-                                        <li><a class="nav-link" href=" https://www.facebook.com/espacoharas/" target="_blank">
-                                                        <img src="./assets/icons/facebook.webp" alt="icone facebook">
-                                                </a>
-                                        </li>
-                                </ul>
-                        </li>
+
+                        <?php
+                        include('menu.php');
+
+                        if ($title == 'principal') {
+                                $menu = $menuPrincipal;
+                        } else if ($title == 'casamento') {
+                                $menu = $menuCasamento;
+                        } else if ($title == 'corporativos') {
+                                $menu = $menuCorporativo;
+                        } else if ($title == 'formaturas') {
+                                $menu = $menuFormaturas;
+                        } else if ($title == 'aniversarios') {
+                                $menu = $menuAniversarios;
+                        }
+                        echo $menu; ?>
+
                 </ul>
         </div>
         <nav>
@@ -103,32 +71,7 @@
                                         </div>
                                 </div>
                         </li>
-                        <li><a href="#photo-gallery">Fotos</a></li>
-                        <li><a href="#diferenciais">Diferenciais</a></li>
-                        <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
-                        <li><a href="#tour-completo">Tour 360</a></li>
-                        <li><a href="#faq">Perguntas Frequentes</a></li>
-                        <li><a href="#footer">Contato</a></li>
-                        <li>
-                                <ul class="nav-icons">
-                                        <li><a target="_blank" class="nav-link whatsapp" href="https://wa.me/5519997093745">
-                                                        <img src="./assets/icons/whatsapp.webp" alt="icone whatsapp">
-                                                </a>
-                                        </li>
-                                        <li><a target="_blank" class="nav-link" href="https://www.instagram.com/espacoharaspiracicaba/">
-                                                        <img src="./assets/icons/instagram.webp" alt="icone instagram">
-                                                </a>
-                                        </li>
-                                        <li><a target="_blank" class="nav-link" href="mailto:contato@espacoharas.com.br">
-                                                        <img src="./assets/icons/email-circle.webp">
-                                                </a>
-                                        </li>
-                                        <li><a target="_blank" class="nav-link" href=" https://www.facebook.com/espacoharas/">
-                                                        <img src="./assets/icons/facebook.webp" alt="icone facebook">
-                                                </a>
-                                        </li>
-                                </ul>
-                        </li>
+                        <?php echo $menu ?>
                 </ul>
         </div>
 

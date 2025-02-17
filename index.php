@@ -37,9 +37,11 @@
 </head>
 
 <body>
-        <?php include 'assets/php/header.php' ?>
+        <?php
+        $title = 'principal';
+        include('assets/php/header.php')
+        ?>
         <section id="home" class="home">
-
                 <article class="home-card">
                         <h1 class="home-title text-uppercase">
                                 <span>Bem-vindo ao</span>
@@ -52,7 +54,7 @@
                         <p class="home-text">A antiga construção, remota à arquitetura de 1930, oferecendo aos convidados o
                                 charme do passado e a
                                 modernidade do presente com os serviços e qualidade oferecidos.</p>
-                        <a href="formulario.html" target="_blank" class="zoom btn-preto text-uppercase">Solicite um
+                        <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link " target="_blank" class="zoom btn-vermelho text-uppercase">Solicite um
                                 Orçamento</a>
                 </article>
         </section>
@@ -76,7 +78,7 @@
                                                 íntimo ao
                                                 grandioso, até cerimônias ao ar livre.
                                         </p>
-                                        <a target="_blank" href="lp-casamentos/"
+                                        <a target="_blank" href="https://espacoharas.com.br/lp-casamentos.php"
                                                 class="evento-btn btn btn-outline-light text-uppercase">Saiba
                                                 Mais</a>
                                 </div>
@@ -89,7 +91,7 @@
                                                 necessidade.
                                                 Seja palesta, coworking, confraternizações, treinamentos e muito mais.
                                         </p>
-                                        <a target="_blank" href="lp-corporativos/"
+                                        <a target="_blank" href="https://espacoharas.com.br/lp-corporativos.php"
                                                 class="evento-btn btn btn-outline-light text-uppercase">Saiba
                                                 Mais</a>
                                 </div>
@@ -103,7 +105,7 @@
                                                 iluminação, pista de dança, espaço para cabine de fotos, ilha de buffet e muito mais..
                                                 Cada detalhe é pensado para uma experiência única.
                                         </p>
-                                        <a target="_blank" href="lp-formaturas/"
+                                        <a target="_blank" href="https://espacoharas.com.br/lp-formaturas.php"
                                                 class="evento-btn btn btn-outline-light text-uppercase">Saiba
                                                 Mais</a>
                                 </div>
@@ -116,12 +118,12 @@
                                                 e
                                                 personalização se encontram, tornando o seu ideal possível.
                                         </p>
-                                        <a target="_blank" href="lp-aniversarios/"
+                                        <a target="_blank" href="https://espacoharas.com.br/lp-aniversarios.php"
                                                 class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
                                 </div>
                         </div>
                 </div>
-                <a href="lp-aniversarios/" class="btn-vermelho text-uppercase">agende sua visita</a>
+                <a href="https://web.whatsapp.com/send?phone=5519997093745" target="_blank" class="btn-vermelho text-uppercase whatsapp">agende sua visita</a>
         </section>
         <section class="photo-gallery" id="photo-gallery">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -130,7 +132,10 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
                         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
                         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <h2 class="text-uppercase">Galeria de Fotos</h2>
+                <h2 class="text-uppercase text-center" data-aos="fade-up">
+                        Galeria de Fotos
+                        <div class="detalhe-div"></div>
+                </h2>
                 <div id="carousel-container" class="carousel-container responsive">
 
                         <div class="item-container">
@@ -303,7 +308,7 @@
                                                 proposta se ajusta exatamente às suas preferências.
                                         </p>
                                         <a target="_blank" href="https://zarabuffet.com.br/"
-                                                class="btn text-uppercase btn-preto ">CONHEÇA O
+                                                class="btn text-uppercase btn-vermelho ">CONHEÇA O
                                                 NOSSO <br>ZARA BUFFET</a>
                                 </div>
                         </div>
@@ -332,34 +337,49 @@
                         <img class="zoom" src="assets/img/realize_1.webp" data-aos="fade-up" data-aos-delay="180"
                                 alt="salao de eventos">
                 </div>
-                <a target="_blank" href="formulario.html" class="btn btn-vermelho text-uppercase">Solicite um
+                <a target="_blank" href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link " class="btn btn-vermelho text-uppercase">Solicite um
                         Orçamento</a>
 
-                <div class="tour-completo" id="tour-completo">
-                        <h2 class="text-uppercase">tour completo <div class="detalhe-div"></div>
-                        </h2>
-                        <iframe src="https://www.youtube.com/embed/JIh6xmrwyxY?si=v8KUv0v4oDyWurbB"
-                                title="clipboard-write; encrypted-media; picture-in-picture;"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 
+        </section>
+        <section id="tour" class="tour">
+                <h2 class="text-uppercase">tour completo <div class="detalhe-div"></div>
+                </h2>
+                <div id="display-video" class="display-video" onclick=playVideo()>
+                        <img src="./assets/img/video-placeholder.webp" alt="video placeholder" loading="lazy">
                 </div>
+                <script>
+                        function playVideo() {
+                                const displayVideo = document.getElementById("display-video");
+                                displayVideo.innerHTML = '';
+
+                                const iframe = document.createElement('iframe');
+                                iframe.src = "https://www.youtube.com/embed/JIh6xmrwyxY?autoplay=1&si=v8KUv0v4oDyWurbB";
+                                iframe.title = "YouTube video player";
+                                iframe.referrerPolicy = "strict-origin-when-cross-origin";
+                                iframe.allow = "clipboard-write; encrypted-media; picture-in-picture; fullscreen";
+                                iframe.allowFullscreen = true;
+
+                                displayVideo.appendChild(iframe);
+                        }
+                </script>
         </section>
         <section id="onde-estamos" class="onde-estamos" data-aos="fade-up">
                 <h2 class="text-uppercase">Onde estamos?<div class="detalhe-div"></div>
                 </h2>
-                <iframe class="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8003104095037!2d-47.596177824695985!3d-22.698476479402224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62e7265c16c91%3A0x2eb14df4bf9d5544!2sESPA%C3%87O%20HARAS!5e0!3m2!1spt-BR!2sbr!4v1716854276847!5m2!1spt-BR!2sbr"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="endereco">
-                        <img class="mapa-icone" alt="icone localização"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERUlEQVR4nO1aS6gdRRBtEzWSKKiPy/Q5fT+Cz4AvIshDMKCC5ulCEPyh4kIkEReiRhGMoBFc6MbgB/G/iAuNxscLiUZ04QdE8EOCSowSE8MziHGhYlRExdyR0hoYh/ndmZ43V7Cg4NJTXV2nq7q7uvoa8z+l0/T09FEkrya5CcBekr8I6+/nSV4lMmacyVp7Ocn9JMMC3g/gUjOGdATJh2OG7gKwNgiCFUEQLFNeIW3yLZID8KD0NeNCJB9Sw34neaMxZlGO+GIAN6ms9NlgxoEAXBKBcM6dX7YfyVURGJIXmzZpamrqaAAH1BjxxEgE4GbtO9/qBuCcuyJaExIyiW9dALMkf1Kec86dklCxmOSnosNae5lpiwC8qGG1NgXE98ndStq63a5LyN6m3zeZtgjAHp3NqUT7rBr+ihguDGC7tm2OywZBcJq271kww621A5JbAHwXn+mJiYnj4nIaSmF89kn21OAf47LSN8VzHyV1eiWSr6UdcP1+/4SE3CFplxArAtLtdk9M0wngiSaB/Jw2qLX2zITcnBqzXcDomnlV22bjstI34/QfkpyRDcE5dxbJ20k+DeBtkjsAvExyZSUgAL7OGPTuBJDlyfCLLfbJhM47slIZAD9E3s34/huA6SpANmQo/CQpqwt8sxpySDyRBKGgPyyRm4U5YDZWAXJBjsJzRtVH8ow6IPgPv1M4kHPudJKPAHiP5Jckd+co3FphYl7wAGRr0WzdpwuurMJhctHnkbX2VJJ/1gUC4PHMQXq93skVlb41gje2efBGSPK6pga5skzm6wlEGATBSVkg1tRUfnAwGByfBUIuWbreaoMAsC0vpP5OL2ryU0WXsBp8WA9XOSxT6UgA73ty+RDA2SkgVoohNb1waxaAKKTu9RW3OuAXnU7n2Jj+pSQ/86D7rkwQElJy3PsEomCejXnjGU96n8vzxkbfIGJgrpFalkedn+cB2dsUkCjX8qhvKBGUBeSGirvVvJwJuqXOkPyqwQkJS91V5HKkW+Mou8qqskmlZz4s4WpKlD1L5UDxXSnr2togDyUfzAUD4LGSymZa8kioIbYvF4geXGWUzYvx4hkAFy7UGuG/a8e5Hlm6kAZVBPFrv99HLhD1io+cq0m+vxCEAvGRTjTFB0vXvUg+OsZhdb0pSxJ/DZ/4VXlXsmBeSLIbkVw/BsaHETvnLjJVKSr9t80A3qwMQoFsGRNvnFcLiFYM2/bGx7VAKJA32gZCcr0PIGVzryZ5Z+2nbP03w1zN0DiQ9hzntfBQFkz0pFYFRKfTsfIK7Jy7tqCGHObwbuOJpGT0wIg14TDl/X2R/F8leoMsORl/kFxtfJK19lyS9wC4E8CTAD7QgdIMeKlgYtYUpf8AvkmrkzVCg8HgGHkj0UzgdXndkkdNAP2ivpOTk0sA3ELy2xQg7/Z6PZr/EgVBsAzAOt0YhNfJumrbrgWlvwCojcwxK4K1xwAAAABJRU5ErkJggg==">
+                <a href="https://www.google.com/maps?ll=-22.697364,-47.593105&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=3364556110204589380"
+                        id="display-map"
+                        class="display-map" target="_blank">
+                        <img src="./assets/img/map-placeholder.webp" alt="map placeholder" loading="lazy">
+                </a>
+                <a class="endereco" target="_blank" href="https://www.google.com/maps?ll=-22.697364,-47.593105&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=3364556110204589380">
+                        <img class="mapa-icone" alt="icone localização" src="./assets/icons/map-icon.webp">
                         <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Limeira - SP</p>
-                </div>
+                </a>
         </section>
         <section class="faq" id="faq">
-                <h2 class="text-uppercase" data-aos="fade-up" data-aos-delay="150">perguntas <br>frequentes</h2>
-                <div class="accordions " data-aos="fade-up" data-aos-delay="130">
+                <h2 class="text-uppercase detalhe-vertical">perguntas frequentes </h2>
+                <div class="accordions-container" data-aos="fade-up" data-aos-delay="130">
                         <div class="accordion-item">
                                 <input type="checkbox" id="accordion-1">
                                 <label for="accordion-1">

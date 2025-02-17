@@ -42,69 +42,61 @@
 </head>
 
 <body>
-        <?php include './assets/php/header.php' ?>
+        <?php
+        $title = 'aniversarios';
+        include './assets/php/header.php'
+        ?>
         <main>
-
                 <section id="home" class="home">
                         <div class="capa">
                                 <img class="capa-logo" src="./assets/img-commom/logo_branco_2.webp" alt="" data-aos="fade-down"
                                         data-aos-delay="150">
                                 <h1 class="main-title text-uppercase text-center" data-aos="fade-up" data-aos-delay="100">Aniversários
                                         e Outros</h1>
-                                <a href="../formulario.php" class="button btn-transparent-white" data-aos="fade" data-aos-delay="200"
-                                        target="_blank"><span>Solicite Orçamento</span></a>
+                                <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link"
+                                        class=" button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
+                                        <span>Solicite Orçamento</span>
+                                </a>
                         </div>
                 </section>
-
-                <section class="text">
+                <section class="text" id="text">
                         <div class="text-container">
                                 <div class="text-card" data-aos="fade-up">
                                         <h2 class="detalhe-vertical text-uppercase">
                                                 Sua festa Completa e Inesquecível.
                                         </h2>
-                                        <p>Seja para aniversários, debutantes, jantares comemorativos ou qualquer outro evento especial,
-                                                estamos aqui para tornar cada detalhe único e personalizado de acordo com suas preferências.
-                                                Nosso espaço amplo e versátil pode acomodar grupos de diferentes tamanhos, proporcionando
-                                                conforto e espaço para todos os seus amigos e familiares.
-                                                Gostaria de um espaço digno de protagonismo para sua mesa de bolo? Temos! Um bartender para
-                                                preparar drinks deliciosos? Também Temos! Precisa de bistrôs charmosos para os convidados
-                                                relaxarem? Estamos aqui para isso também! E claro, não poderia faltar um palco para aquelas
-                                                apresentações especiais, uma iluminação incrível para criar a atmosfera perfeita, um hall de
-                                                entrada que impressiona desde o primeiro momento e muito mais.
-                                                Além disso, contamos com uma equipe dedicada e experiente, pronta para auxiliá-lo em todos os
-                                                aspectos da organização do evento, desde o planejamento inicial até a execução no dia da festa.
-                                                Conosco, cada detalhe é cuidadosamente planejado para criar momentos inesquecíveis!</p>
+                                        <p>Seja para aniversários, debutantes, jantares comemorativos ou qualquer outro evento especial, estamos aqui para tornar cada detalhe único e personalizado de acordo com suas preferência</p>
+                                        <p>Nosso espaço amplo e versátil pode acomodar grupos de diferentes tamanhos, proporcionando conforto e espaço para todos os seus amigos e familiares. </p>
+                                        <p>Gostaria de um espaço digno de protagonismo para sua mesa de bolo? Temos! Um bartender para preparar drinks deliciosos? Também Temos! Precisa de bistrôs charmosos para os convidados relaxarem? Estamos aqui para isso também! E claro, não poderia faltar um palco para aquelas apresentações especiais, uma iluminação incrível para criar a atmosfera perfeita, um hall de entrada que impressiona desde o primeiro momento e muito mais. </p>
+                                        <p>Além disso, contamos com uma equipe dedicada e experiente, pronta para auxiliá-lo em todos os aspectos da organização do evento, desde o planejamento inicial até a execução no dia da festa. Conosco, cada detalhe é cuidadosamente planejado para criar momentos inesquecíveis!</p>
+
                                         <a class="button btn-transparent-white " href="../formulario.php">Faça um orçamento</a>
                                 </div>
-                                <div class="mtg-container">
-                                        <img class="mtg-1" data-aos="fade-left" data-aos-delay="500" src="./assets/img-aniversarios/mtg-1.webp" alt="">
-                                        <img class="mtg-2" data-aos="fade" data-aos-delay="500" src="./assets/img-aniversarios/mtg-2.webp" alt="">
-                                        <img class="mtg-3" data-aos="fade-right" data-aos-delay="300" src="./assets/img-aniversarios/mtg-3.webp" alt="">
-                                </div>
+                                <img class="text-img" data-aos="fade" data-aos-delay="500" src="./assets/img-aniversarios/mtg-2.webp" alt="">
                 </section>
                 <section id="about-the-space" class="about-the-space">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
                                 </div>
                         </h2>
-                        <div class="carousel-container responsive">
+                        <div class="capacity-container">
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-place.webp" alt="">
                                         <div>
-                                                <h4>ESPAÇO TOTAL</h4>
+                                                <h4 class="capacity-title">ESPAÇO TOTAL</h4>
                                                 <p>24 mil m² (interno e externo)</p>
                                         </div>
                                 </div>
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-pessoas.webp" alt="">
                                         <div>
-                                                <h4>SALÃO PRINCIPAL</h4>
+                                                <h4 class="capacity-title">SALÃO PRINCIPAL</h4>
                                                 <p>340 pessoas (na área coberta)</p>
                                         </div>
                                 </div>
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-capela.webp" alt="">
                                         <div>
-                                                <h4>CAPELINHA</h4>
+                                                <h4 class="capacity-title">SALÃO ANEXO</h4>
                                                 <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
                                                         <small>(na área externa)</small>
                                                 </p>
@@ -113,51 +105,43 @@
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-fonte.webp" alt="">
                                         <div>
-                                                <h4>JARDIM EXTERNO <br> (CERIMÔNIA)</h4>
+                                                <h4 class="capacity-title">JARDIM EXTERNO <br> (CERIMÔNIA)</h4>
                                                 <p>400 pessoas <br><small>(sentadas na área externa)</small></p>
                                         </div>
                                 </div>
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-kids.webp" alt="">
                                         <div>
-                                                <h4>ESPAÇO PARA ÁREA KIDS</h4>
+                                                <h4 class="capacity-title">ESPAÇO PARA ÁREA KIDS</h4>
                                                 <p> (DESCOBERTO)</p>
                                         </div>
                                 </div>
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-carro.webp" alt="">
                                         <div>
-                                                <h4>ESTACIONAMENTO</h4>
+                                                <h4 class="capacity-title">ESTACIONAMENTO</h4>
                                                 <p>privativo e de fácil acesso, para mais de 500 carros.</p>
                                         </div>
                                 </div>
                         </div>
-                        <div class="diferenciais" data-aos='fade-up' data-aos-delay="200">
-                                <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
-                                </h2>
-                                <ul class="diferenciais-lista">
-                                        <li data-aos='fade-up' data-aos-delay="120">Espaço para Área Kids (salão anexo)</li>
-                                        <li data-aos='fade-up' data-aos-delay="100">Pergolado externo instagramável</li>
-                                        <li data-aos='fade-up' data-aos-delay="200">Conjunto de Mesas e Cadeiras</li>
-                                        <li data-aos='fade-up' data-aos-delay="150">Palco Móvel de até 6x3m</li>
-                                        <li data-aos='fade-up' data-aos-delay="175">Lounges de bancos rústicos e bistrôs</li>
-                                        <li data-aos='fade-up' data-aos-delay="125">Camarim</li>
-                                        <li data-aos='fade-up' data-aos-delay="100">Acessibilidade</li>
-                                        <li data-aos='fade-up' data-aos-delay="125">Banheiristas e Seguranças</li>
-                                        <li data-aos='fade-up' data-aos-delay="150">Gerador de energia</li>
-                                </ul>
-                        </div>
+
                 </section>
-                <section class="testimonial" id="testimonial">
-                        <div class="cta" data-aos='fade-up' data-aos-delay="200">
-                                <img class="cta-logo" src="./assets/img-commom/logo-zara.webp" alt="logo zara buffet">
-                                <p>Seu evento precisa de Buffet?</p>
-                                <a class="button btn-transparent-white" href="https://zarabuffet.com.br/" target="_blank">
-                                        Saiba mais
-                                        <span><img src="./assets/icons/to-right.webp" alt=""></span>
-                                </a>
-                        </div>
+                <section class="diferenciais" id="diferenciais" data-aos='fade-up' data-aos-delay="200">
+                        <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
+                        </h2>
+                        <ul class="diferenciais-lista">
+                                <li data-aos='fade-up' data-aos-delay="120">Espaço para Área Kids (salão anexo)</li>
+                                <li data-aos='fade-up' data-aos-delay="100">Pergolado externo instagramável</li>
+                                <li data-aos='fade-up' data-aos-delay="200">Conjunto de Mesas e Cadeiras</li>
+                                <li data-aos='fade-up' data-aos-delay="150">Palco Móvel de até 6x3m</li>
+                                <li data-aos='fade-up' data-aos-delay="175">Lounges de bancos rústicos e bistrôs</li>
+                                <li data-aos='fade-up' data-aos-delay="125">Camarim</li>
+                                <li data-aos='fade-up' data-aos-delay="100">Acessibilidade</li>
+                                <li data-aos='fade-up' data-aos-delay="125">Banheiristas e Seguranças</li>
+                                <li data-aos='fade-up' data-aos-delay="150">Gerador de energia</li>
+                        </ul>
                 </section>
+                <?php include './assets/php/cta.php' ?>
                 <?php include './assets/php/buttons.php' ?>
 
         </main>

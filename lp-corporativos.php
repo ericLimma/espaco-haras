@@ -53,126 +53,142 @@
 </head>
 
 <body>
-        <?php include './assets/php/header.php' ?>
+        <?php
+        $title = 'corporativos';
+        include './assets/php/header.php'
+        ?>
         <main>
                 <section id="home" class="home">
                         <div class="capa">
                                 <img class="capa-logo" src="../assets/img-commom/logo_branco_2.webp" alt="" data-aos="fade-down"
                                         data-aos-delay="150">
                                 <h1 class="main-title" data-aos="fade-up" data-aos-delay="100">CORPORATIVOS</h1>
-                                <a href="../formulario.php" class="button btn-transparent-white" data-aos="fade" data-aos-delay="200"
-                                        target="_blank"><span>Solicite Orçamento</span></a>
+                                <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link"
+                                        class=" button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
+                                        <span>Solicite Orçamento</span>
+                                </a>
                         </div>
                 </section>
-                <section class="text">
+                <section class="text" id="text">
                         <div class="text-container">
                                 <div class="text-card" data-aos="fade-up">
                                         <h2 class="detalhe-vertical text-uppercase">
                                                 Potencializando o sucesso da sua empresa!
                                         </h2>
-                                        <p>Bem-vindo ao Espaço Haras, o local ideal para os seus eventos corporativos em Piracicaba. Com uma
-                                                década de experiência, somos especializados em transformar suas reuniões e celebrações em
-                                                experiências memoráveis, sob medida para atender às necessidades únicas da sua empresa.
-                                                Nossos diferenciais são evidentes desde o primeiro contato. Com uma equipe altamente dedicada,
-                                                garantimos uma assessoria completa, que vai desde a estruturação inicial até a realização
-                                                completa do seu evento. Aqui, cada detalhe é cuidadosamente planejado para refletir a identidade
-                                                da sua empresa e criar experiências que marcam história.
-                                                Com um espaço amplo de 24 mil m², oferecemos flexibilidade para personalizar o layout do seu
-                                                evento de acordo com suas preferências e necessidades específicas. Seja uma confraternização
-                                                animada, uma palestra inspiradora, um treinamento produtivo ou um lançamento de produto
-                                                emocionante, estamos preparados para tornar seu evento um verdadeiro sucesso.
-                                                Grandes empresas como Raízen, Ajinomoto, Hyundai, Sicredi, Sicoob, Unimed e muitas outras já
-                                                confiaram em nós para potencializar seu sucesso corporativo. Faça parte desse grupo de sucesso e
-                                                ofereça aos seus colaboradores e convidados uma experiência única e marcante no Espaço Haras.
-                                        </p>
+                                        <p>Com uma década de experiência, somos especializados em transformar suas reuniões e celebrações em experiências memoráveis, sob medida para atender às necessidades únicas da sua empresa. </p>
+                                        <p>Nossos diferenciais são evidentes desde o primeiro contato. Com uma equipe altamente dedicada, garantimos uma assessoria completa, que vai desde a estruturação inicial até a realização completa do seu evento. Aqui, cada detalhe é cuidadosamente planejado para refletir a identidade da sua empresa e criar experiências que marcam história.</p>
+                                        <p>Com um espaço amplo de 24 mil m², oferecemos flexibilidade para personalizar o layout do seu evento de acordo com suas preferências e necessidades específicas. Seja uma confraternização animada, uma palestra inspiradora, um treinamento produtivo ou um lançamento de produto emocionante, estamos preparados para tornar seu evento um verdadeiro sucesso. </p>
+                                        <p>Grandes empresas como Raízen, Ajinomoto, Hyundai, Sicredi, Sicoob, Unimed e muitas outras já confiaram em nós para potencializar seu sucesso corporativo. </p>
+                                        <p>Faça parte desse grupo de sucesso e ofereça aos seus colaboradores e convidados uma experiência única e marcante no Espaço Haras.</p>
                                         <a class="button btn-transparent-white " href="../formulario.php">Faça um orçamento</a>
                                 </div>
-                                <div class="mtg-container">
-                                        <div>
-                                                <img class="mtg-1" data-aos="fade-left" data-aos-delay="500" src="../assets/img-corporativos/mtg-1.webp" alt="">
-                                                <img class="mtg-2" data-aos="fade-left" data-aos-delay="500" src="../assets/img-corporativos/mtg-2.webp" alt="">
-                                        </div>
-                                        <div>
-                                                <img class="mtg-3" data-aos="fade-right" data-aos-delay="300" src="../assets/img-corporativos/mtg-3.webp" alt="">
-                                                <img class="mtg-4" data-aos="fade-right" data-aos-delay="300" src="../assets/img-corporativos/mtg-4.webp" alt="">
-                                        </div>
-                                </div>
+                                <img class="about-img" data-aos="fade-left" data-aos-delay="500" src="../assets/img-corporativos/mtg-1.webp" alt="">
                         </div>
                 </section>
-                <!--                 <section>
-                        <div class="wrapper">
-                                <div class="slide-wrapper" data-slide="wrapper">
-                                        <button class="slide-nav-button slide-nav-prev" data-slide="nav-prev-button">
-                                                <img class="left-arrow" src="./assets/icons/previous.webp" alt="Anterior">
-                                        </button>
-                                        <button class="slide-nav-button slide-nav-next" data-slide="nav-next-button">
-                                                <img src="./assets/icons/next.webp" alt="Próximo">
-                                        </button>
-
-                                        <div class="slide-list" data-slide="list">
-                                                <div class="slide-item" data-slide="item" data-index="0">
-                                                        <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_loreta_bruno.webp" alt="Depoimento Loreta e Bruno">
-                                                        </div>
-                                                </div>
-                                                <div class="slide-item" data-slide="item" data-index="1">
-                                                        <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_mari_remo.webp" alt="Depoimento Mari e Remo">
-                                                        </div>
-                                                </div>
-                                                <div class="slide-item" data-slide="item" data-index="2">
-                                                        <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_marina_luiz.webp" alt="Depoimento Marina e Luiz">
-                                                        </div>
-                                                </div>
-                                                <div class="slide-item" data-slide="item" data-index="3">
-                                                        <div class="testimonial-card">
-                                                                <img class="testimonial-img" src="./assets/img-casamentos/lp_depoimento_bruna_gustavo.webp" alt="Depoimento Bruna e Gustavo">
-                                                        </div>
-                                                </div>
-                                        </div>
-
-                                        <div class="slide-controls" id="slide-controls" data-slide="controls-wrapper"></div>
-                                </div>
-                        </div>
-                        
-                </section> -->
                 <section class="partners" id="partners">
                         <h2 class="text-uppercase">Marcas que fizeram história conosco<div class="detalhe-div"></div>
                         </h2>
                         <div class="partners-carousel" data-aos='fade-up' data-aos-delay="150">
-                                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
-                                                <div class="carousel-item active">
+                                                <div class="carousel-item active" data-bs-interval="10000">
                                                         <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/01.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/02.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/03.webp" alt="">
-                                                        </div>
-                                                </div>
+                                                                <img class="partners-img" src="../assets/img-corporativos/oji.webp" alt="logo oji papeis">
+                                                                <img class="partners-img" src="../assets/img-corporativos/raizen.webp" alt="logo raizen">
+                                                                <img class="partners-img" src="../assets/img-corporativos/ek.webp" alt="logo elring klinger">
+                                                                <img class="partners-img" src="../assets/img-corporativos/unimed.webp" alt="logo unimed">
 
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                                                        data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                                                        data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                        <span class="visually-hidden">Next</span>
-                                                </button>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item" data-bs-interval="2000">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/merieux.webp" alt="logo merieux">
+                                                                <img class="partners-img" src="../assets/img-corporativos/polar.webp" alt="logo polar">
+                                                                <img class="partners-img" src="../assets/img-corporativos/klabin.webp" alt="logo klabin">
+                                                                <img class="partners-img" src="../assets/img-corporativos/sicredi.webp" alt="logo sicredi">
+
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/msb.webp" alt="logo msb">
+                                                                <img class="partners-img" src="../assets/img-corporativos/sicoob.webp" alt="logo sicoob">
+                                                                <img class="partners-img" src="../assets/img-corporativos/transys.webp" alt="logo transys">
+                                                                <img class="partners-img" src="../assets/img-corporativos/suvinil.webp" alt="logo suvinil">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/mobis.webp" alt="logo mobis">
+                                                                <img class="partners-img" src="../assets/img-corporativos/hyundai.webp" alt="logo hyundai">
+                                                                <img class="partners-img" src="../assets/img-corporativos/ajinomoto.webp" alt="logo ajinomoto">
+                                                                <img class="partners-img" src="../assets/img-corporativos/candura.webp" alt="logo candura">
+
+                                                        </div>
+                                                </div>
                                         </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                        </button>
                                 </div>
-                        </div>
+                                <script>
+                                        document.addEventListener('DOMContentLoaded', () => {
 
+                                        })
+                                        let windowWidth = window.innerWidth;
+                                        const carouselInner = document.getElementById('carousel-inner')
+
+                                        function setCarrosselImages() {
+                                                if (windowWidth < 900) {
+                                                        carouselInner.innerHTML = `<div class="carousel-item active">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/raizen.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/oji.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/unimed.webp" alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/merieux.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/polar.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/klabin.webp" alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/sicoob.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/msb.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/candura.webp" alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/ek.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/transys.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/sicredi.webp" alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/mobis.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/hyundai.webp" alt="">
+                                                                <img class="partners-img" src="../assets/img-corporativos/ajinomoto.webp" alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <div class="partners-container">
+                                                                <img class="partners-img" src="../assets/img-corporativos/suvinil.webp" alt="">
+                                                        </div>
+                                                </div>`
+                                                }
+                                        }
+                                </script>
+                        </div>
                 </section>
                 <section id="about-the-space" class="about-the-space">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
@@ -231,7 +247,7 @@
                                 </div>
 
                         </div>
-                        <div class="diferenciais" data-aos='fade-up' data-aos-delay="200">
+                        <div class="diferenciais" id="diferenciais" data-aos='fade-up' data-aos-delay="200">
                                 <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
                                 </h2>
                                 <ul class="diferenciais-lista">
@@ -251,16 +267,7 @@
                                 </ul>
                         </div>
                 </section>
-                <section class="testimonial" id="testimonial">
-                        <div class="cta" data-aos='fade-up' data-aos-delay="200">
-                                <img class="cta-logo" src="../assets/img-commom/logo-zara.webp" alt="logo zara buffet">
-                                <p>Seu evento precisa de Buffet?</p>
-                                <a class="button btn-transparent-white" href="https://zarabuffet.com.br/" target="_blank">
-                                        Saiba mais
-                                        <span><img src="../assets/icons/to-right.webp" alt=""></span>
-                                </a>
-                        </div>
-                </section>
+                <?php include './assets/php/cta.php' ?>
                 <?php include './assets/php/buttons.php' ?>
         </main>
         <?php include './assets/php/footer.php' ?>

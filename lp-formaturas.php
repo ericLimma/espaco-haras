@@ -29,14 +29,19 @@
 
 <body>
         <main>
-                <?php include './assets/php/header.php' ?>
+                <?php
+                $title = 'formaturas';
+                include './assets/php/header.php'
+                ?>
                 <section id="home" class="home">
                         <div class="capa">
                                 <img class="capa-logo" src="./assets/img-commom/logo_branco_2.webp" alt="" data-aos="fade-down"
                                         data-aos-delay="150">
                                 <h1 class="main-title" data-aos="fade-up" data-aos-delay="100">FORMATURAS</h1>
-                                <a href="https://espacoharas.com.br/formulario.php" class="button btn-transparent-white"
-                                        data-aos="fade" data-aos-delay="200" target="_blank"><span>Solicite Orçamento</span></a>
+                                <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link"
+                                        class=" button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
+                                        <span>Solicite Orçamento</span>
+                                </a>
                         </div>
                 </section>
                 <section class="text">
@@ -45,18 +50,10 @@
                                         <h2 class="detalhe-vertical text-uppercase">
                                                 Diversão e Comemoração com muito estilo.
                                         </h2>
-                                        <p>Na sua formatura no Espaço Haras, cada detalhe é planejado para tornar o seu evento único e
-                                                inesquecível. Com um espaço amplo e versátil, podemos acomodar desde turmas pequenas até grandes
-                                                grupos de amigos.
-                                                Queremos que sua formatura seja do seu jeito, por isso oferecemos várias opções para
-                                                personalizar o evento, é isso mesmo: desenhe o seu layout com a gente!
-                                                Sonha com um buffet completo, espaço aconchegante para acomodar toda a sua família, local para
-                                                um sistema de bar completo, pista de dança e palco para sua banda dos sonhos? O Espaço Haras
-                                                torna tudo possível e muito mais, com muita diversão garantida!
-                                                E tem mais! Se seu objetivo é uma Pré-Festa, Colação de Grau, Bailes e afins, você também
-                                                encontrou o lugar certo.Estamos aqui para tornar seu evento incrível, onde você pode celebrar
-                                                suas conquistas com seus amigos e família.
-                                        </p>
+                                        <p>Na sua formatura no Espaço Haras, cada detalhe é planejado para tornar o seu evento único e inesquecível. Com um espaço amplo e versátil, podemos acomodar desde turmas pequenas até grandes grupos de amigos. </p>
+                                        <p>Queremos que sua formatura seja do seu jeito, por isso oferecemos várias opções para personalizar o evento, é isso mesmo: desenhe o seu layout com a gente! </p>
+                                        <p>Sonha com um buffet completo, espaço aconchegante para acomodar toda a sua família, local para um sistema de bar completo, pista de dança e palco para sua banda dos sonhos? O Espaço Haras torna tudo possível e muito mais, com muita diversão garantida! </p>
+                                        <p>E tem mais! Se seu objetivo é uma Pré-Festa, Colação de Grau, Bailes e afins, você também encontrou o lugar certo.Estamos aqui para tornar seu evento incrível, onde você pode celebrar suas conquistas com seus amigos e família.</p>
                                         <a class="button btn-transparent-white " href="https://espacoharas.com.br/formulario.php">Faça um
                                                 orçamento</a>
                                 </div>
@@ -85,7 +82,7 @@
                                                         <div class="capacity-card">
                                                                 <img class="capacity-card-icon" src="./assets/img-formaturas/capacidade-capela.webp" alt="">
                                                                 <div>
-                                                                        <h4>CAPELINHA</h4>
+                                                                        <h4>SALÃO ANEXO</h4>
                                                                         <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
                                                                                 <small>(na área externa)</small>
                                                                         </p>
@@ -134,7 +131,7 @@
                                 <div class="capacity-card zoom" data-aos="fade-up" data-aos-delay="100">
                                         <img class="capacity-card-icon" src="./assets/img-formaturas/capacidade-capela.webp" alt="">
                                         <div>
-                                                <h4>CAPELINHA</h4>
+                                                <h4>SALÃO ANEXO</h4>
                                                 <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
                                                         <small>(na área externa)</small>
                                                 </p>
@@ -156,7 +153,7 @@
                                 </div>
 
                         </div>
-                        <div class="diferenciais" data-aos='fade-up' data-aos-delay="200">
+                        <div class="diferenciais" id="diferenciais" data-aos='fade-up' data-aos-delay="200">
                                 <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
                                 </h2>
                                 <ul class="diferenciais-lista">
@@ -171,16 +168,8 @@
                                 </ul>
                         </div>
                 </section>
-                <section class="testimonial" id="testimonial">
-                        <div class="cta" data-aos='fade-up' data-aos-delay="200">
-                                <img class="cta-logo" src="./assets/img-commom/logo-zara.webp" alt="logo zara buffet">
-                                <p>Seu evento precisa de Buffet?</p>
-                                <a class="button btn-transparent-white" href="https://zarabuffet.com.br/" target="_blank">
-                                        Saiba mais
-                                        <span><img src="./assets/icons/to-right.webp" alt=""></span>
-                                </a>
-                        </div>
-                </section>
+
+                <?php include './assets/php/cta.php' ?>
                 <?php include './assets/php/buttons.php' ?>
         </main>
         <?php include './assets/php/footer.php' ?>

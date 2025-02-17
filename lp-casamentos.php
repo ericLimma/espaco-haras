@@ -41,37 +41,34 @@
 </head>
 
 <body>
-        <?php include 'assets/php/header.php' ?>
+        <?php
+        $title = 'casamento';
+        include('assets/php/header.php')
+        ?>
         <main>
                 <section id="home" class="home">
                         <div class="capa">
                                 <img class="capa-logo" src="./assets/img-commom/logo_branco_2.webp" alt="" data-aos="fade-down"
                                         data-aos-delay="150">
                                 <h1 class="main-title" data-aos="fade-up" data-aos-delay="100">CASAMENTOS</h1>
-                                <a href="https://espacoharas.com.br/formulario.php" class="button btn-transparent-white"
-                                        data-aos="fade" data-aos-delay="200" target="_blank"><span>Solicite Orçamento</span></a>
+                                <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link"
+                                        class=" button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
+                                        <span>Solicite Orçamento</span>
+                                </a>
                         </div>
                 </section>
-                <section class="text">
+                <section class="text" id="text">
                         <div class="text-card" data-aos="fade-up">
                                 <h2 class="detalhe-vertical text-uppercase">
                                         Celebrando o amor em sua forma mais autêntica.
                                 </h2>
-                                <p>Imagine trocar votos de amor em um cenário rústico e encantador, onde o requinte se encontra com
-                                        a
-                                        beleza natural. No Espaço Haras, oferecemos não apenas um local para casamentos, mas sim um
-                                        palco para a realização dos seus sonhos mais românticos.
-                                        Um dos nossos diferenciais é a total personalização do layout do evento. Seja uma cerimônia
-                                        íntima na nossa acolhedora Capelinha Coberta, uma celebração majestosa no Salão Principal ou um
-                                        casamento ao ar livre no deslumbrante Jardim Externo, estamos preparados para tornar sua visão
-                                        uma realidade.
-                                        O Espaço Haras disponibiliza o conforto dos sonhos com o amplo salão de festas para seus
-                                        convidados, varandas multifuncionais e instagramáveis, espaço para ambientação de capela para
-                                        cerimônias, jardim externo com iluminação, além de estacionamento para aproximadamente 500
-                                        carros.
-                                        Junte-se a nós no Espaço Haras e transforme seu casamento em um evento que será lembrado para
-                                        sempre. Estamos ansiosos para fazer parte do seu conto de fadas.</p>
-                                <a class="button btn-transparent-white " href="https://espacoharas.com.br/formulario.php">Faça um
+                                <div>
+                                        <p> Imagine trocar votos de amor em um cenário rústico e encantador, onde o requinte se encontra com a beleza natural. </p>
+                                        <p> No Espaço Haras, oferecemos não apenas um local para casamentos, mas sim um palco para a realização dos seus sonhos mais românticos. Um dos nossos diferenciais é a total personalização do layout do evento. Seja uma cerimônia íntima no nosso acolhedor Salão Anexo Coberto, uma celebração majestosa no Salão Principal ou um casamento ao ar livre no deslumbrante Jardim Externo, estamos preparados para tornar sua visão uma realidade. </p>
+                                        <p> O Espaço Haras disponibiliza o conforto dos sonhos com o amplo salão de festas para seus convidados, varandas multifuncionais e instagramáveis, espaço para ambientação de capela para cerimônias, jardim externo com iluminação, além de estacionamento para aproximadamente 500 carros. </p>
+                                        <p> Junte-se a nós no Espaço Haras e transforme seu casamento em um evento que será lembrado para sempre. Estamos ansiosos para fazer parte do seu conto de fadas. </p>
+                                </div>
+                                <a class="button btn-transparent-white " href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link">Faça um
                                         orçamento</a>
                         </div>
                         <img class="mtg-3"
@@ -84,7 +81,8 @@
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
                                 integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
                                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                        <h2 class="text-uppercase">Galeria de Fotos</h2>
+                        <h2 class="text-uppercase">Galeria de Fotos <div class="detalhe-div"></div>
+                        </h2>
 
                         <div id="carousel-container" class="carousel-container responsive">
                                 <div class="item-container">
@@ -286,7 +284,9 @@
                                         <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-66.webp" alt="Salão de festa decorado 55">
                                 </div>
                         </div>
-                        <a class="see-all" href="galeria.php?origem=casamentos">Ver todas...</a>
+                        <a class="btn-vermelho" href="galeria.php" target="_blank">
+                                Ver Todas
+                        </a>
                 </section>
                 <section id="about-the-space" class="about-the-space">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
@@ -309,7 +309,7 @@
                                                         <div class="capacity-card">
                                                                 <img class="capacity-card-icon" src="./assets/img-casamentos/capacidade-capela.webp" alt="">
                                                                 <div>
-                                                                        <h4>CAPELINHA</h4>
+                                                                        <h4>SALÃO ANEXO</h4>
                                                                         <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
                                                                                 <small>(na área externa)</small>
                                                                         </p>
@@ -358,7 +358,7 @@
                                 <div class="capacity-card zoom" data-aos="fade-up" data-aos-delay="100">
                                         <img class="capacity-card-icon" src="./assets/img-casamentos/capacidade-capela.webp" alt="">
                                         <div>
-                                                <h4>CAPELINHA</h4>
+                                                <h4>SALÃO ANEXO</h4>
                                                 <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
                                                         <small>(na área externa)</small>
                                                 </p>
@@ -380,7 +380,7 @@
                                 </div>
 
                         </div>
-                        <div class="diferenciais" data-aos='fade-up' data-aos-delay="200">
+                        <div class="diferenciais" id="diferenciais" data-aos='fade-up' data-aos-delay="200">
                                 <h2 class="detalhe-horizontal text-uppercase">diferenciais <div class="detalhe-div"></div>
                                 </h2>
                                 <ul class="diferenciais-lista">
@@ -395,7 +395,6 @@
                                 </ul>
                         </div>
                 </section>
-
                 <section class="testimonial" id="testimonial">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="200">depoimentos <div class="detalhe-div">
                                 </div>
@@ -515,25 +514,13 @@
                                         </div>
                                 </div>
                         </div>
-
-                        <div class="cta" data-aos='fade-up' data-aos-delay="200">
-                                <img class="cta-logo" src="./assets/img-commom/logo-zara.webp" alt="logo zara buffet">
-                                <p>Seu evento precisa de Buffet?</p>
-                                <a class="button btn-transparent-white" href="https://zarabuffet.com.br/" target="_blank">
-                                        Saiba mais
-                                        <span><img src="./assets/icons/next.webp" alt=""></span>
-                                </a>
-                        </div>
-
                 </section>
-
-                <style>
-
-                </style>
+                <?php include 'assets/php/cta.php' ?>
                 <?php include 'assets/php/buttons.php' ?>
         </main>
         <?php include 'assets/php/footer.php' ?>
-
+        <script defer src="./assets/js/arrow_animation.js"></script>
+        <script defer src="./assets/js/nav.js"></script>
         <script defer src="./assets/js/carousel.js"></script>
         <script src="assets/js/slider-2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

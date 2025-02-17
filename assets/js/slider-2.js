@@ -56,8 +56,8 @@ class Slider {
         getSlidesPerView() {
                 const windowWidth = window.innerWidth;
 
-                if (windowWidth > 962) return 3;
-                else if (windowWidth <= 962 && windowWidth > 590) return 2;
+                if (windowWidth > 1600) return 3;
+                else if (windowWidth <= 1199 && windowWidth > 590) return 2;
                 else return 1;
         }
 
