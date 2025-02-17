@@ -1,21 +1,27 @@
 <?php
 // Define o diretório onde as fotos estão armazenadas
-$diretorio = './assets/img-casamentos/galeria/';
+$title = filter_input(INPUT_GET, 'title',) ?? 'principal';
 
-// Verifica se o diretório existe
-if (is_dir($diretorio)) {
-        // Abre o diretório
-        $arquivos = scandir($diretorio);
-
-        // Filtra apenas os arquivos de imagem (supondo que sejam .jpg, .jpeg, .png, .webp)
-        $imagens = array_filter($arquivos, function ($arquivo) {
-                $extensoes = ['jpg', 'jpeg', 'png', 'webp'];
-                $extensao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
-                return in_array($extensao, $extensoes);
-        });
-} else {
-        die("Diretório não encontrado.");
+if ($title == 'casamentos') {
+        $diretorio = './assets/img-casamentos/galeria/';
+} else if ($title == 'principal') {
+        $diretorio = './assets/img/carousel/';
 }
+$diretorios = [
+        'casamentos' => './assets/img-casamentos/galeria/',
+        'principal' => './assets/img/carousel/'
+];
+$diretorio = $diretorios[$title] ?? null;
+
+if (!$diretorio || !is_dir($diretorio)) {
+        die("Erro: Diretório não encontrado.");
+}
+$arquivos = scandir($diretorio);
+$extensoes_permitidas = ['jpg', 'jpeg', 'png', 'webp'];
+$imagens = array_values(array_filter($arquivos, function ($arquivo) use ($extensoes_permitidas) {
+        return in_array(strtolower(pathinfo($arquivo, PATHINFO_EXTENSION)), $extensoes_permitidas);
+}));
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -35,16 +41,11 @@ if (is_dir($diretorio)) {
         <meta property="og:url" content="https://https://espacoharas.com.br/galeria">
         <meta property="og:type" content="website">
 
+
         <title>Espaço Haras | Galeria</title>
 
         <?php include './assets/php/fav_icon.php' ?>
-        <!-- Slick jS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-                integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-                integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -121,9 +122,8 @@ if (is_dir($diretorio)) {
 
                 <div class="mosaic">
                         <?php
-                        // Exibe cada imagem no mosaico
                         foreach ($imagens as $imagem) {
-                                echo '<img src="' . $diretorio . $imagem . '" alt="' . $imagem . '">';
+                                echo "<img src='{$diretorio}{$imagem}' alt='Imagem'>";
                         }
                         ?>
                 </div>

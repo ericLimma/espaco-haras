@@ -281,6 +281,9 @@
                         </div>
 
                 </div>
+                <a class="btn-vermelho" href="galeria.php?title=<?php echo urlencode($title); ?>" target="_blank">
+                        Ver Todas
+                </a>
         </section>
         <section id="diferenciais" class="diferenciais">
                 <img src="assets/img/img-diferenciais.webp" data-aos="fade-right" data-aos-delay="150" alt=""

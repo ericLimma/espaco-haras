@@ -284,7 +284,7 @@
                                         <img class="gallery-img" src="./assets/img-casamentos/carousel/carrossel-66.webp" alt="Salão de festa decorado 55">
                                 </div>
                         </div>
-                        <a class="btn-vermelho" href="galeria.php" target="_blank">
+                        <a class="btn-vermelho" href="galeria.php?title=<?php echo urlencode($title); ?>" target="_blank">
                                 Ver Todas
                         </a>
                 </section>
