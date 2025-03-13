@@ -65,7 +65,74 @@
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
                                 </div>
                         </h2>
-                        <div class="capacity-container">
+
+                        <div class="slide-container" data-slide='slide-container' data-type="single" data-slide-loop data-slide-auto>
+                                <div class="slide-display" data-slide='slide-display'>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-place.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">ESPAÇO TOTAL</h4>
+                                                                <p>24 mil m² (interno e externo)</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-pessoas.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">SALÃO PRINCIPAL</h4>
+                                                                <p>340 pessoas (na área coberta)</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-capela.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">SALÃO ANEXO</h4>
+                                                                <p>170 pessoas <small>(na área coberta)</small> <br> 200 pessoas
+                                                                        <small>(na área externa)</small>
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-fonte.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">JARDIM EXTERNO <br> (CERIMÔNIA)</h4>
+                                                                <p>400 pessoas <br><small>(sentadas na área externa)</small></p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-kids.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">ESPAÇO PARA ÁREA KIDS</h4>
+                                                                <p> (DESCOBERTO)</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide="slide-item">
+                                                <div class="capacity-card">
+                                                        <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-carro.webp" alt="">
+                                                        <div>
+                                                                <h4 class="capacity-title">ESTACIONAMENTO</h4>
+                                                                <p>privativo e de fácil acesso, para mais de 500 carros.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="slide-controls" data-slide='slide-controls'>
+                                        <img class="slide-control slide-control-prev" data-slide='slide-control-prev'
+                                                src="./assets/icons/prev.webp" alt="prev button">
+                                        <img class="slide-control slide-control-next" data-slide='slide-control-next'
+                                                src="./assets/icons/next.webp" alt="next button">
+                                </div>
+                        </div>
+                        <div class="capacity-container ">
                                 <div class="capacity-card">
                                         <img class="capacity-card-icon" src="./assets/img-aniversarios/capacidade-place.webp" alt="">
                                         <div>
@@ -133,14 +200,15 @@
 
         </main>
         <?php include './assets/php/footer.php' ?>
+
+        <script defer src="./assets/js/slider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <script defer src="./assets/js/aos_init.js"></script>
+
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-<script defer src="./assets/js/aos_init.js"></script>
-<script defer src="./assets/js/carousel.js"></script>
 
 </html>

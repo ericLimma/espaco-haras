@@ -19,17 +19,7 @@
         <title>Espaço Haras | Eventos</title>
 
         <?php include './assets/php/fav_icon.php' ?>
-
-        <!-- Slick jS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-                integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-                integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/commom-style.css">
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -126,160 +116,71 @@
                 <a href="https://web.whatsapp.com/send?phone=5519997093745" target="_blank" class="btn-vermelho text-uppercase whatsapp">agende sua visita</a>
         </section>
         <section class="photo-gallery" id="photo-gallery">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-                        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
                 <h2 class="text-uppercase text-center" data-aos="fade-up">
                         Galeria de Fotos
                         <div class="detalhe-div"></div>
                 </h2>
-                <div id="carousel-container" class="carousel-container responsive">
-
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-25.webp" alt="Salão de festa decorado">
+                <div class="slide-container" data-slide='slide-container' data-type="triple" data-slide-controls
+                        data-slide-loop data-slide-auto>
+                        <div class="slide-display" data-slide='slide-display'>
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-1.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-2.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-1.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-2.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-3.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-4.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-5.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-6.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-7.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-8.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-9.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-10.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-11.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-12.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-13.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-14.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-15.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-16.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-17.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-18.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-19.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-20.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-21.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-22.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-23.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-24.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-25.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-26.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-27.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-28.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-29.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-30.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-31.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-32.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-33.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-34.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-35.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-36.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-37.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-38.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-39.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-40.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-41.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-42.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-43.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-44.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-45.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-46.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-47.webp" alt="Salão de festa decorado">
+                                <img data-slide='slide-item' class="slide-item" src="assets/img/carousel/carrossel-48.webp" alt="Salão de festa decorado">
                         </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-26.webp" alt="Salão de festa decorado">
+                        <div class="slide-controls" data-slide='slide-controls'>
+                                <img class="slide-control slide-control-prev" data-slide='slide-control-prev'
+                                        src="./assets/icons/prev.webp" alt="prev button">
+                                <img class="slide-control slide-control-next" data-slide='slide-control-next'
+                                        src="./assets/icons/next.webp" alt="next button">
                         </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-27.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-28.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-29.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-30.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-31.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-32.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-33.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-34.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-35.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-36.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-37.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-38.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-39.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-40.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-41.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-42.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-43.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-44.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-45.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-46.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-47.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-48.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-1.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-2.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-3.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-4.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-5.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-6.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-7.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-8.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-9.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-10.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-11.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-12.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-13.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-15.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-16.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-17.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-18.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-19.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-20.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-21.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-22.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-23.webp" alt="Salão de festa decorado">
-                        </div>
-                        <div class="item-container">
-                                <img class="gallery-img" src="assets/img/carousel/carrossel-24.webp" alt="Salão de festa decorado">
-                        </div>
-
                 </div>
                 <a class="btn-vermelho" href="galeria.php?title=<?php echo urlencode($title); ?>" target="_blank">
                         Ver Todas
@@ -471,7 +372,7 @@
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>
 
-        <script defer src="./assets/js/carousel.js"></script>
+        <script defer src="./assets/js/slider.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
         <script defer src="./assets/js/aos_init.js"></script>
 </body>

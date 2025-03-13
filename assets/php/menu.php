@@ -2,7 +2,7 @@
 $menuPrincipal = '<li><a href="#photo-gallery">Fotos</a></li>
 <li><a href="#diferenciais">Diferenciais</a></li>
 <li><a href="#alta-gastronomia">Alta Gastronomia</a></li>
-<li><a href="#tour-completo">Tour 360</a></li>
+<li><a href="#tour">Tour 360</a></li>
 <li><a href="#faq">Perguntas Frequentes</a></li>
 <li><a href="#footer">Contato</a></li>';
 

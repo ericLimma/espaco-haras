@@ -9,7 +9,7 @@
         </div>
         <div class="footer-row footer-item">
                 <div class="footer-nav" data-aos="fade-up" data-aos-delay="150">
-                        <h4>Nossos Serviços</h4>
+                        <p class="h4">Nossos Serviços</p>
                         <ul class="footer-nav-list">
                                 <li><a href="#home">Home</a></li>
                                 <?php

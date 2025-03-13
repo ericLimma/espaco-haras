@@ -88,107 +88,54 @@
                 <section class="partners" id="partners">
                         <h2 class="text-uppercase">Marcas que fizeram história conosco<div class="detalhe-div"></div>
                         </h2>
-                        <div class="partners-carousel" data-aos='fade-up' data-aos-delay="150">
-                                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                                <div class="carousel-item active" data-bs-interval="10000">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/oji.webp" alt="logo oji papeis">
-                                                                <img class="partners-img" src="../assets/img-corporativos/raizen.webp" alt="logo raizen">
-                                                                <img class="partners-img" src="../assets/img-corporativos/ek.webp" alt="logo elring klinger">
-                                                                <img class="partners-img" src="../assets/img-corporativos/unimed.webp" alt="logo unimed">
 
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item" data-bs-interval="2000">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/merieux.webp" alt="logo merieux">
-                                                                <img class="partners-img" src="../assets/img-corporativos/polar.webp" alt="logo polar">
-                                                                <img class="partners-img" src="../assets/img-corporativos/klabin.webp" alt="logo klabin">
-                                                                <img class="partners-img" src="../assets/img-corporativos/sicredi.webp" alt="logo sicredi">
+                        <div class="slide-container" data-slide='slide-container' data-type="single" data-slide-controls
+                                data-slide-loop data-slide-auto>
+                                <div class="slide-display" data-slide='slide-display'>
+                                        <div class="slide-item" data-slide='slide-item'>
+                                                <div class="partners-container">
+                                                        <img class="partners-img" src="../assets/img-corporativos/oji.webp" alt="logo oji papeis">
+                                                        <img class="partners-img" src="../assets/img-corporativos/raizen.webp" alt="logo raizen">
+                                                        <img class="partners-img" src="../assets/img-corporativos/ek.webp" alt="logo elring klinger">
+                                                        <img class="partners-img" src="../assets/img-corporativos/unimed.webp" alt="logo unimed">
 
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/msb.webp" alt="logo msb">
-                                                                <img class="partners-img" src="../assets/img-corporativos/sicoob.webp" alt="logo sicoob">
-                                                                <img class="partners-img" src="../assets/img-corporativos/transys.webp" alt="logo transys">
-                                                                <img class="partners-img" src="../assets/img-corporativos/suvinil.webp" alt="logo suvinil">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/mobis.webp" alt="logo mobis">
-                                                                <img class="partners-img" src="../assets/img-corporativos/hyundai.webp" alt="logo hyundai">
-                                                                <img class="partners-img" src="../assets/img-corporativos/ajinomoto.webp" alt="logo ajinomoto">
-                                                                <img class="partners-img" src="../assets/img-corporativos/candura.webp" alt="logo candura">
-
-                                                        </div>
                                                 </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="slide-item" data-slide='slide-item'>
+                                                <div class="partners-container">
+                                                        <img class="partners-img" src="../assets/img-corporativos/merieux.webp" alt="logo merieux">
+                                                        <img class="partners-img" src="../assets/img-corporativos/polar.webp" alt="logo polar">
+                                                        <img class="partners-img" src="../assets/img-corporativos/klabin.webp" alt="logo klabin">
+                                                        <img class="partners-img" src="../assets/img-corporativos/sicredi.webp" alt="logo sicredi">
+
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide='slide-item'>
+                                                <div class="partners-container">
+                                                        <img class="partners-img" src="../assets/img-corporativos/msb.webp" alt="logo msb">
+                                                        <img class="partners-img" src="../assets/img-corporativos/sicoob.webp" alt="logo sicoob">
+                                                        <img class="partners-img" src="../assets/img-corporativos/transys.webp" alt="logo transys">
+                                                        <img class="partners-img" src="../assets/img-corporativos/suvinil.webp" alt="logo suvinil">
+                                                </div>
+                                        </div>
+                                        <div class="slide-item" data-slide='slide-item'>
+                                                <div class="partners-container">
+                                                        <img class="partners-img" src="../assets/img-corporativos/mobis.webp" alt="logo mobis">
+                                                        <img class="partners-img" src="../assets/img-corporativos/hyundai.webp" alt="logo hyundai">
+                                                        <img class="partners-img" src="../assets/img-corporativos/ajinomoto.webp" alt="logo ajinomoto">
+                                                        <img class="partners-img" src="../assets/img-corporativos/candura.webp" alt="logo candura">
+
+                                                </div>
+                                        </div>
                                 </div>
-                                <script>
-                                        document.addEventListener('DOMContentLoaded', () => {
-
-                                        })
-                                        let windowWidth = window.innerWidth;
-                                        const carouselInner = document.getElementById('carousel-inner')
-
-                                        function setCarrosselImages() {
-                                                if (windowWidth < 900) {
-                                                        carouselInner.innerHTML = `<div class="carousel-item active">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/raizen.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/oji.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/unimed.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/merieux.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/polar.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/klabin.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/sicoob.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/msb.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/candura.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/ek.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/transys.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/sicredi.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/mobis.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/hyundai.webp" alt="">
-                                                                <img class="partners-img" src="../assets/img-corporativos/ajinomoto.webp" alt="">
-                                                        </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                        <div class="partners-container">
-                                                                <img class="partners-img" src="../assets/img-corporativos/suvinil.webp" alt="">
-                                                        </div>
-                                                </div>`
-                                                }
-                                        }
-                                </script>
+                                <div class="slide-controls" data-slide='slide-controls'>
+                                        <img class="slide-control slide-control-prev" data-slide='slide-control-prev'
+                                                src="./assets/icons/prev.webp" alt="prev button">
+                                        <img class="slide-control slide-control-next" data-slide='slide-control-next'
+                                                src="./assets/icons/next.webp" alt="next button">
+                                </div>
                         </div>
+
                 </section>
                 <section id="about-the-space" class="about-the-space">
                         <h2 class="text-uppercase" data-aos='fade-up' data-aos-delay="150">capacidade <div class="detalhe-div">
@@ -276,7 +223,8 @@
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>
 
-        <script defer src="assets/js/slider-2.js"></script>
+        <script defer src="./assets/js/slider.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
         <script defer src="./assets/js/aos_init.js"></script>
 

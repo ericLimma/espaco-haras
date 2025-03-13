@@ -120,7 +120,7 @@ main {
 }
 
 .zoom:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
 }
 
@@ -351,7 +351,6 @@ nav {
 
 
 /* button */
-.btn-preto,
 .btn-vermelho {
     text-decoration: none;
     color: var(--branco);
@@ -366,23 +365,6 @@ nav {
     justify-content: center;
     margin: auto;
     border-radius: 4px;
-}
-
-.btn-preto {
-    background-color: var(--preto);
-    color: var(--branco);
-}
-
-.btn-vermelho {
-    background-color: var(--vermelho);
-}
-
-.btn-preto:hover {
-    background-color: var(--preto);
-    color: var(--branco);
-}
-
-.btn-vermelho:hover {
     background-color: var(--vermelho);
 }
 
@@ -409,17 +391,6 @@ nav {
     font-weight: 300;
 }
 
-.button.btn-preto {
-    --btn-color: var(--preto);
-
-}
-
-.button.btn-vermelho {
-    --btn-color: var(--vermelho);
-    background-color: transparent;
-    border: 1px solid var(--vermelho);
-    color: var(--vermelho);
-}
 
 .button.btn-transparent-white {
     --btn-color: var(--vermelho);
@@ -429,51 +400,10 @@ nav {
 
 }
 
-.button.btn-transparent-black {
-    --btn-color: var(--preto);
-    color: var(--preto);
-    border: 1px solid var(--preto);
-    backdrop-filter: blur(1px);
-    text-shadow: none;
-
-}
-
-.button.btn-golden {
-    --btn-color: var(--dourado);
-    color: var(--dourado);
-    border: 1px solid var(--dourado);
-    backdrop-filter: blur(1px);
-    text-shadow: none;
-    box-shadow: none;
-
-}
-
 .button:hover {
     color: var(--branco);
     backdrop-filter: none;
 
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    background-color: var(--btn-color);
-    box-shadow: 0 0 10px 60px var(--btn-color);
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
-    transition: width .3s ease-in-out, opacity 0.3s ease-out;
-    opacity: 0;
-}
-
-.button:hover::before {
-    width: 200%;
-    height: 200%;
-    opacity: 1;
-    transition: width .3s ease-in-out, opacity 0.6s ease-out;
 }
 
 
@@ -522,29 +452,6 @@ nav {
     aspect-ratio: 16 / 9;
 
 }
-
-.cta-title-desktop {
-    display: none;
-}
-
-.cta-title-mobile {
-    display: block;
-}
-
-
-
-/* 
-
-.cta-text div {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-around;
-    gap: 2rem;
-    aspect-ratio: 16 / 9;
-}
- */
 
 /* footer */
 .footer {

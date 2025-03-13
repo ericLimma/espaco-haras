@@ -1,7 +1,8 @@
 <?php
-// Define o diretório onde as fotos estão armazenada
-$title = 'principal';
-$diretorio = './assets/img/carousel/';
+// Define o diretório onde as fotos estão armazenadas
+
+$diretorio = './assets/img-casamentos/galeria/';
+
 $arquivos = scandir($diretorio);
 $extensoes_permitidas = ['jpg', 'jpeg', 'png', 'webp'];
 $imagens = array_values(array_filter($arquivos, function ($arquivo) use ($extensoes_permitidas) {
@@ -41,7 +42,10 @@ $imagens = array_values(array_filter($arquivos, function ($arquivo) use ($extens
 </head>
 
 <body>
-        <?php include 'assets/php/header.php' ?>
+        <?php
+        $title = 'casamento';
+        include('assets/php/header.php')
+        ?>
         <main>
                 <h1 class="display-1">Galeria de Fotos</h1>
                 <style>
