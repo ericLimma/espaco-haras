@@ -44,13 +44,13 @@
                         <p class="home-text">A antiga construção, remota à arquitetura de 1930, oferecendo aos convidados o
                                 charme do passado e a
                                 modernidade do presente com os serviços e qualidade oferecidos.</p>
-                        <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link " target="_blank" class="zoom btn-vermelho text-uppercase">Solicite um
+                        <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link " target="_blank" class="btn btn-vermelho text-uppercase">Solicite um
                                 Orçamento</a>
                 </article>
         </section>
 
         <section id="tipo-de-evento" class="tipo-de-evento">
-                <h2 class="text-uppercase text-center" data-aos="fade-up">
+                <h2 class="text-uppercase text-center" data-aos="fade-up"> 
                         Tipos de Evento
                         <div class="detalhe-div"></div>
                 </h2>

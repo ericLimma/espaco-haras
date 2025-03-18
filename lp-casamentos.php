@@ -42,7 +42,7 @@
                                         data-aos-delay="150">
                                 <h1 class="main-title" data-aos="fade-up" data-aos-delay="100">CASAMENTOS</h1>
                                 <a href="https://y4loz4ub3kk.typeform.com/to/CnmE3yPl?typeform-source=bio.link"
-                                        class=" button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
+                                        class="button btn-transparent-white" data-aos="fade" data-aos-delay="200" target="_blank">
                                         <span>Solicite Orçamento</span>
                                 </a>
                         </div>

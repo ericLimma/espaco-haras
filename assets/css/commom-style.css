@@ -72,10 +72,6 @@ main {
 .detalhe-vertical {
     position: relative;
     display: inline-block;
-
-}
-
-.detalhe-vertical {
     padding-left: 10px;
     border-left: 1.5px solid var(--vermelho);
     padding: 0 1rem;
@@ -368,6 +364,10 @@ nav {
     background-color: var(--vermelho);
 }
 
+.btn-vermelho:hover{
+    background-color: #77181c;
+}
+
 .button {
     font-family: "Poppins";
     width: 80%;
@@ -400,10 +400,9 @@ nav {
 
 }
 
-.button:hover {
+.button.btn-transparent-white:hover {
     color: var(--branco);
-    backdrop-filter: none;
-
+    background-color: var(--vermelho);
 }
 
 

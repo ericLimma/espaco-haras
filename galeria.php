@@ -43,13 +43,11 @@ $imagens = array_values(array_filter($arquivos, function ($arquivo) use ($extens
 <body>
         <?php include 'assets/php/header.php' ?>
         <main>
-                <h1 class="display-1">Galeria de Fotos</h1>
+                <h1 class="display-3 text-uppercase text-center" data-aos="fade-up">
+                        Galeria de Fotos
+                        <div class="detalhe-div"></div>
+                </h1>
                 <style>
-                        body {
-                                background-color: var(--preto-azulado);
-                                color: var(--branco);
-                        }
-
                         main {
                                 padding: 2rem 0;
 
