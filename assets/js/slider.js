@@ -10,6 +10,7 @@ class Slider {
                 this.loop = options.loop;
                 this.currentIndex = 0;
                 this.savedPosition = 0;
+                this.isTransitioning = false; // Novo: controle de transição
 
                 this.adjustLayout();
                 window.addEventListener('resize', () => this.adjustLayout());
@@ -19,8 +20,9 @@ class Slider {
 
                 if (this.loop) this.createSlideClones();
                 if (this.dots) this.activeDots();
-                if (options.autoPlay) this.activeAutoPlay()
+                if (options.autoPlay) this.activeAutoPlay();
         }
+
 
         createSlideClones() {
                 for (let i = 0; i < this.slideColumns; i++) {
@@ -43,29 +45,31 @@ class Slider {
         adjustLayout() {
                 this.width = window.innerWidth;
 
-                switch (this.slideType) {
-                        case 'single':
-                                this.slideColumns = 1;
-                                break;
-                        case 'double':
-                                if (this.width < 475) {
+                // Em telas menores que 768px, exibe apenas 1 slide
+                if (this.width < 768) {
+                        this.slideColumns = 1;
+                } else {
+                        // Em telas maiores, aplica a lógica normal
+                        switch (this.slideType) {
+                                case 'single':
                                         this.slideColumns = 1;
-                                } else {
+                                        break;
+                                case 'double':
                                         this.slideColumns = 2;
-                                }
-                                break;
-                        case 'triple':
-                                if (this.width < 475) {
-                                        this.slideColumns = 1;
-                                } else if (this.width >= 475 && this.width < 980) {
-                                        this.slideColumns = 2;
-                                } else {
+                                        break;
+                                case 'triple':
                                         this.slideColumns = 3;
-                                }
-                                break;
-                        default:
-                                this.slideColumns = 1;
-                                break;
+                                        break;
+                                case 'quadruple':
+                                        this.slideColumns = 4;
+                                        break;
+                                case 'quintuple':
+                                        this.slideColumns = 5;
+                                        break;
+                                default:
+                                        this.slideColumns = 1;
+                                        break;
+                        }
                 }
                 this.setSliderTrack();
         }
@@ -223,6 +227,50 @@ class Slider {
                 });
         }
 
+        prevSlide() {
+                if (this.isTransitioning) return; // Bloqueia se estiver em transição
+                this.isTransitioning = true; // Inicia a transição
+
+                if (this.currentIndex > this.slideColumns) {
+                        this.currentIndex -= 1;
+                        this.translateTrack();
+                } else if (this.loop) {
+                        this.currentIndex = this.slideList.length + this.slideColumns - 1;
+                        this.translateTrack(true);
+
+                        setTimeout(() => {
+                                this.translateTrack();
+                        }, 50);
+                }
+
+                // Libera o bloqueio após a transição
+                setTimeout(() => {
+                        this.isTransitioning = false;
+                }, 500); // Tempo igual à duração da transição (0.5s)
+        }
+
+        nextSlide() {
+                if (this.isTransitioning) return; // Bloqueia se estiver em transição
+                this.isTransitioning = true; // Inicia a transição
+
+                if (this.currentIndex < this.slideList.length + this.slideColumns - 1) {
+                        this.currentIndex += 1;
+                        this.translateTrack();
+                } else if (this.loop) {
+                        this.currentIndex = this.slideColumns;
+                        this.translateTrack(true);
+
+                        setTimeout(() => {
+                                this.translateTrack();
+                        }, 50);
+                }
+
+                // Libera o bloqueio após a transição
+                setTimeout(() => {
+                        this.isTransitioning = false;
+                }, 500); // Tempo igual à duração da transição (0.5s)
+        }
+
         translateTrack(disableTransition = false) {
                 const itemWidth = this.slider.querySelector('[data-slide="slide-item"]').clientWidth;
                 const gap = this.slideTrackGap;
@@ -231,51 +279,11 @@ class Slider {
                 const position = -(totalWidth * this.currentIndex);
                 this.savedPosition = position;
 
-                // Condicional para desativar a transição
                 this.slideTrack.style.transition = !disableTransition ? 'transform 0.5s' : 'none';
-
                 this.slideTrack.style.transform = `translateX(${position}px)`;
 
                 if (this.dots) {
                         this.updateActiveDot();
-                }
-        }
-
-        prevSlide() {
-                if (this.currentIndex > this.slideColumns) {
-                        this.currentIndex -= 1;
-                        this.translateTrack(); // Transição normal
-                } else if (this.loop) {
-                        // Desliza para o último slide sem transição
-                        this.currentIndex = this.slideList.length + this.slideColumns - 1;
-                        this.translateTrack(true); // Desativa a transição
-
-                        // Reativa a transição após um pequeno delay
-                        setTimeout(() => {
-                                this.translateTrack(); // Reativa a transição
-                        }, 50);
-                }
-        }
-
-        nextSlide() {
-                if (this.currentIndex < this.slideList.length + this.slideColumns - 1) {
-                        this.currentIndex += 1;
-                        this.translateTrack(); // Transição normal
-                } else if (this.loop) {
-                        // Desliza para o primeiro slide sem transição
-                        this.currentIndex = this.slideColumns; // Ignora os clones à esquerda
-                        this.translateTrack(true); // Desativa a transição
-
-                        // Reativa a transição após um pequeno delay
-                        setTimeout(() => {
-                                this.translateTrack(); // Reativa a transição
-                        }, 50);
-                }
-        }
-        moveToSlide(index) {
-                if (index >= this.slideColumns && index < this.slideList.length + this.slideColumns) {
-                        this.currentIndex = index;
-                        this.translateTrack();
                 }
         }
 }
@@ -296,4 +304,4 @@ sliders.forEach((slider) => {
                 loop,
                 autoPlay
         });
-});
+})
